@@ -1,0 +1,492 @@
+[
+ {
+  "id": "turismo-paseo-00",
+  "src": "/img/turismo-paseo-00.webp",
+  "width": 2560,
+  "height": 1920,
+  "category": "turismo",
+  "model": "paseo",
+  "alt": "Panga de turismo roja con toldo para tours",
+  "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAwAA4BaJZACdACh+sP2wAAA/rewt0NcgWth5J7hY4goVnO2MafuKeDPPcXyqCHue0tb3NW7rnoqIqRbF2nAv5aYQY+/E/BxI1K7lLewpfEtAlLApwAA"
+ },
+ {
+  "id": "turismo-corvina-14-02",
+  "src": "/img/turismo-corvina-14-02.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-14",
+  "alt": "Corvina 14 con toldo, casco verde y blanco",
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwAA4BaJYwCdAEUoN3RAAD+3MBtV4DA7tR7qOhv3xXes7eYlJxzjlOxVwuwAk2McTXwHWaQN79YFiRQF/+1XWGLpgb48Ras1LwAAAA="
+ },
+ {
+  "id": "turismo-corvina-14-03",
+  "src": "/img/turismo-corvina-14-03.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-14",
+  "alt": "Corvina 14 con toldo vista lateral",
+  "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAwAA4BaJYwCdADzQlkQAP7PcK9NHVDbpjFqq6URBZm9eG0FjKk1S6gE3FBn5SObZ4jImkHMb/EBIOdxZJKIwAA="
+ },
+ {
+  "id": "turismo-corvina-14-04",
+  "src": "/img/turismo-corvina-14-04.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-14",
+  "alt": "Corvina 14 rotulada, lista para entrega",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJYwCdADp/ExgAIAAAP7kaPZUZPeW2UUpnypi7pV5ckk7Ocr/BreWZNjaR2aZW3UjfNvDAIrjuVRkLAy2rPWebdhtQS0EbVnEQAAA"
+ },
+ {
+  "id": "turismo-corvina-14-07",
+  "src": "/img/turismo-corvina-14-07.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-14",
+  "alt": "Popa con pintura de aerógrafo de paisaje",
+  "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACQAQCdASoQAAwAA4BaJZwAAornjiAA/kQzBkgad3+O5zm1qrywBVdtJwLO+4YJJWmkPtmRanmuAi3hQsOOJBycycXtioUAAAA="
+ },
+ {
+  "id": "pesca-corvina-18-08",
+  "src": "/img/pesca-corvina-18-08.webp",
+  "width": 1920,
+  "height": 2560,
+  "category": "pesca",
+  "model": "corvina-18",
+  "alt": "Proa de Corvina 18 rotulada en azul",
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoMABAAA4BaJZAC7AEDHxdILH9AAAD+7RcHiOiOt5AOadLy196ut5Po2lWc6e29cj9RhxPr2UOv3RaeiC4CRVGBhfYQr6XDpVEmfR5r8yoO5/gUCgAAAA=="
+ },
+ {
+  "id": "turismo-corvina-18-10",
+  "src": "/img/turismo-corvina-18-10.webp",
+  "width": 2560,
+  "height": 1920,
+  "category": "turismo",
+  "model": "corvina-18",
+  "alt": "Corvina 18 con techo sobre remolque doble eje",
+  "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwAA4BaJYwCdADcTjmCcoAA/s0H/Xp/MHB/H6CZg547m6RybzRpL4TyPKcOhoWSS3so2xaxtXGgy00vqxVzJggAAA=="
+ },
+ {
+  "id": "turismo-corvina-18-11",
+  "src": "/img/turismo-corvina-18-11.webp",
+  "width": 2560,
+  "height": 1920,
+  "category": "turismo",
+  "model": "corvina-18",
+  "alt": "Corvina 18 con techo para pasajeros",
+  "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAwAA4BaJYwCdAD0u4JumffIAP5ATTx8p/iJczUJ3kMdP756O3dxoBKQ5cM+3ox8EdaxreBemGcyyI+4Y6pvq17KUiAA"
+ },
+ {
+  "id": "turismo-corvina-18-12",
+  "src": "/img/turismo-corvina-18-12.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-18",
+  "alt": "Popa pintada a mano con atardecer y palmeras",
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAwAA4BaJZQC7ADibiV+lZuqQAD8spEcEZau9CeT9LsgitN2h9552PhgemVI6qVyeBuwTwQnjSVYCiXg4WNSjxESxfLbUBDa8z5i5QAAAA=="
+ },
+ {
+  "id": "turismo-corvina-18-13",
+  "src": "/img/turismo-corvina-18-13.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-18",
+  "alt": "Proa rotulada de Corvina 18",
+  "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwAA4BaJZQCw7DPAf0fkErAAP7Boabf/x15R0yBCbSE+i86Wpkv3Gs+KjZxKMbTBK/CHJKQG8rDIn5jNGhxEeZWaaARLOWM4oAA"
+ },
+ {
+  "id": "turismo-corvina-18-14",
+  "src": "/img/turismo-corvina-18-14.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "corvina-18",
+  "alt": "Interior y popa con aerógrafo tropical",
+  "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAwAA4BaJQBdgCBruEd5uADLTiUKltHioCu2oFHN6WvsDMyDhUouLEL0N0EOrUxQ75G6t9iwdMM8fOkfC4I5QqtQxYM+Jr/cAAAA"
+ },
+ {
+  "id": "pesca-faena-25-15",
+  "src": "/img/pesca-faena-25-15.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "faena-25",
+  "alt": "Panga de pesca Faena 25 en el taller",
+  "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAwAA4BaJQBOgB3h/wPlgmwAAP6q5vyfpFmph7+Tp0pS5qK5qAOvicWIRb+H1kMiXYCVYbAs43D00kAzTjfzAAA="
+ },
+ {
+  "id": "pesca-faena-25-16",
+  "src": "/img/pesca-faena-25-16.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "faena-25",
+  "alt": "Proa alta de Faena 25 para mar abierto",
+  "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAwAA4BaJQBOgCG+LLjgGkAA/tIeTBYMlN0IuJj2ypXTOGuk91d0Ob7v70jhAfYTYeKbBjThWrA+esywg8OVeVarwoQAAAA="
+ },
+ {
+  "id": "pesca-faena-25-18",
+  "src": "/img/pesca-faena-25-18.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "faena-25",
+  "alt": "Faena 25 terminada, casco blanco y franja morada",
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAwAA4BaJagCdAD5ekLObogA/s3mBJd5VwSBWFJRVWs8lcMkHr5Ie14ooMQEknkopIMBCD7STvxkvd6aV1y7ReWb0SJps19E0DRFgAA="
+ },
+ {
+  "id": "pesca-faena-25-19",
+  "src": "/img/pesca-faena-25-19.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "faena-25",
+  "alt": "Vista de proa de Faena 25",
+  "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwAA4BaJQBdgCHwfHnRIDiAAP7pnG1IhYjy0Uu1NK5X+grb+fabbUtSwAYdR5XV93MnpmC2NelAN7p14Y1WQNWjZggAAAA="
+ },
+ {
+  "id": "pesca-faena-25-20",
+  "src": "/img/pesca-faena-25-20.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "faena-25",
+  "alt": "Faena 25 en gris recién desmoldada",
+  "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAwAA4BaJZQC7AEQOjwpSWmFgAD+7Nw2z70fm5+1rPG7iAa/UNB3PxtW9C0AeGM1cDujpbe+gMa9fxqnG9ywVZAAAA=="
+ },
+ {
+  "id": "pesca-faena-25-21",
+  "src": "/img/pesca-faena-25-21.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "faena-25",
+  "alt": "Faena 25 gris con consola central",
+  "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwAA4BaJYwCdAEMsF4QwAD+0NvcKx9H+YB1CrQjuUyxcGw3j8edfuKz9xn7P2VZBLhlGW873xJ6SY/1gJZIJRKyDfWAAAA="
+ },
+ {
+  "id": "turismo-costa-20-22",
+  "src": "/img/turismo-costa-20-22.webp",
+  "width": 2400,
+  "height": 3200,
+  "category": "turismo",
+  "model": "costa-20",
+  "alt": "Costa 20 con franjas roja y turquesa",
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoMABAAA4BaJQBOgCPtYogLP7ygAP7u7p2FH+pJnhoIwuy5XdeLXBxTD5NS8tQb28lNmLdKTKlCaIVBJg5qJpIucWL6ltkwGAAAAA=="
+ },
+ {
+  "id": "turismo-costa-20-23",
+  "src": "/img/turismo-costa-20-23.webp",
+  "width": 2400,
+  "height": 3200,
+  "category": "turismo",
+  "model": "costa-20",
+  "alt": "Proa de Costa 20 con chevrón rojo",
+  "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoMABAAA4BaJQAAS5Y97z+iiAAA/vDssrgS7ZLqjlCxB27s0HPjrvlcwwdPhdphXSLukGvrDO9qM9IgHNfCS7O+QAA="
+ },
+ {
+  "id": "pesca-costa-20-26",
+  "src": "/img/pesca-costa-20-26.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-20",
+  "alt": "Popa con delfines pintados a mano",
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAwAA4BaJZACdAD2LnG7qwAA/u6ykAWKDWJhh/gPHBGUu3+8AhyrE2h0LT6zEScI/We6osIzjqAdgjY3egS7HkGvsZkbXPj8VZkKSKP4bKAgAAA="
+ },
+ {
+  "id": "turismo-costa-24-31",
+  "src": "/img/turismo-costa-24-31.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "costa-24",
+  "alt": "Costa 24 con toldo azul para pasajeros",
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAwAA4BaJQBdgB367rAAAAD7ve6LpiDT4Ve6yQSGd7XLSE26tydk6yjBKiBplGv8BD1iH12eJnPK/e/zet0F7Wpw2Nb0ayA/YdCdQ77QAA=="
+ },
+ {
+  "id": "turismo-costa-24-32",
+  "src": "/img/turismo-costa-24-32.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "costa-24",
+  "alt": "Costa 24 azul con toldo, lista para turismo",
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAwAA4BaJZACdAELTzGp/pUAAM3wBIdqLMtpQFHzC9T+dBqz/cMCrvm8IQEIK31r/uw3tWNZgOyDPaJNeBMuih5kann2fHHjClranaAAAA=="
+ },
+ {
+  "id": "turismo-costa-24-33",
+  "src": "/img/turismo-costa-24-33.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "costa-24",
+  "alt": "Costa 24 con toldo vista de proa",
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAwAA4BaJaACdACtNp+kAPKf8iCgMLARKOIVPajc7gLir06mNWqLmOKYbWDdfapeQ+QBVJgX5l+mMPyoNMcgjEQONLKHo0hZ7YGpjYAAAA=="
+ },
+ {
+  "id": "pesca-costa-24-34",
+  "src": "/img/pesca-costa-24-34.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-24",
+  "alt": "Costa 24 roja con chevrón blanco en la proa",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJYgCdADicKstU4CYAP7tCbNqiBPP1ayeNpjTowSWP2J5coT3myM5L0Ubye5FnFZeeIdSfJ4/bxYraK3nskwMrZGu8XVfOSY/OYAA"
+ },
+ {
+  "id": "pesca-costa-24-36",
+  "src": "/img/pesca-costa-24-36.webp",
+  "width": 2400,
+  "height": 3200,
+  "category": "pesca",
+  "model": "costa-24",
+  "alt": "Costa 24 roja, interior celeste",
+  "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoMABAAA4BaJbACdFQAA6z9Lwl7X3RAAP7bhfUDm7xF/vqkOpT5qT08HFuYIjZkw7O72gds2LGrxMoIjsEuria/VMDX4nDp5MoU7lWM30/l10FJ66vhJVxH9CXIIIIbQ+fDUsp+qf+/fXQA"
+ },
+ {
+  "id": "pesca-doble-realce-38",
+  "src": "/img/pesca-doble-realce-38.webp",
+  "width": 3200,
+  "height": 1800,
+  "category": "pesca",
+  "model": "doble-realce",
+  "alt": "Doble Realce turquesa vista de proa",
+  "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkAA4BaJbACdAEekVKl/cAA/oQOH9V9ToF59rg7FJy2oFC6UWRvxlhRZ/TY2np1yiqYIiAzNITCguLIzWSSiwOKXdgAAAA="
+ },
+ {
+  "id": "pesca-doble-realce-39",
+  "src": "/img/pesca-doble-realce-39.webp",
+  "width": 3200,
+  "height": 1800,
+  "category": "pesca",
+  "model": "doble-realce",
+  "alt": "Doble Realce turquesa con estrellas en el costado",
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAkAA4BaJagCdADwoqA0d8uAAP4mt9KgP0yTNYnMR5JgGB5E89KxZEQQZJucf8JgHBHK1QpEkfgeecMhpqrVd45XFunno4wAAA=="
+ },
+ {
+  "id": "pesca-doble-realce-40",
+  "src": "/img/pesca-doble-realce-40.webp",
+  "width": 1800,
+  "height": 3200,
+  "category": "pesca",
+  "model": "doble-realce",
+  "alt": "Interior de Doble Realce con bancas",
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoJABAAA4BaJQBOj+ACd6lLSJpwAP6p7tVRpqlUivUiCKqiq4oOn2Iu1G1iGCvgQGFAtWEiH2+uwVCQPO4dcjpcxgMGV4EDKYun8Pf4AAA="
+ },
+ {
+  "id": "pesca-doble-realce-41",
+  "src": "/img/pesca-doble-realce-41.webp",
+  "width": 1800,
+  "height": 3200,
+  "category": "pesca",
+  "model": "doble-realce",
+  "alt": "Doble Realce con franjas blancas",
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoJABAAA4BaJQBdgCHh4TZXafAA/tqfnSXUc2KGjq9yRDyg4DvwgZ3YgHeyMFn9SeTsT4e4133UWvTE9IGwiogte61kb3XA5VbgGFW8QSgnLz266gAAAA=="
+ },
+ {
+  "id": "turismo-doble-realce-42",
+  "src": "/img/turismo-doble-realce-42.webp",
+  "width": 1800,
+  "height": 3200,
+  "category": "turismo",
+  "model": "doble-realce",
+  "alt": "Doble Realce azul con toldo",
+  "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoJABAAA4BaJQBOgCFmHZLPAAD+h+QmzYp0d14+H0E3W8mpgxlEXSQb4PhwVIUnRTR+6y4RQ2aY2ohoEq/QNAAA"
+ },
+ {
+  "id": "pesca-doble-realce-43",
+  "src": "/img/pesca-doble-realce-43.webp",
+  "width": 1440,
+  "height": 2560,
+  "category": "pesca",
+  "model": "doble-realce",
+  "alt": "Doble Realce roja",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoJABAAA4BaJZgCdH8AE0FwAP7OBc4MPwEE+Ac5xb7UV8fEzvcSYr5XQwrb0palXxH4BqyW/mXwMnzY9yiNHgIaQBS1QmkWLlXZ2iBfheoGAAAA"
+ },
+ {
+  "id": "pesca-costa-18-45",
+  "src": "/img/pesca-costa-18-45.webp",
+  "width": 3000,
+  "height": 2250,
+  "category": "pesca",
+  "model": "costa-18",
+  "alt": "Costa 18 celeste con franjas azules",
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAwAA4BaJQBOgBl01LPTaAAA/QMMTHKxABo1/vSC88oJQuxmVXiIVUK3E9S8pjYdEWyml3B37kfaujBHN7cCPm18D265zDSDPuAgCDvNwQfWtGouOt6ApJJuAAAA"
+ },
+ {
+  "id": "pesca-costa-18-48",
+  "src": "/img/pesca-costa-18-48.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-18",
+  "alt": "Costa 18 con nombre rotulado",
+  "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwAA4BaJZQCdAD1dA1vtrv4APjhWMvFEjPTFqhOAcgFKhvWSxyaniUjoCMjjegqJ8fqjtqvdlGmnvuw+AYwnemJTUFPQAA="
+ },
+ {
+  "id": "pesca-costa-18-50",
+  "src": "/img/pesca-costa-18-50.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-18",
+  "alt": "Costa 18 azul con detalles de aerógrafo",
+  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAwAA4BaJZACdADp/PlqXx4oAAD+kb3KIhLUfGvgcwPOhYpQ9RL6upUGEa9GlnbtiwhI9Cv17bTyHaMvVNUgv5hGiafa6SjTg/UioAY2uYEAqjm4zQn+AAA="
+ },
+ {
+  "id": "pesca-costa-18-51",
+  "src": "/img/pesca-costa-18-51.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-18",
+  "alt": "Costa 18 azul, vista lateral completa",
+  "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQAgCdASoQAAwAA4BaJYgCdEf/gerjN93M3AAA/ie79kVKNtNK4Q62wwOmW20xoXmWR9C1CtJNirZKogxrRuzv1YYu3uN5Vb9rfdmru68tAAAA"
+ },
+ {
+  "id": "pesca-costa-18-52",
+  "src": "/img/pesca-costa-18-52.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-18",
+  "alt": "Costa 18 azul en el patio del taller",
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAwAA4BaJQBOgCBaNfMWWAD3dfmsRqWxhu4GAcGTl8oxF3TCzhckZmVNp3dCwAjsjuHKiYHOHsIMn/6ttWKQ6DaOJ2poM3+NeopXPsSokHnAAAA="
+ },
+ {
+  "id": "turismo-costa-18-53",
+  "src": "/img/turismo-costa-18-53.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "turismo",
+  "model": "costa-18",
+  "alt": "Popa con atardecer pintado a mano",
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAwAA4BaJZQCdAEQFTBviP/gAAD+7vLaam3VSz8sz69Nm7BTgt7gK2fELjEkDuupIUn+l4jlM029pqzyTA5wGQBcPHh03Xa3gP3AMnN9EWLpYAA="
+ },
+ {
+  "id": "pesca-costa-18-54",
+  "src": "/img/pesca-costa-18-54.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "pesca",
+  "model": "costa-18",
+  "alt": "Panga blanca con cabina pequeña",
+  "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwAA4BaJZgC7AERBYBftAAA/u6vqt9yEqLW5nzoWVpIEBSHf256XdrI+2fzu+sGQu6JQwZXzckAAAA="
+ },
+ {
+  "id": "turismo-costa-24-64",
+  "src": "/img/turismo-costa-24-64.webp",
+  "width": 1800,
+  "height": 3200,
+  "category": "turismo",
+  "model": "costa-24",
+  "alt": "Panga larga con toldo en construcción",
+  "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoJABAAA4BaJZQCdAELMieSKMAA/vQwaPbSGx+SNpNnHslm3S4BmbL2CtUVKRRLP5Ws6wAA"
+ },
+ {
+  "id": "proceso-molde-56",
+  "src": "/img/proceso-molde-56.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "proceso",
+  "model": "molde",
+  "alt": "Casco en el molde antes del desmolde",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJYwC7AEMxfPrj6YAAP4A57nDmOgbm7RfUs2Za6+peYgiYmOjOMDfnj+umAIzDBOeoJyhsGbITsoTGqL2JHQkJZ6o92Fr4Y5bkAAA"
+ },
+ {
+  "id": "proceso-laminado-57",
+  "src": "/img/proceso-laminado-57.webp",
+  "width": 2400,
+  "height": 3200,
+  "category": "proceso",
+  "model": "laminado",
+  "alt": "Laminado de fibra de vidrio sobre el molde",
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoMABAAA4BaJZQC7AEWPMYOfIq+sAAA/uwEqNAQBwXJWq7s2iZyoC0dFBo62f30paXgdP3292h8tFNd3odPJEYzHPa+PDanQGAAAA=="
+ },
+ {
+  "id": "proceso-estructura-59",
+  "src": "/img/proceso-estructura-59.webp",
+  "width": 2400,
+  "height": 3200,
+  "category": "proceso",
+  "model": "estructura",
+  "alt": "Bancas y estructura interna laminadas",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoMABAAA4BaJQBOgBuLc4fKgADOMw6hrsxgsp9tIHbced0zzLuUM66YFyW3K70Gwhvxr2x0xav+X7B/tK6IetFg84+d7EirPBJQ6CJETl3LAAAA"
+ },
+ {
+  "id": "proceso-gelcoat-27",
+  "src": "/img/proceso-gelcoat-27.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "proceso",
+  "model": "gelcoat",
+  "alt": "Interior terminado con gelcoat antideslizante",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAwAA4BaJYwC7AED5nKbWaAA/unhktJVKsbRiSxsNMnqkZDYeWGJ2KTUSClQsRE/+4Tzs2ccmgCoYOsQ+5Tu2x0Gn0oEVk9PmvfIPodkXgAA"
+ },
+ {
+  "id": "proceso-consola-44",
+  "src": "/img/proceso-consola-44.webp",
+  "width": 3200,
+  "height": 2400,
+  "category": "proceso",
+  "model": "consola",
+  "alt": "Consola y cajones en fibra antes de pintar",
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwAA4BaJaACdADdeInEVfgA9muJ5Ny8k01olExFwcMi2Fl16eT2x+D9+8Mib+txK4LCMEIe4Dw9Cxp072GqXzI1Ek2FzcMgAA=="
+ },
+ {
+  "id": "proceso-acabado-63",
+  "src": "/img/proceso-acabado-63.webp",
+  "width": 2400,
+  "height": 3200,
+  "category": "proceso",
+  "model": "acabado",
+  "alt": "Casco terminado listo para pintura",
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoMABAAA4BaJQBdgCHaSlyN4ztTgAD+5kkCjWwu/zEILDIxDbLmXsajQpHgq5zcO9kC5hxOzpzSa7kAbdYN52CNZzk+cVDJhAAAAA=="
+ },
+ {
+  "id": "deportivas-ranita-20-01",
+  "src": "/img/deportivas-ranita-20-01.webp",
+  "width": 2400,
+  "height": 1802,
+  "category": "deportivas",
+  "model": "ranita-20",
+  "alt": "Ranita 20 blanca y celeste, vista lateral con rotulado deportivo",
+  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAwAA4BaJbACdAECmyz2UrzyAP7jc4zYHx9suaxa38TpeFlBmrpPzaU+6Ju83Vyn+NqSu5y5E9Ztsf2OuFBbWB64eLdT4dD7u7SL9MvroT92W7mSeyQTysxBdm83AAA="
+ },
+ {
+  "id": "deportivas-ranita-20-02",
+  "src": "/img/deportivas-ranita-20-02.webp",
+  "width": 2400,
+  "height": 1806,
+  "category": "deportivas",
+  "model": "ranita-20",
+  "alt": "Ranita 20 en el taller, costado con franja celeste",
+  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACQAgCdASoQAAwAA4BaJZACdH8G6AA6xwHS8o41cAD+9YLOklECmcjTvku/v0VCOK9L8YqdVkoip+KasZ19hkpv4S3lO0lW63loZCq2GtQcSTzeMCMEG7/5b2f8aA6AAAA="
+ },
+ {
+  "id": "deportivas-ranita-20-03",
+  "src": "/img/deportivas-ranita-20-03.webp",
+  "width": 2400,
+  "height": 1802,
+  "category": "deportivas",
+  "model": "ranita-20",
+  "alt": "Interior de la Ranita 20 con consola central y bancas",
+  "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQAAwAA4BaJbACdFQAAnRLwyVdS4AA/uzxojo4L3efRhdpy7DaxQUtSgfARUuW+NTk2AzdFov1pKa8erTvUy0CQoRIoGmBHQRWH1lzV5QWgO5xeblhqAT+t2Lz7W001UsGOTeG0AA="
+ },
+ {
+  "id": "deportivas-ranita-20-04",
+  "src": "/img/deportivas-ranita-20-04.webp",
+  "width": 2400,
+  "height": 1806,
+  "category": "deportivas",
+  "model": "ranita-20",
+  "alt": "Proa de la Ranita 20 vista de frente",
+  "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAwAA4BaJbACdH8AgtTK7QVrYrAAAP7yyrzkY8mJPOhLosLBZX8trssaYa3V0twtXmhn+wRvrfxrfmZJS4jMHnvBnIq/3nixUTJDUnIUyE5t82gi6cRh1y8PUwVA9ThuoOOwAAA="
+ }
+]

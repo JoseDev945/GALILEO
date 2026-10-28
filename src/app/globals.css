@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import "@fontsource-variable/manrope/wght.css";
+@import "@fontsource-variable/playfair-display/wght.css";
+@import "@fontsource-variable/playfair-display/wght-italic.css";
+
+@theme {
+  --color-night: #121417;
+  --color-night-2: #1b1f23;
+  --color-teal: #1d5f6b;
+  --color-teal-600: #174d57;
+  --color-teal-100: #e3eef0;
+  --color-paper: #f6f7f8;
+  --color-ink: #16191c;
+  --color-mist: #5f6870;
+  --color-line: #dfe3e6;
+
+  --font-sans: "Manrope Variable", system-ui, sans-serif;
+  --font-serif: "Playfair Display Variable", Georgia, serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+  :focus-visible { outline: 3px solid #4fb3c2; outline-offset: 3px; border-radius: 8px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *:not(.allow-motion), *::before, *::after { animation: none !important; transition: none !important; }
+  }
+}
+
+/* Título de modelo: número en cursiva subrayado + nombre en versalitas serif */
+@utility model-title {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+@utility model-num {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--color-teal);
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.12em;
+}
+@utility eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background-color 150ms, color 150ms, border-color 150ms;
+}
+
+@keyframes hero-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* Colores del carrusel: cambian con cada bote y se animan suavemente */
+@property --accent { syntax: "<color>"; inherits: true; initial-value: #1d5f6b; }
+@property --accent-light { syntax: "<color>"; inherits: true; initial-value: #4fb3c2; }
+.hero-accent {
+  transition: --accent 900ms ease, --accent-light 900ms ease;
+}
+
+/* Botón estilo WhatsApp con acabado cromado. Su color sale de --wa-color (verde WhatsApp por defecto). */
+@property --wa-color { syntax: "<color>"; inherits: true; initial-value: #25d366; }
+@utility btn-wa {
+  --wa-color: #25d366;
+  position: relative;
+  overflow: hidden;
+  gap: 0.6rem;
+  color: #fff;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 0.35);
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--wa-color) 45%, white) 0%,
+    color-mix(in srgb, var(--wa-color) 75%, white) 22%,
+    var(--wa-color) 48%,
+    color-mix(in srgb, var(--wa-color) 72%, black) 52%,
+    color-mix(in srgb, var(--wa-color) 88%, white) 78%,
+    color-mix(in srgb, var(--wa-color) 60%, white) 100%);
+  border: 1px solid color-mix(in srgb, var(--wa-color) 65%, black);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.75),
+    inset 0 -1px 0 rgb(0 0 0 / 0.2),
+    0 4px 14px color-mix(in srgb, var(--wa-color) 40%, transparent);
+  transition: --wa-color 900ms ease, filter 150ms, transform 150ms;
+  &:hover { filter: brightness(1.08) saturate(1.1); }
+  &:active { transform: translateY(1px); }
+  /* reflejo que cruza el botón */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 -60%;
+    width: 40%;
+    background: linear-gradient(100deg, transparent, rgb(255 255 255 / 0.55), transparent);
+    transform: skewX(-20deg);
+    animation: wa-shine 4.5s ease-in-out infinite;
+  }
+}
+/* En la cabecera, el botón toma el color del bote que muestra el carrusel (si lo hay) */
+.btn-wa.wa-follow { --wa-color: var(--boat-color, #25d366); }
+@keyframes wa-shine {
+  0%, 70% { left: -60%; }
+  100% { left: 130%; }
+}
