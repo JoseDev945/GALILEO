@@ -111,3 +111,59 @@
   0%, 70% { left: -60%; }
   100% { left: 130%; }
 }
+
+/* Vista ampliada de fotos: flechas grandes con el color del bote de la foto */
+.lb-boat .yarl__navigation_prev,
+.lb-boat .yarl__navigation_next {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  margin: 0 12px;
+  border-radius: 9999px;
+  color: #fff;
+  background: color-mix(in srgb, var(--yarl__boat) 88%, transparent);
+  border: 2px solid color-mix(in srgb, var(--yarl__boat-light) 70%, white);
+  box-shadow: 0 6px 22px rgb(0 0 0 / 0.45), 0 0 0 4px color-mix(in srgb, var(--yarl__boat) 25%, transparent);
+  filter: none;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background-color 400ms, border-color 400ms, transform 150ms;
+}
+.lb-boat .yarl__navigation_prev:hover,
+.lb-boat .yarl__navigation_next:hover { transform: translateY(-50%) scale(1.08); background: var(--yarl__boat); }
+.lb-boat .yarl__navigation_prev .yarl__icon,
+.lb-boat .yarl__navigation_next .yarl__icon { width: 30px; height: 30px; }
+@media (min-width: 1024px) {
+  .lb-boat .yarl__navigation_prev,
+  .lb-boat .yarl__navigation_next { width: 72px; height: 72px; margin: 0 28px; }
+  .lb-boat .yarl__navigation_prev .yarl__icon,
+  .lb-boat .yarl__navigation_next .yarl__icon { width: 40px; height: 40px; }
+}
+/* En teléfonos y pantallas táctiles se cambia de foto deslizando: sin flechas */
+@media (max-width: 1023px), (hover: none) {
+  .lb-boat .yarl__navigation_prev,
+  .lb-boat .yarl__navigation_next { display: none; }
+}
+
+/* Teléfono y PC: modo limpio al tocar/hacer clic en la foto (se ocultan textos y zoom, queda la X) */
+.lb-boat .yarl__slide_title_container,
+.lb-boat .yarl__slide_captions_container,
+.lb-boat .yarl__toolbar .yarl__button { transition: opacity 250ms ease; }
+.lb-clean .yarl__slide_title_container,
+.lb-clean .yarl__slide_captions_container,
+.lb-clean .yarl__toolbar .yarl__button:not([aria-label="Cerrar"]):not([aria-label*="antalla completa"]) { opacity: 0; pointer-events: none; }
+/* Botón de pantalla completa un poco más grande en el teléfono para tocarlo fácil */
+@media (max-width: 1023px), (hover: none) {
+  .lb-boat .yarl__toolbar .yarl__button[aria-label*="antalla completa"] .yarl__icon { width: 34px; height: 34px; }
+}
+
+/* Pantalla completa: la foto se ajusta al borde de la pantalla (ancho o alto), completa y sin recortes */
+.lb-fs .yarl__slide { padding: 0; }
+.lb-fs .yarl__slide_image { object-fit: contain; }
+/* En PC también: al entrar a pantalla completa se ocultan textos y zoom (las flechas de colores se quedan) */
+.lb-fs.lb-clean .yarl__slide_title_container,
+.lb-fs.lb-clean .yarl__slide_captions_container,
+.lb-fs.lb-clean .yarl__toolbar .yarl__button:not([aria-label="Cerrar"]):not([aria-label*="antalla completa"]) { opacity: 0; pointer-events: none; }
