@@ -114,7 +114,10 @@ export function Hero({ slides }: { slides: Slide[] }) {
           alt={i === active ? sl.photo.alt : ""}
           aria-hidden={i !== active}
           fill
-          priority={i === 0}
+          // La primera foto es lo más grande de la página (LCP): se pide primero y sin espera
+          preload={i === 0}
+          fetchPriority={i === 0 ? "high" : "auto"}
+          loading={i === 0 ? "eager" : "lazy"}
           placeholder="blur"
           blurDataURL={sl.photo.blur}
           sizes="100vw"

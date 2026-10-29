@@ -43,6 +43,10 @@ const nextConfig: NextConfig = {
     qualities: [75, 90],
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
+  experimental: {
+    // El CSS va dentro del HTML: el navegador no espera otro archivo para pintar la página (mejor LCP en móvil)
+    inlineCss: true,
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

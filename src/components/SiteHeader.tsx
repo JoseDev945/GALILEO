@@ -25,7 +25,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-night text-white/85">
       <div className="relative mx-auto flex h-[74px] max-w-7xl items-center justify-between gap-6 px-4 sm:px-6">
         <LogoLink label={`${site.name}, inicio`} className="shrink-0">
-          <Image src="/logo-galileo.png" alt={site.name} width={720} height={452} priority className="h-10 w-auto sm:h-12" />
+          <Image src="/logo-galileo.png" alt={site.name} width={720} height={452} loading="eager" sizes="80px" className="h-10 w-auto sm:h-12" />
         </LogoLink>
 
         <nav aria-label="Principal" className="hidden lg:block">

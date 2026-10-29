@@ -58,7 +58,7 @@ export default async function ModeloPage({ params }: Props) {
     <>
       <JsonLd data={ld} />
       <section className="relative isolate overflow-hidden bg-night text-white">
-        <Image src={cover.src} alt={cover.alt} fill priority placeholder="blur" blurDataURL={cover.blur} sizes="100vw" quality={90} className="-z-20 object-cover" />
+        <Image src={cover.src} alt={cover.alt} fill preload fetchPriority="high" loading="eager" placeholder="blur" blurDataURL={cover.blur} sizes="100vw" quality={90} className="-z-20 object-cover" />
         {/* Sombra suave solo abajo, para que el nombre se lea sin tapar el bote */}
         <div className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-night/70 to-transparent" />
         <div className="mx-auto flex min-h-[70svh] max-w-7xl flex-col justify-end px-4 pb-8 pt-24 sm:px-6 sm:pb-12 lg:min-h-[calc(100svh-74px)]">
