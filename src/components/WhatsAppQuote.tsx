@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { whatsappLink } from "@/config/site";
-import { categoryOrder, modelName, models, useLabel, type Category } from "@/data/catalog";
+import { categoryOrder, modelName, models, useLabel, type Category } from "@/data/models";
 
 /** Arma un mensaje de cotización y abre WhatsApp. No guarda ningún dato en el sitio. */
 export function WhatsAppQuote() {

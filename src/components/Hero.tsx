@@ -4,7 +4,7 @@ import Image, { getImageProps } from "next/image";
 import { preload } from "react-dom";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { BoatModel, Photo } from "@/data/catalog";
+import type { BoatModel, Photo } from "@/data/models";
 import { ModelTitle } from "./ModelTitle";
 import { whatsappLink } from "@/config/site";
 import { HERO_RESET_EVENT } from "./LogoLink";

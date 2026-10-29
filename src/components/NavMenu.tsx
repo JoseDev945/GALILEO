@@ -1,12 +1,16 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useOpenUntilNavigate } from "./useOpenUntilNavigate";
 
 /** Menú desplegable que se abre con clic o al pasar el mouse, y se cierra con Esc, clic afuera o al navegar. */
 export function NavMenu({ label, children, panelClassName = "" }: { label: string; children: React.ReactNode; panelClassName?: string }) {
   const [open, setOpen] = useOpenUntilNavigate();
   const ref = useRef<HTMLLIElement>(null);
+  // El contenido del menú (con sus fotos) solo se dibuja la primera vez que la persona se acerca a él:
+  // así la página inicial pesa menos y carga más rápido. Después queda listo para abrir al instante.
+  const [armed, setArmed] = useState(false);
+  const arm = () => setArmed(true);
 
   useEffect(() => {
     if (!open) return;
@@ -18,11 +22,11 @@ export function NavMenu({ label, children, panelClassName = "" }: { label: strin
   }, [open, setOpen]);
 
   return (
-    <li ref={ref} data-open={open} className="group">
+    <li ref={ref} data-open={open} className="group" onPointerEnter={arm} onFocusCapture={arm}>
       <button
         type="button"
         aria-expanded={open}
-        onClick={() => setOpen((o) => !o)}
+        onClick={() => { arm(); setOpen((o) => !o); }}
         className="flex items-center gap-1.5 py-6 hover:text-white group-data-[open=true]:text-white"
       >
         {label}
@@ -34,7 +38,7 @@ export function NavMenu({ label, children, panelClassName = "" }: { label: strin
         onClick={(e) => { if ((e.target as HTMLElement).closest("a")) setOpen(false); }}
         className={`invisible absolute top-full z-50 opacity-0 shadow-2xl transition group-hover:visible group-hover:opacity-100 group-data-[open=true]:visible group-data-[open=true]:opacity-100 ${panelClassName}`}
       >
-        {children}
+        {armed && children}
       </div>
     </li>
   );

@@ -8,7 +8,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
-import { modelBySlug, type Photo } from "@/data/catalog";
+import { modelBySlug, type Photo } from "@/data/models";
 
 const LIGHTBOX_WIDTHS = [828, 1440, 1920, 2560, 3200];
 
