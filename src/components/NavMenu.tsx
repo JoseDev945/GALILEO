@@ -1,15 +1,13 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import { useOpenUntilNavigate } from "./useOpenUntilNavigate";
 
 /** Menú desplegable que se abre con clic o al pasar el mouse, y se cierra con Esc, clic afuera o al navegar. */
 export function NavMenu({ label, children, panelClassName = "" }: { label: string; children: React.ReactNode; panelClassName?: string }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useOpenUntilNavigate();
   const ref = useRef<HTMLLIElement>(null);
-  const path = usePathname();
 
-  useEffect(() => setOpen(false), [path]);
   useEffect(() => {
     if (!open) return;
     const onDown = (e: MouseEvent) => { if (!ref.current?.contains(e.target as Node)) setOpen(false); };
@@ -17,7 +15,7 @@ export function NavMenu({ label, children, panelClassName = "" }: { label: strin
     document.addEventListener("mousedown", onDown);
     document.addEventListener("keydown", onKey);
     return () => { document.removeEventListener("mousedown", onDown); document.removeEventListener("keydown", onKey); };
-  }, [open]);
+  }, [open, setOpen]);
 
   return (
     <li ref={ref} data-open={open} className="group">

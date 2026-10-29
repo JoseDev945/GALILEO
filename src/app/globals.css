@@ -37,10 +37,8 @@
 }
 @utility model-num {
   font-style: italic;
-  text-decoration: underline;
-  text-decoration-color: var(--color-teal);
-  text-decoration-thickness: 0.07em;
-  text-underline-offset: 0.12em;
+  color: var(--num-color, inherit);
+  transition: color 900ms ease;
 }
 @utility eyebrow {
   font-size: 0.72rem;

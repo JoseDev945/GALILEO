@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
-import { site } from "@/config/site";
+import { responsible, site } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Política de privacidad",
@@ -17,13 +17,12 @@ export default function Privacidad() {
       </p>
 
       <h2>Responsable del tratamiento</h2>
-      <p>{site.legalOwner} ({site.legalId}), {site.address.street}, {site.address.locality}, {site.address.region}. Contacto: {site.email}.</p>
+      <p>{responsible()}, {site.address.street}, {site.address.locality}, {site.address.region}. Contacto: {site.email}.</p>
 
       <h2>Qué datos recogemos</h2>
       <p>
-        Este sitio <strong>no tiene formularios ni guarda datos personales</strong>. Tampoco usa cookies de publicidad ni herramientas de
-        seguimiento de terceros. El servidor que aloja el sitio (Vercel) puede registrar datos técnicos de las visitas, como la dirección IP,
-        solo por motivos de seguridad y funcionamiento.
+        Este sitio <strong>no tiene formularios ni guarda datos personales</strong> y <strong>no instala cookies</strong>. El servidor que
+        aloja el sitio (Vercel) puede registrar datos técnicos de las visitas, como la dirección IP, solo por motivos de seguridad y funcionamiento.
       </p>
 
       <h2>Cuando nos escribes por WhatsApp, correo o redes sociales</h2>
@@ -40,10 +39,24 @@ export default function Privacidad() {
         conforme con la respuesta, puedes acudir a la Autoridad Nacional de Transparencia y Acceso a la Información (ANTAI).
       </p>
 
+      <h2>Estadísticas de visitas</h2>
+      <p>
+        Usamos Vercel Web Analytics y Vercel Speed Insights para saber cuántas personas visitan cada página, qué modelos se ven, cuántas veces
+        se toca el botón de WhatsApp y qué tan rápido carga el sitio. Estas herramientas <strong>no usan cookies</strong>, no guardan tu
+        dirección IP y no permiten identificarte: solo producen cifras agregadas y anónimas.
+      </p>
+
       <h2>Mapa de ubicación</h2>
       <p>
-        La página de inicio muestra un mapa de Google Maps con la ubicación del taller. Al cargarse, Google puede recibir datos técnicos
-        de tu navegador según su propia política de privacidad.
+        La página de inicio ofrece un mapa de Google Maps con la ubicación del taller. El mapa <strong>no se carga hasta que tú lo pides</strong>{" "}
+        tocando «Mostrar mapa». Desde ese momento Google puede recibir datos técnicos de tu navegador y usar cookies según su propia
+        política de privacidad. Si no quieres eso, usa el botón «Cómo llegar», que abre Google Maps aparte.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        Este sitio no instala cookies propias ni de terceros mientras navegas. La única excepción es el mapa de Google descrito arriba, y solo
+        si decides mostrarlo.
       </p>
 
       <h2>Cambios</h2>

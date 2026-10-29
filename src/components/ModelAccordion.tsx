@@ -4,7 +4,7 @@ import { modelName, models, photos, type Category } from "@/data/catalog";
 /** Lista de acordeones: un modelo por fila; al abrirlo se ven sus fotos de esa categoría. */
 export function ModelAccordion({ category, openFirst = false }: { category: Category; openFirst?: boolean }) {
   const groups = models
-    .map((m) => ({ m, list: photos.filter((p) => p.category === category && p.model === m.slug) }))
+    .map((m) => ({ m, list: m.uses.includes(category) ? photos.filter((p) => p.category !== "proceso" && p.model === m.slug) : [] }))
     .filter((g) => g.list.length > 0);
 
   return (
@@ -16,7 +16,7 @@ export function ModelAccordion({ category, openFirst = false }: { category: Cate
               {modelName(m.slug)}
             </span>
             <span className="flex items-center gap-4">
-              <span className="hidden text-sm text-mist sm:inline">{list.length} {list.length === 1 ? "foto" : "fotos"}</span>
+              <span className="hidden text-sm text-ink/75 sm:inline">{list.length} {list.length === 1 ? "foto" : "fotos"}</span>
               <span aria-hidden className="relative grid size-12 shrink-0 place-items-center rounded-full bg-[#bdbdbd] text-teal sm:size-14">
                 <span className="absolute h-0.5 w-5 bg-current" />
                 <span className="absolute h-5 w-0.5 bg-current transition-transform group-open:rotate-90 group-open:opacity-0" />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { byId, categories, modelName, models, photos, photosOf, priceLabel } from "@/data/catalog";
+import { byId, categories, modelName, ofName, theName, models, photos, photosOf, priceLabel } from "@/data/catalog";
 import { site, whatsappLink } from "@/config/site";
 import { Hero } from "@/components/Hero";
 import { ModelTitle } from "@/components/ModelTitle";
@@ -20,20 +20,22 @@ const steps = [
 ];
 
 export default function Home() {
-  // Carrusel: todos los modelos, empezando por el bote rojo (Paseo)
-  const first = "paseo";
+  // Carrusel: todos los modelos, empezando por el bote rojo (Galileo 30)
+  const first = "galileo-30";
   const slides = [...models.filter((m) => m.slug === first), ...models.filter((m) => m.slug !== first)]
     .map((m) => ({
       model: m,
+      name: modelName(m.slug),
+      ofName: ofName(m.slug),
       photo: byId(m.cover),
       price: m.priceFrom ? `Desde ${priceLabel(m)}` : "Precio a cotizar",
       eslora: m.specs.find((s) => s.label === "Largo" && !["Consultar", "A medida"].includes(s.value))?.value ?? "",
     }));
-  const strip = ["turismo-corvina-18-12", "pesca-costa-24-34", "turismo-costa-24-31", "pesca-doble-realce-38", "turismo-corvina-14-02", "pesca-costa-18-50"].map(byId);
+  const strip = ["corvina-18-08", "galileo-24-10", "galileo-24-01", "galileo-18-doble-realce-01", "corvina-14-02", "galileo-18-80"].map(byId);
   const total = photos.filter((p) => p.category !== "proceso").length;
   const sport = models.find((m) => m.slug === "ranita-20")!;
   const sportCover = byId(sport.cover);
-  const sportPhotos = photosOf("deportivas");
+  const sportPhotos = photosOf("deportivas").filter((p) => p.model === sport.slug);
 
   return (
     <>
@@ -45,7 +47,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <h2 id="modelos-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">La línea</h2>
             <p className="mt-4 text-lg text-mist">
-              Nueve modelos de panga y lancha en fibra de vidrio, de 14 a 28 pies. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
+              Nueve modelos de panga y lancha en fibra de vidrio, de 14 a 30 pies. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -80,7 +82,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="text-4xl sm:text-5xl"><ModelTitle m={sport} /></h3>
+              <h3 className="text-4xl sm:text-5xl"><ModelTitle m={sport} light /></h3>
               <p className="mt-5 text-lg leading-relaxed text-white/80">{sport.description}</p>
               <dl className="mt-8 grid grid-cols-2 gap-y-5 border-y border-white/15 py-6">
                 {sport.specs.map((sp) => (
@@ -94,7 +96,7 @@ export default function Home() {
                 <a href={whatsappLink(`Hola, quiero cotizar la lancha deportiva ${modelName(sport.slug)}.`)} target="_blank" rel="noopener noreferrer" className="btn bg-teal text-white hover:bg-teal-600">
                   Cotizar por WhatsApp
                 </a>
-                <Link href={`/modelos/${sport.slug}`} className="btn border border-white text-white hover:bg-white hover:text-ink">Ver la {modelName(sport.slug)}</Link>
+                <Link href={`/modelos/${sport.slug}`} className="btn border border-white text-white hover:bg-white hover:text-ink">Ver {theName(sport.slug)}</Link>
                 <Link href="/galeria/deportivas" className="btn text-white underline underline-offset-4 hover:text-white/80">Ver fotos</Link>
               </div>
             </div>
@@ -153,7 +155,7 @@ export default function Home() {
       <section id="nosotros" aria-labelledby="nosotros-titulo" className="scroll-mt-20 bg-paper">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:py-24 lg:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-line">
-            <Image src={byId("turismo-corvina-18-14").src} alt={byId("turismo-corvina-18-14").alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <Image src={byId("corvina-18-11").src} alt={byId("corvina-18-11").alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
           </div>
           <div>
             <h2 id="nosotros-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">Acerca de {site.name}</h2>
@@ -177,7 +179,7 @@ export default function Home() {
               <div><dt className="eyebrow text-mist">WhatsApp</dt><dd className="mt-1 text-lg"><a href={whatsappLink("Hola, quiero cotizar un bote.")} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-teal">{site.phoneDisplay}</a></dd></div>
               <div><dt className="eyebrow text-mist">Correo</dt><dd className="mt-1 text-lg"><a href={`mailto:${site.email}`} className="underline underline-offset-4 hover:text-teal">{site.email}</a></dd></div>
               <div><dt className="eyebrow text-mist">Taller</dt><dd className="mt-1 text-lg"><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-teal">{site.address.street}, {site.address.locality}, {site.address.region}</a></dd></div>
-              <div><dt className="eyebrow text-mist">Horario</dt><dd className="mt-1 text-lg">{site.hours}</dd></div>
+              {site.hours && <div><dt className="eyebrow text-mist">Horario</dt><dd className="mt-1 text-lg">{site.hours}</dd></div>}
             </dl>
             <div className="mt-8">
               <p className="eyebrow text-mist">Redes sociales</p>

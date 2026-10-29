@@ -9,23 +9,6 @@ import { LogoLink } from "./LogoLink";
 import { whatsappLink } from "@/config/site";
 import { ModelLinks } from "./ModelLinks";
 
-
-function Dropdown({ label, items }: { label: string; items: { href: string; label: string }[] }) {
-  return (
-    <NavMenu label={label} panelClassName="min-w-56 overflow-hidden rounded-xl border border-white/10 bg-night py-2">
-      <ul>
-        {items.map((i) => (
-          <li key={i.href}>
-            <Link href={i.href} className="block px-5 py-2.5 text-white/80 hover:bg-white/5 hover:text-white">
-              {i.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </NavMenu>
-  );
-}
-
 function ModelsMenu() {
   return (
     <NavMenu label="Modelos" panelClassName="inset-x-4 overflow-hidden rounded-2xl bg-white text-ink">

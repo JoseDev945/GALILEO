@@ -3,10 +3,11 @@ import type { NextConfig } from "next";
 const isDev = process.env.NODE_ENV !== "production";
 
 // Content Security Policy: solo se permite cargar recursos del propio sitio.
-// Las fuentes están auto-alojadas (sin Google Fonts), así que no hace falta abrir dominios externos.
+// Las fuentes están auto-alojadas (sin Google Fonts). Vercel Analytics usa el propio dominio en producción;
+// va.vercel-scripts.com solo se usa en desarrollo.
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob:",
   "font-src 'self'",
@@ -41,9 +42,6 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 828, 1080, 1440, 1920, 2560, 3200],
     qualities: [75, 90],
     minimumCacheTTL: 60 * 60 * 24 * 30,
-  },
-  experimental: {
-    serverActions: { bodySizeLimit: "64kb" },
   },
   async headers() {
     return [

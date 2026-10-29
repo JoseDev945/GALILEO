@@ -8,7 +8,7 @@ import { ModelTitle } from "./ModelTitle";
 import { whatsappLink } from "@/config/site";
 import { HERO_RESET_EVENT } from "./LogoLink";
 
-type Slide = { model: BoatModel; photo: Photo; price: string; eslora: string };
+type Slide = { model: BoatModel; name: string; ofName: string; photo: Photo; price: string; eslora: string };
 
 const INTERVAL = 6000;
 
@@ -43,8 +43,17 @@ export function Hero({ slides }: { slides: Slide[] }) {
   }, []);
   const n = slides.length;
   const s = slides[active];
+  // Solo se descargan las fotos ya mostradas y la siguiente (no las 9 de golpe): la página carga mucho más rápido.
+  const [seen, setSeen] = useState<Set<number>>(() => new Set([0, 1 % n]));
 
-  const go = useCallback((i: number) => setActive(((i % n) + n) % n), [n]);
+  const go = useCallback(
+    (i: number) => {
+      const k = ((i % n) + n) % n;
+      setSeen((prev) => (prev.has(k) && prev.has((k + 1) % n) ? prev : new Set([...prev, k, (k + 1) % n])));
+      setActive(k);
+    },
+    [n],
+  );
   const next = useCallback(() => go(active + 1), [go, active]);
   const prev = useCallback(() => go(active - 1), [go, active]);
 
@@ -70,7 +79,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
 
   // Mantener visible la miniatura activa en la tira (no si la persona la está moviendo a mano)
   const browsingRef = useRef(false);
-  browsingRef.current = browsing;
+  useEffect(() => { browsingRef.current = browsing; }, [browsing]);
   useEffect(() => {
     if (browsingRef.current) return;
     const strip = stripRef.current;
@@ -98,7 +107,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
         touchX.current = null;
       }}
     >
-      {slides.map((sl, i) => (
+      {slides.map((sl, i) => seen.has(i) && (
         <Image
           key={sl.photo.id}
           src={sl.photo.src}
@@ -106,7 +115,6 @@ export function Hero({ slides }: { slides: Slide[] }) {
           aria-hidden={i !== active}
           fill
           priority={i === 0}
-          loading={i === 0 ? undefined : "eager"}
           placeholder="blur"
           blurDataURL={sl.photo.blur}
           sizes="100vw"
@@ -122,14 +130,14 @@ export function Hero({ slides }: { slides: Slide[] }) {
         <div className="flex items-end justify-between gap-6">
           <div key={s.model.slug} aria-live={paused ? "polite" : "off"} className="max-w-3xl [text-shadow:0_1px_14px_rgb(0_0_0/0.6)]">
             <span className="inline-block rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold ring-1 ring-white/20">{s.model.badge}</span>
-            <h1 className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:decoration-[var(--accent-light)]">
+            <h1 className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:text-[var(--accent-light)]">
               <ModelTitle m={s.model} />
             </h1>
             <p className="mt-5 max-w-xl text-lg text-white/90 sm:text-xl">{s.model.summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={whatsappLink(`Hola, quiero cotizar el modelo ${s.model.word.charAt(0)}${s.model.word.slice(1).toLowerCase()}${s.model.num ? " " + s.model.num : ""}.`)} target="_blank" rel="noopener noreferrer" className="btn bg-[var(--accent)] text-white ring-1 ring-white/20 hover:brightness-110">Cotiza la tuya</a>
+              <a href={whatsappLink(`Hola, quiero cotizar el modelo ${s.name}.`)} target="_blank" rel="noopener noreferrer" className="btn bg-[var(--accent)] text-white ring-1 ring-white/20 hover:brightness-110">Cotiza la tuya</a>
               <Link href={`/modelos/${s.model.slug}`} className="btn border border-white text-white hover:bg-white hover:text-ink">
-                Explora la {s.model.num || s.model.word.charAt(0) + s.model.word.slice(1).toLowerCase()}
+                Ver fotos<span className="hidden sm:inline">&nbsp;{s.ofName}</span>
               </Link>
             </div>
           </div>
@@ -151,7 +159,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
                 type="button"
                 role="tab"
                 aria-selected={i === active}
-                aria-label={`Ver ${sl.model.num} ${sl.model.word}`}
+                aria-label={`Ver ${sl.name}`}
                 onClick={() => go(i)}
                 className="group relative h-6 flex-1"
               >
@@ -190,7 +198,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
               >
                 <Image src={sl.photo.src} alt="" width={96} height={64} sizes="96px" className="h-14 w-20 shrink-0 rounded-lg object-cover" />
                 <span className="min-w-0">
-                  <ModelTitle m={sl.model} className="block text-lg sm:text-xl [&_.model-num]:decoration-[var(--accent-light)]" />
+                  <ModelTitle m={sl.model} className="block text-lg sm:text-xl" light />
                   <span className="eyebrow mt-1 block truncate text-white/70">{sl.model.badge}</span>
                   <span className="mt-1 block text-xs text-white/80 sm:text-sm">
                     {sl.eslora && `Largo ${sl.eslora} · `}<strong className="text-white">{sl.price}</strong>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { byId, priceLabel, useLabel, type BoatModel } from "@/data/catalog";
+import { byId, ofName, priceLabel, useLabel, type BoatModel } from "@/data/catalog";
 import { ModelTitle } from "./ModelTitle";
 
 export function ModelCard({ m, wide = false }: { m: BoatModel; wide?: boolean }) {
@@ -42,8 +42,8 @@ export function ModelCard({ m, wide = false }: { m: BoatModel; wide?: boolean })
             <p className="eyebrow text-mist">{m.priceFrom ? "Desde" : "Precio"}</p>
             <p className="mt-1 text-xl font-semibold">{priceLabel(m)}</p>
           </div>
-          <Link href={`/modelos/${m.slug}`} className="btn border border-ink/80 hover:bg-ink hover:text-white" aria-label={`Explorar el modelo ${m.num} ${m.word}`}>
-            Explorar
+          <Link href={`/modelos/${m.slug}`} className="btn shrink-0 border border-ink/80 text-center hover:bg-ink hover:text-white" aria-label={`Ver fotos ${ofName(m.slug)}`}>
+            Ver fotos<span className="hidden lg:inline">&nbsp;{ofName(m.slug)}</span>
           </Link>
         </div>
       </div>

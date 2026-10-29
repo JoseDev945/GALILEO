@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: true
+  unrs-resolver: false
+# Antes de pnpm dev/build/lint, revisa que las dependencias estén instaladas y, si faltan, las instala solo.
+verifyDepsBeforeRun: install

@@ -31,6 +31,7 @@ export function SiteFooter() {
           </ul>
           <p className="eyebrow mb-4 mt-8 text-white">Legal</p>
           <ul className="space-y-2">
+            <li><Link href="/aviso-legal" className="hover:text-white">Aviso legal</Link></li>
             <li><Link href="/privacidad" className="hover:text-white">Política de privacidad</Link></li>
             <li><Link href="/terminos" className="hover:text-white">Términos y condiciones</Link></li>
           </ul>
@@ -42,7 +43,7 @@ export function SiteFooter() {
             <li><a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a></li>
             <li><a href={site.social.facebookContact} target="_blank" rel="noopener noreferrer" className="hover:text-white">Facebook</a> · <a href={site.social.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-white">TikTok</a></li>
             <li><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">{site.address.street}, {site.address.locality}, {site.address.region}</a></li>
-            <li>{site.hours}</li>
+            {site.hours && <li>{site.hours}</li>}
           </ul>
         </div>
       </div>

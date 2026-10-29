@@ -1,3 +1,6 @@
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { WhatsAppTracker } from "@/components/WhatsAppTracker";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { site } from "@/config/site";
@@ -7,6 +10,8 @@ import { JsonLd } from "@/components/JsonLd";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
 
 export const metadata: Metadata = {
+  // Código de verificación de Google Search Console (se configura como variable de entorno en Vercel)
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } : undefined,
   metadataBase: new URL(site.url),
   title: { default: `${site.name} | Pangas de fibra para pesca y turismo en Panamá`, template: `%s | ${site.name}` },
   description: site.description,
@@ -61,6 +66,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="contenido">{children}</main>
         <SiteFooter />
         <WhatsAppFab />
+        <WhatsAppTracker />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { LogoLink } from "./LogoLink";
 import { SocialLinks } from "./SocialLinks";
 import { WaIcon } from "./WaIcon";
+import { useOpenUntilNavigate } from "./useOpenUntilNavigate";
 
 type Item = { href: string; label: string };
 
@@ -31,16 +31,14 @@ function Group({ title, items }: { title: string; items: Item[] }) {
 }
 
 export function MobileMenu({ models, whatsapp }: { models: Item[]; whatsapp: string }) {
-  const [open, setOpen] = useState(false);
-  const path = usePathname();
+  const [open, setOpen] = useOpenUntilNavigate();
 
-  useEffect(() => setOpen(false), [path]);
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
     document.addEventListener("keydown", onKey);
     return () => { document.body.style.overflow = ""; document.removeEventListener("keydown", onKey); };
-  }, [open]);
+  }, [open, setOpen]);
 
   return (
     <div className="lg:hidden">

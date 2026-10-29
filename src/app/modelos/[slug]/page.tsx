@@ -8,7 +8,7 @@ import { ModelCard } from "@/components/ModelCard";
 import { ModelTitle } from "@/components/ModelTitle";
 import { PaymentInfo } from "@/components/PaymentInfo";
 import { WaIcon } from "@/components/WaIcon";
-import { byId, modelBySlug, modelName, models, photosOfModel, priceLabel, useLabel } from "@/data/catalog";
+import { byId, modelBySlug, ofName, theName, modelName, models, photosOfModel, priceLabel, useLabel } from "@/data/catalog";
 import { site, whatsappLink } from "@/config/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = byId(m.cover);
   const name = modelName(m.slug);
   return {
-    title: `Panga ${name}: ${m.badge.toLowerCase()}`,
+    title: `${m.kind ?? "Panga"} ${name}: ${m.badge.toLowerCase()}`,
     description: `${m.summary} ${m.priceFrom ? `Desde ${priceLabel(m)}.` : "Precio a cotizar."} Fabricada a mano en Panamá.`,
     alternates: { canonical: `/modelos/${m.slug}` },
     openGraph: { title: `${name} | ${site.name}`, description: m.summary, images: [{ url: p.src, width: p.width, height: p.height, alt: p.alt }] },
@@ -44,7 +44,7 @@ export default async function ModeloPage({ params }: Props) {
   const ld = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `Panga ${name}`,
+    name: `${m.kind ?? "Panga"} ${name}`,
     description: m.description,
     image: list.map((p) => `${site.url}${p.src}`),
     brand: { "@type": "Brand", name: site.name },
@@ -62,7 +62,7 @@ export default async function ModeloPage({ params }: Props) {
         {/* Sombra suave solo abajo, para que el nombre se lea sin tapar el bote */}
         <div className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-night/70 to-transparent" />
         <div className="mx-auto flex min-h-[70svh] max-w-7xl flex-col justify-end px-4 pb-8 pt-24 sm:px-6 sm:pb-12 lg:min-h-[calc(100svh-74px)]">
-          <h1 className="text-[clamp(2.6rem,7vw,5.25rem)] [text-shadow:0_2px_18px_rgb(0_0_0/0.55)]"><ModelTitle m={m} /></h1>
+          <h1 className="text-[clamp(2.6rem,7vw,5.25rem)] [text-shadow:0_2px_18px_rgb(0_0_0/0.55)]"><ModelTitle m={m} light /></h1>
         </div>
       </section>
 
@@ -70,7 +70,7 @@ export default async function ModeloPage({ params }: Props) {
       {list.length > 0 && (
         <section id="fotos" className="bg-paper">
           <div className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6 sm:pt-14 lg:py-20">
-            <h2 className="font-serif text-2xl font-extrabold sm:text-3xl">Fotos de la {name}</h2>
+            <h2 className="font-serif text-2xl font-extrabold sm:text-3xl">Fotos {ofName(m.slug)}</h2>
             <p className="mt-2 text-mist">Toca una foto para verla en grande y hacer zoom.</p>
             <div className="mt-8"><Gallery photos={list} priorityCount={2} /></div>
           </div>
@@ -105,7 +105,7 @@ export default async function ModeloPage({ params }: Props) {
       <section className="border-t border-line bg-paper">
         <div className="mx-auto grid max-w-7xl items-start gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:py-20">
           <div className="rounded-2xl border border-line bg-white p-6 sm:p-8">
-            <h2 className="font-serif text-3xl font-extrabold">Cotiza la {name}</h2>
+            <h2 className="font-serif text-3xl font-extrabold">Cotiza {theName(m.slug)}</h2>
             <p className="eyebrow mt-6 text-mist">{m.priceFrom ? "Desde" : "Precio"}</p>
             <p className="mt-1 text-4xl font-bold">{priceLabel(m)}</p>
             {m.priceNote && <p className="mt-2 text-mist">{m.priceNote}</p>}

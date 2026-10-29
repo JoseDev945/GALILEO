@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
-import { site } from "@/config/site";
+import { responsible, site } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Términos y condiciones",
@@ -54,7 +54,7 @@ export default function Terminos() {
       <p>Estas condiciones se rigen por las leyes de la República de Panamá, incluida la normativa de protección al consumidor.</p>
 
       <h2>Contacto</h2>
-      <p>{site.legalOwner}. <a className="underline" href={`mailto:${site.email}`}>{site.email}</a>.</p>
+      <p>{responsible()}. <a className="underline" href={`mailto:${site.email}`}>{site.email}</a>.</p>
     </LegalPage>
   );
 }
