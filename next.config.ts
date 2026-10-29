@@ -39,7 +39,7 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     // Tamaños hasta 4K para que en pantallas grandes (o retina) las fotos se vean nítidas
-    deviceSizes: [640, 828, 1080, 1440, 1920, 2560, 3200],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1440, 1920, 2560, 3200],
     qualities: [75, 90],
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },

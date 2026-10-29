@@ -1,7 +1,16 @@
 @import "tailwindcss";
 @import "@fontsource-variable/manrope/wght.css";
 @import "@fontsource-variable/playfair-display/wght.css";
-@import "@fontsource-variable/playfair-display/wght-italic.css";
+
+/* Playfair Display cursiva solo se usa en los números de los modelos: archivo recortado a dígitos (6 KB en vez de 39 KB) */
+@font-face {
+  font-family: "Playfair Display Variable";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400 900;
+  src: url("/fonts/playfair-italic-digits.woff2") format("woff2-variations");
+  unicode-range: U+0020, U+0030-0039;
+}
 
 @theme {
   --color-night: #121417;

@@ -1,12 +1,42 @@
 "use client";
 
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
+import { preload } from "react-dom";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { BoatModel, Photo } from "@/data/catalog";
 import { ModelTitle } from "./ModelTitle";
 import { whatsappLink } from "@/config/site";
 import { HERO_RESET_EVENT } from "./LogoLink";
+
+const MOBILE = "(max-width: 767px)";
+
+/**
+ * Foto de fondo del carrusel. En teléfonos se sirve con calidad 75 (pesa ~30 % menos y no se nota en pantallas pequeñas);
+ * en PC y pantallas grandes, con calidad 90. La primera foto se pide antes que todo (es el LCP de la página).
+ */
+function HeroPhoto({ photo, active, first }: { photo: Photo; active: boolean; first: boolean }) {
+  const common = { src: photo.src, alt: active ? photo.alt : "", fill: true, sizes: "100vw", placeholder: "blur" as const, blurDataURL: photo.blur };
+  const mobile = getImageProps({ ...common, quality: 75 }).props;
+  const { props: desktop } = getImageProps({ ...common, quality: 90 });
+  if (first) {
+    preload(mobile.src, { as: "image", imageSrcSet: mobile.srcSet, imageSizes: "100vw", fetchPriority: "high", media: MOBILE });
+    preload(desktop.src, { as: "image", imageSrcSet: desktop.srcSet, imageSizes: "100vw", fetchPriority: "high", media: "(min-width: 768px)" });
+  }
+  return (
+    <picture>
+      <source media={MOBILE} srcSet={mobile.srcSet} sizes="100vw" />
+      {/* eslint-disable-next-line jsx-a11y/alt-text -- el alt viene en desktop */}
+      <img
+        {...desktop}
+        aria-hidden={!active}
+        fetchPriority={first ? "high" : "auto"}
+        loading={first ? "eager" : "lazy"}
+        className={`-z-20 object-cover transition-opacity duration-1000 ${active ? "opacity-100" : "opacity-0"}`}
+      />
+    </picture>
+  );
+}
 
 type Slide = { model: BoatModel; name: string; ofName: string; photo: Photo; price: string; eslora: string };
 
@@ -107,24 +137,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
         touchX.current = null;
       }}
     >
-      {slides.map((sl, i) => seen.has(i) && (
-        <Image
-          key={sl.photo.id}
-          src={sl.photo.src}
-          alt={i === active ? sl.photo.alt : ""}
-          aria-hidden={i !== active}
-          fill
-          // La primera foto es lo más grande de la página (LCP): se pide primero y sin espera
-          preload={i === 0}
-          fetchPriority={i === 0 ? "high" : "auto"}
-          loading={i === 0 ? "eager" : "lazy"}
-          placeholder="blur"
-          blurDataURL={sl.photo.blur}
-          sizes="100vw"
-          quality={90}
-          className={`-z-20 object-cover transition-opacity duration-1000 ${i === active ? "opacity-100" : "opacity-0"}`}
-        />
-      ))}
+      {slides.map((sl, i) => seen.has(i) && <HeroPhoto key={sl.photo.id} photo={sl.photo} active={i === active} first={i === 0} />)}
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-night/95 via-night/35 via-45% to-transparent" />
       {/* Tono del color del bote sobre la foto */}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[linear-gradient(to_top_right,color-mix(in_srgb,var(--accent)_22%,transparent),transparent_40%)]" />

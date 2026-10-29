@@ -8,7 +8,7 @@ export function ModelCard({ m, wide = false }: { m: BoatModel; wide?: boolean })
   return (
     <article className={`flex flex-col overflow-hidden rounded-2xl border border-line bg-white ${wide ? "md:col-span-2 md:flex-row" : ""}`}>
       <Link href={`/modelos/${m.slug}`} tabIndex={-1} aria-hidden className={`group relative block aspect-[16/9] overflow-hidden bg-night ${wide ? "md:aspect-auto md:min-h-[420px] md:w-1/2 md:shrink-0" : ""}`}>
-        <Image src={p.src} alt={p.alt} fill placeholder="blur" blurDataURL={p.blur} sizes="(min-width: 1280px) 620px, (min-width: 768px) 50vw, calc(100vw - 32px)" quality={80} className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+        <Image src={p.src} alt={p.alt} fill placeholder="blur" blurDataURL={p.blur} sizes="(min-width: 1280px) 620px, (min-width: 768px) 50vw, calc(100vw - 32px)" quality={75} className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
         <span className="eyebrow absolute left-4 top-4 rounded-full bg-night/85 px-3 py-1.5 text-white">{m.badge}</span>
       </Link>
       <div className={`flex flex-1 flex-col p-6 sm:p-8 ${wide ? "md:justify-center lg:p-10" : ""}`}>
