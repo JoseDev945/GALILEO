@@ -123,7 +123,7 @@ export const models: BoatModel[] = [
       { label: "Toldo", value: "Opcional" },
     ],
     priceFrom: 2700,
-    cover: "galileo-18-83",
+    cover: "galileo-18-96",
     accent: ["#0c6f96", "#46c4f5"],
     featured: true,
   },

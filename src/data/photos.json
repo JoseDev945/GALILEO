@@ -190,6 +190,26 @@
   "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAwAA4BaJYwC7AD0OmB/yAAA/vFJWIA4/dH1aax2ZAJNMUzblevTAOn2oeoYMPc6hhJKdVMIi4lJRcgTRltXsWV906esv5xJHJCmvkDowAVhAAA="
  },
  {
+  "id": "galileo-18-96",
+  "src": "/img/galileo-18-96.webp",
+  "category": "turismo",
+  "model": "galileo-18",
+  "alt": "Galileo 18 azul y blanca rotulada «Madagascar 2» sobre el césped",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwAA4BaJZAAAxZaPUNkwAD+1RfhvEFbLVVcx/GvlMC1/0AMf908jUGbYFYoRC3pJdiXKOc+FAUl0pE2s+v1JqtWEYRH4lwAAA=="
+ },
+ {
+  "id": "galileo-18-97",
+  "src": "/img/galileo-18-97.webp",
+  "category": "turismo",
+  "model": "galileo-18",
+  "alt": "Proa de Galileo 18 «Madagascar 2» vista de frente",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAQCdASoQAAwAA4BaJZgAAl2WF6RgAP62x3DsZEtbILPGvmp+zXfzKUQcVh0yxUCqu7mAh9LF/jJgHdRd1xw3kGEnCvjic4YdHnSQzOMkXVCMZ2Y8kZ3XK5UtoI/NF5FAAA=="
+ },
+ {
   "id": "galileo-18-08",
   "src": "/img/galileo-18-08.webp",
   "category": "turismo",
@@ -1308,26 +1328,6 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAwAA4BaJQBdgCMCY1xrcS0N9gAA/vFT46iBs91FnF//m0n1LQMXP5N+sb7vu6EtscRUI8QOQO88qfTzXmlJqKydNILcaRoJG/UTsI5gLTZ7gAA="
- },
- {
-  "id": "galileo-20-09",
-  "src": "/img/galileo-20-09.webp",
-  "category": "turismo",
-  "model": "galileo-20",
-  "alt": "Galileo 20 azul y blanca rotulada «Madagascar 2» sobre el césped",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwAA4BaJZAAAxZaPUNkwAD+1RfhvEFbLVVcx/GvlMC1/0AMf908jUGbYFYoRC3pJdiXKOc+FAUl0pE2s+v1JqtWEYRH4lwAAA=="
- },
- {
-  "id": "galileo-20-10",
-  "src": "/img/galileo-20-10.webp",
-  "category": "turismo",
-  "model": "galileo-20",
-  "alt": "Proa de Galileo 20 «Madagascar 2» vista de frente",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAQCdASoQAAwAA4BaJZgAAl2WF6RgAP62x3DsZEtbILPGvmp+zXfzKUQcVh0yxUCqu7mAh9LF/jJgHdRd1xw3kGEnCvjic4YdHnSQzOMkXVCMZ2Y8kZ3XK5UtoI/NF5FAAA=="
  },
  {
   "id": "galileo-20-11",

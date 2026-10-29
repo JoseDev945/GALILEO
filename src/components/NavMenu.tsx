@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useOpenUntilNavigate } from "./useOpenUntilNavigate";
 
-/** Menú desplegable que se abre con clic o al pasar el mouse, y se cierra con Esc, clic afuera o al navegar. */
+/** Menú desplegable: se abre al pasar el mouse o con clic, y se cierra con otro clic, al salir con el mouse, con Esc, clic afuera o al navegar. */
 export function NavMenu({ label, children, panelClassName = "" }: { label: string; children: React.ReactNode; panelClassName?: string }) {
   const [open, setOpen] = useOpenUntilNavigate();
   const ref = useRef<HTMLLIElement>(null);
@@ -22,7 +22,15 @@ export function NavMenu({ label, children, panelClassName = "" }: { label: strin
   }, [open, setOpen]);
 
   return (
-    <li ref={ref} data-open={open} className="group" onPointerEnter={arm} onFocusCapture={arm}>
+    <li
+      ref={ref}
+      data-open={open}
+      className="group"
+      onFocusCapture={arm}
+      // Con mouse: se abre al pasar por encima y se cierra al salir. Un clic en "Modelos" lo abre o lo cierra.
+      onPointerEnter={(e) => { arm(); if (e.pointerType === "mouse") setOpen(true); }}
+      onPointerLeave={(e) => { if (e.pointerType === "mouse") setOpen(false); }}
+    >
       <button
         type="button"
         aria-expanded={open}
@@ -30,13 +38,13 @@ export function NavMenu({ label, children, panelClassName = "" }: { label: strin
         className="flex items-center gap-1.5 py-6 hover:text-white group-data-[open=true]:text-white"
       >
         {label}
-        <svg aria-hidden width="12" height="12" viewBox="0 0 12 12" className="transition-transform group-hover:rotate-180 group-data-[open=true]:rotate-180">
+        <svg aria-hidden width="12" height="12" viewBox="0 0 12 12" className="transition-transform group-data-[open=true]:rotate-180">
           <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.6" />
         </svg>
       </button>
       <div
         onClick={(e) => { if ((e.target as HTMLElement).closest("a")) setOpen(false); }}
-        className={`invisible absolute top-full z-50 opacity-0 shadow-2xl transition group-hover:visible group-hover:opacity-100 group-data-[open=true]:visible group-data-[open=true]:opacity-100 ${panelClassName}`}
+        className={`invisible absolute top-full z-50 opacity-0 shadow-2xl transition group-data-[open=true]:visible group-data-[open=true]:opacity-100 ${panelClassName}`}
       >
         {armed && children}
       </div>
