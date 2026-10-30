@@ -145,10 +145,12 @@ export function Hero({ slides }: { slides: Slide[] }) {
       <div className="mx-auto flex min-h-[calc(100svh-74px)] max-w-7xl flex-col justify-end px-4 pb-36 pt-28 sm:px-6 lg:pb-8 lg:pt-32">
         <div className="flex items-end justify-between gap-6">
           <div key={s.model.slug} aria-live={paused ? "polite" : "off"} className="max-w-3xl [text-shadow:0_1px_14px_rgb(0_0_0/0.6)]">
+            {/* Título principal de la página para Google: lo que busca la gente ("botes en Panamá", "pangas") */}
+            <h1 className="eyebrow mb-4 text-white/85">Botes y pangas de fibra de vidrio en Panamá</h1>
             <span className="inline-block rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold ring-1 ring-white/20">{s.model.badge}</span>
-            <h1 className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:text-[var(--accent-light)]">
+            <p className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:text-[var(--accent-light)]">
               <ModelTitle m={s.model} />
-            </h1>
+            </p>
             <p className="mt-5 max-w-xl text-lg text-white/90 sm:text-xl">{s.model.summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={whatsappLink(`Hola, quiero cotizar el modelo ${s.name}.`)} target="_blank" rel="noopener noreferrer" className="btn bg-[var(--accent)] text-white ring-1 ring-white/20 hover:brightness-110">Cotiza la tuya</a>

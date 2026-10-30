@@ -47,7 +47,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <h2 id="modelos-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">La línea</h2>
             <p className="mt-4 text-lg text-mist">
-              Nueve modelos de panga y lancha en fibra de vidrio, de 14 a 30 pies. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
+              Nueve modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -160,7 +160,7 @@ export default function Home() {
           <div>
             <h2 id="nosotros-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">Acerca de {site.name}</h2>
             <p className="mt-6 text-lg leading-relaxed text-mist">
-              Somos un taller panameño que fabrica pangas de fibra de vidrio a mano. Trabajamos para pescadores artesanales que salen todos los días y para operadores de turismo que necesitan un bote seguro, cómodo y con su marca bien visible.
+              Somos un taller de La Chorrera, Panamá Oeste, que fabrica botes y pangas de fibra de vidrio a mano. Trabajamos para pescadores artesanales que salen todos los días y para operadores de turismo que necesitan un bote seguro, cómodo y con su marca bien visible.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-mist">
               Cada bote se hace sobre pedido: eliges el modelo, el largo, los colores y el nombre, y nosotros lo laminamos, lo pintamos y lo rotulamos en nuestro taller.

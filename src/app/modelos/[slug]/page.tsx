@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = byId(m.cover);
   const name = modelName(m.slug);
   return {
-    title: `${m.kind ?? "Panga"} ${name}: ${m.badge.toLowerCase()}`,
+    title: `${m.kind ?? "Panga"} ${name}: bote de fibra de vidrio en Panamá`,
     description: `${m.summary} ${m.priceFrom ? `Desde ${priceLabel(m)}.` : "Precio a cotizar."} Fabricada a mano en Panamá.`,
     alternates: { canonical: `/modelos/${m.slug}` },
     openGraph: { title: `${name} | ${site.name}`, description: m.summary, images: [{ url: p.src, width: p.width, height: p.height, alt: p.alt }] },

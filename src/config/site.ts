@@ -5,7 +5,7 @@ export const site = {
   name: "Botes Galileo",
   shortName: "Botes Galileo",
   description:
-    "Fabricamos pangas de fibra de vidrio a mano en Panamá: botes para pesca artesanal y botes para turismo, con rotulado y pintura personalizada.",
+    "Botes y pangas de fibra de vidrio hechos a mano en La Chorrera, Panamá Oeste: botes de pesca, botes de turismo y lanchas deportivas. Precios a la vista y cotización por WhatsApp.",
   // Dominio público. En Vercel se toma solo; para un dominio propio, define NEXT_PUBLIC_SITE_URL (sin barra al final).
   url: (
     process.env.NEXT_PUBLIC_SITE_URL ??
