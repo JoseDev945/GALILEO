@@ -771,6 +771,72 @@
   "boat": "bote-7"
  },
  {
+  "id": "galileo-24-02",
+  "src": "/img/galileo-24-02.webp",
+  "category": "turismo",
+  "model": "delphin-doble-realce",
+  "alt": "Delphin doble realce azul con franjas blancas y toldo, vista lateral",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAA4BaJZgCdAEfP30wbVAAAP6HT2HgKts/E4BWf+KS5Bdhpn1sbUwXAo27CIiTHuyJscz5ghtnVZD5QzrS57PAux58SByFlAlkAUJ6gf165AAAAA==",
+  "boat": "bote-8"
+ },
+ {
+  "id": "galileo-24-06",
+  "src": "/img/galileo-24-06.webp",
+  "category": "turismo",
+  "model": "delphin-doble-realce",
+  "alt": "Delphin doble realce con toldo visto de proa",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAwAA4BaJaACdACtNp+kAPKf8iCgMLARKOIVPajc7gLir06mNWqLmOKYbWDdfapeQ+QBVJgX5l+mMPyoNMcgjEQONLKHo0hZ7YGpjYAAAA==",
+  "boat": "bote-8"
+ },
+ {
+  "id": "galileo-24-05",
+  "src": "/img/galileo-24-05.webp",
+  "category": "turismo",
+  "model": "delphin-doble-realce",
+  "alt": "Delphin doble realce azul y blanco con toldo, vista lateral en el patio",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJaACdADOq6VMSAAA9hz5ZbsPcs0UXaSlmoYZKc5JEHAW3hBSTZJDpoTGB8NpO4IpddLeDjP03GK+58E/XIw8Xoi8+GGGKroAAA==",
+  "boat": "bote-8"
+ },
+ {
+  "id": "galileo-24-04",
+  "src": "/img/galileo-24-04.webp",
+  "category": "turismo",
+  "model": "delphin-doble-realce",
+  "alt": "Proa de Delphin doble realce azul con toldo, vista de frente",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJZgCdAELLJNxigAA9HCS6ooDqq4iUfQOcrxq2bfsus+UFemzyB8uXUqTL+hlh5PlznZRoeBNOwNGaZV1Zv5ZhT6SJ+PAGlwwAA==",
+  "boat": "bote-8"
+ },
+ {
+  "id": "galileo-24-01",
+  "src": "/img/galileo-24-01.webp",
+  "category": "turismo",
+  "model": "delphin-doble-realce",
+  "alt": "Delphin doble realce con toldo azul para pasajeros",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAwAA4BaJQBdgB367rAAAAD7ve6LpiDT4Ve6yQSGd7XLSE26tydk6yjBKiBplGv8BD1iH12eJnPK/e/zet0F7Wpw2Nb0ayA/YdCdQ77QAA==",
+  "boat": "bote-8"
+ },
+ {
+  "id": "galileo-24-03",
+  "src": "/img/galileo-24-03.webp",
+  "category": "turismo",
+  "model": "delphin-doble-realce",
+  "alt": "Delphin doble realce azul con toldo, listo para turismo",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAwAA4BaJZACdAELTzGp/pUAAM3wBIdqLMtpQFHzC9T+dBqz/cMCrvm8IQEIK31r/uw3tWNZgOyDPaJNeBMuih5kann2fHHjClranaAAAA==",
+  "boat": "bote-8"
+ },
+ {
   "id": "galileo-18-93",
   "src": "/img/galileo-18-93.webp",
   "category": "turismo",
@@ -1739,56 +1805,6 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAwAA4BaJYgCdAYs3bWApm6qwAD+5gmGE7fMT1BeokCMzelIZlouZwcLDzxLse5SZHXjcABaCyTp25b9yzjzLrakXlmZboKKBq/37AA="
- },
- {
-  "id": "galileo-24-01",
-  "src": "/img/galileo-24-01.webp",
-  "category": "turismo",
-  "model": "delphin-24",
-  "alt": "Delphin 24 pies con toldo azul para pasajeros",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAwAA4BaJQBdgB367rAAAAD7ve6LpiDT4Ve6yQSGd7XLSE26tydk6yjBKiBplGv8BD1iH12eJnPK/e/zet0F7Wpw2Nb0ayA/YdCdQ77QAA=="
- },
- {
-  "id": "galileo-24-06",
-  "src": "/img/galileo-24-06.webp",
-  "category": "turismo",
-  "model": "delphin-24",
-  "alt": "Delphin 24 pies con toldo visto de proa",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAwAA4BaJaACdACtNp+kAPKf8iCgMLARKOIVPajc7gLir06mNWqLmOKYbWDdfapeQ+QBVJgX5l+mMPyoNMcgjEQONLKHo0hZ7YGpjYAAAA=="
- },
- {
-  "id": "galileo-24-02",
-  "src": "/img/galileo-24-02.webp",
-  "category": "turismo",
-  "model": "delphin-24",
-  "alt": "Delphin 24 pies azul con franjas blancas y toldo, vista lateral",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAA4BaJZgCdAEfP30wbVAAAP6HT2HgKts/E4BWf+KS5Bdhpn1sbUwXAo27CIiTHuyJscz5ghtnVZD5QzrS57PAux58SByFlAlkAUJ6gf165AAAAA=="
- },
- {
-  "id": "galileo-24-04",
-  "src": "/img/galileo-24-04.webp",
-  "category": "turismo",
-  "model": "delphin-24",
-  "alt": "Proa de Delphin 24 pies azul con toldo, vista de frente",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJZgCdAELLJNxigAA9HCS6ooDqq4iUfQOcrxq2bfsus+UFemzyB8uXUqTL+hlh5PlznZRoeBNOwNGaZV1Zv5ZhT6SJ+PAGlwwAA=="
- },
- {
-  "id": "galileo-24-05",
-  "src": "/img/galileo-24-05.webp",
-  "category": "turismo",
-  "model": "delphin-24",
-  "alt": "Delphin 24 pies azul y blanco con toldo, vista lateral en el patio",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJaACdADOq6VMSAAA9hz5ZbsPcs0UXaSlmoYZKc5JEHAW3hBSTZJDpoTGB8NpO4IpddLeDjP03GK+58E/XIw8Xoi8+GGGKroAAA=="
  },
  {
   "id": "pesquero-25-01",

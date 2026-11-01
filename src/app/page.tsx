@@ -51,7 +51,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <h2 id="modelos-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">La línea</h2>
             <p className="mt-4 text-lg text-mist">
-              Nueve modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30.5 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
+              Ocho modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30.5 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
