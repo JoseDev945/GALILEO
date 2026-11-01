@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { byId, categories, modelName, ofName, theName, models, photos, photosOf, priceLabel, hrefOfPhoto } from "@/data/catalog";
+import { byId, categories, modelName, ofName, theName, models, photos, photosOf, priceLabel, hrefOfPhoto, photoTag, type Category } from "@/data/catalog";
 import { site, whatsappLink } from "@/config/site";
 import { Hero } from "@/components/Hero";
 import { ModelTitle } from "@/components/ModelTitle";
@@ -29,6 +29,7 @@ export default function Home() {
       name: modelName(m.slug),
       ofName: ofName(m.slug),
       photo: byId(id),
+      tag: (() => { const c = byId(id).category; return c in photoTag ? photoTag[c as Category] : m.badge; })(),
       href: hrefOfPhoto(m, id),
       price: m.priceFrom ? `Desde ${priceLabel(m)}` : "Precio a cotizar",
       eslora: m.specs.find((s) => s.label === "Largo" && !["Consultar", "A medida"].includes(s.value))?.value ?? "",

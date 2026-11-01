@@ -272,6 +272,8 @@ export const categories: Record<Category, { title: string; lead: string; heroId:
 
 /** Orden en que se muestran las categorías en la galería y los menús. */
 export const categoryOrder: Category[] = ["turismo", "pesca", "deportivas"];
+/** Etiqueta de la foto de una tarjeta: dice si ese bote es de pesca, de turismo o deportivo. */
+export const photoTag: Record<Category, string> = { pesca: "Pesca", turismo: "Turismo", deportivas: "Pesca deportiva" };
 /** Nombre corto de cada uso, para etiquetas y formularios. */
 export const useLabel: Record<Category, string> = { pesca: "Pesca", turismo: "Turismo", deportivas: "Deportiva" };
 

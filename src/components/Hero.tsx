@@ -38,7 +38,7 @@ function HeroPhoto({ photo, active, first }: { photo: Photo; active: boolean; fi
   );
 }
 
-type Slide = { model: BoatModel; name: string; ofName: string; photo: Photo; href: string; price: string; eslora: string };
+type Slide = { model: BoatModel; name: string; ofName: string; photo: Photo; href: string; tag: string; price: string; eslora: string };
 
 const INTERVAL = 6000;
 
@@ -147,7 +147,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
           <div key={s.photo.id} aria-live={paused ? "polite" : "off"} className="max-w-3xl [text-shadow:0_1px_14px_rgb(0_0_0/0.6)]">
             {/* Título principal de la página para Google: lo que busca la gente ("botes en Panamá", "pangas") */}
             <h1 className="eyebrow mb-4 text-white/85">Botes y pangas de fibra de vidrio en Panamá</h1>
-            <span className="inline-block rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold ring-1 ring-white/20">{s.model.badge}</span>
+            <span className="inline-block rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold ring-1 ring-white/20">{s.tag}</span>
             <p className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:text-[var(--accent-light)] [&_.model-tag]:text-[var(--accent-light)]">
               <ModelTitle m={s.model} />
             </p>
@@ -217,7 +217,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
                 <Image src={sl.photo.src} alt="" width={96} height={64} sizes="96px" className="h-14 w-20 shrink-0 rounded-lg object-cover" />
                 <span className="min-w-0">
                   <ModelTitle m={sl.model} className="block text-lg sm:text-xl" light />
-                  <span className="eyebrow mt-1 block truncate text-white/70">{sl.model.badge}</span>
+                  <span className="eyebrow mt-1 block truncate text-white/70">{sl.tag}</span>
                   <span className="mt-1 block text-xs text-white/80 sm:text-sm">
                     {sl.eslora && `Largo ${sl.eslora} · `}<strong className="text-white">{sl.price}</strong>
                   </span>
