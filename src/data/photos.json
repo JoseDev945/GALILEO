@@ -1540,17 +1540,6 @@
   "boat": "buena-vibra-1"
  },
  {
-  "id": "galileo-18-41",
-  "src": "/img/galileo-18-41.webp",
-  "category": "turismo",
-  "model": "delphin",
-  "alt": "Delphin 18 pies verde con interior gris, vista desde la popa",
-  "width": 1620,
-  "height": 2160,
-  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoMABAAA4BaJZQC7B2gAfjACM2SEAD+7jVmqO4XwtYS5vwiyxnrQpJmmmOxXlfg1QSaRH/E+lynlZLbrzwYnxw/EUYe8uYncXW0EoEk//sHbyUAAAA=",
-  "boat": "buena-vibra-1"
- },
- {
   "id": "galileo-18-43",
   "src": "/img/galileo-18-43.webp",
   "category": "turismo",
