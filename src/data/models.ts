@@ -236,7 +236,7 @@ export const models: BoatModel[] = [
       { id: "bote-1", size: "20 pies" },
     ],
     badge: "Pesca deportiva",
-    uses: ["deportivas", "pesca", "turismo"],
+    uses: ["deportivas", "pesca"],
     summary: "Lancha deportiva de 20 pies y 6 de ancho: estable, liviana y con consola central para salir a pescar por deporte.",
     description:
       "La Rana es nuestra lancha para pesca deportiva. Mide 20 pies de largo y 6 de ancho, lo que la hace muy estable, y su borda baja de pie y medio facilita lanzar y subir la pesca. Trae consola central y bancas laminadas, y se rotula con el nombre y los colores que elijas.",
