@@ -7,11 +7,14 @@ import { boatTitle, boatsOf, modelName, models, photos, type Category } from "@/
  * (como en las carpetas), cada grupo con un enlace a la sección de ese bote.
  */
 export function ModelAccordion({ category, openFirst = false }: { category: Category; openFirst?: boolean }) {
+  // Solo las fotos de esta sección: un bote con tina va en pesca y no se repite en turismo
   const groups = models
-    .filter((m) => m.uses.includes(category))
     .map((m) => {
-      const boats = boatsOf(m);
-      const list = photos.filter((p) => p.category !== "proceso" && p.model === m.slug);
+      const inCat = (p: { category: string }) => p.category === category;
+      const list = photos.filter((p) => p.model === m.slug && inCat(p));
+      const boats = boatsOf(m)
+        .map((b) => ({ ...b, photos: b.photos.filter(inCat) }))
+        .filter((b) => b.photos.length > 0);
       return { m, list, boats: boats.length ? boats : [{ id: "todas", name: undefined, size: undefined, href: `/modelos/${m.slug}`, photos: list }] };
     })
     .filter((g) => g.list.length > 0);

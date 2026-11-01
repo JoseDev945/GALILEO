@@ -937,7 +937,7 @@
  {
   "id": "galileo-18-68",
   "src": "/img/galileo-18-68.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Delphin 20 pies verde oscuro rotulado «Caribeña», vista de proa",
   "width": 2560,
@@ -1421,7 +1421,7 @@
  {
   "id": "galileo-18-11",
   "src": "/img/galileo-18-11.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Delphin 18 pies con casco verde e interior celeste, vista de proa",
   "width": 1920,
@@ -1619,7 +1619,7 @@
  {
   "id": "galileo-18-49",
   "src": "/img/galileo-18-49.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Popa de Delphin 18 pies con atardecer y palmeras pintados con aerógrafo",
   "width": 3200,
@@ -1630,7 +1630,7 @@
  {
   "id": "galileo-18-51",
   "src": "/img/galileo-18-51.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Interior celeste de Delphin 18 pies con bancas, visto desde la proa",
   "width": 2400,
@@ -1641,7 +1641,7 @@
  {
   "id": "galileo-18-58",
   "src": "/img/galileo-18-58.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Consola y bancas en gelcoat celeste de un Delphin 18 pies",
   "width": 3200,
@@ -1707,7 +1707,7 @@
  {
   "id": "galileo-18-64",
   "src": "/img/galileo-18-64.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Delphin 18 pies con interior celeste y popa pintada, vista desde atrás",
   "width": 1920,
@@ -1718,7 +1718,7 @@
  {
   "id": "galileo-18-67",
   "src": "/img/galileo-18-67.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "delphin",
   "alt": "Interior celeste de Delphin 18 pies con bancas, desde la popa",
   "width": 1920,
@@ -1927,7 +1927,7 @@
  {
   "id": "pesquero-25-01",
   "src": "/img/pesquero-25-01.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Panga de pesca Pesquero 25 pies en el taller",
   "width": 3200,
@@ -1938,7 +1938,7 @@
  {
   "id": "pesquero-25-03",
   "src": "/img/pesquero-25-03.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Proa alta de Pesquero 25 pies para mar abierto",
   "width": 3200,
@@ -1949,7 +1949,7 @@
  {
   "id": "pesquero-25-07",
   "src": "/img/pesquero-25-07.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies terminada, casco blanco y franja morada",
   "width": 3200,
@@ -1960,7 +1960,7 @@
  {
   "id": "pesquero-25-09",
   "src": "/img/pesquero-25-09.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Vista de proa de Pesquero 25 pies",
   "width": 3200,
@@ -1971,7 +1971,7 @@
  {
   "id": "pesquero-25-02",
   "src": "/img/pesquero-25-02.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies blanco con borda morada rotulado «La Chola N», vista de proa",
   "width": 3200,
@@ -1982,7 +1982,7 @@
  {
   "id": "pesquero-25-04",
   "src": "/img/pesquero-25-04.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies morado y blanco con consola, vista desde la popa",
   "width": 3200,
@@ -1993,7 +1993,7 @@
  {
   "id": "pesquero-25-05",
   "src": "/img/pesquero-25-05.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Interior gris del Pesquero 25 pies con bancas, visto desde la popa",
   "width": 3200,
@@ -2004,7 +2004,7 @@
  {
   "id": "pesquero-25-06",
   "src": "/img/pesquero-25-06.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies «La Chola N» bajo el techo del taller, vista de proa",
   "width": 3200,
@@ -2015,7 +2015,7 @@
  {
   "id": "pesquero-25-08",
   "src": "/img/pesquero-25-08.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies blanco con borda morada, vista lateral en el taller",
   "width": 3200,
@@ -2026,7 +2026,7 @@
  {
   "id": "pesquero-25-10",
   "src": "/img/pesquero-25-10.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Interior gris del Pesquero 25 pies con consola y bancas",
   "width": 3200,
@@ -2037,7 +2037,7 @@
  {
   "id": "pesquero-25-11",
   "src": "/img/pesquero-25-11.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies azul y blanco rotulado «Niña Naomi», vista lateral",
   "width": 3200,
@@ -2048,7 +2048,7 @@
  {
   "id": "pesquero-25-12",
   "src": "/img/pesquero-25-12.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Proa alta del Pesquero 25 pies «Niña Naomi»",
   "width": 3200,
@@ -2059,7 +2059,7 @@
  {
   "id": "pesquero-25-13",
   "src": "/img/pesquero-25-13.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies en gris recién desmoldada",
   "width": 3200,
@@ -2070,7 +2070,7 @@
  {
   "id": "pesquero-25-15",
   "src": "/img/pesquero-25-15.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies gris con consola central",
   "width": 3200,
@@ -2081,7 +2081,7 @@
  {
   "id": "pesquero-25-14",
   "src": "/img/pesquero-25-14.webp",
-  "category": "turismo",
+  "category": "pesca",
   "model": "pesquero",
   "alt": "Pesquero 25 pies gris rotulado «Dulce María», vista lateral",
   "width": 3200,

@@ -255,7 +255,7 @@ export const categories: Record<Category, { title: string; lead: string; heroId:
   pesca: {
     title: "Botes para pesca",
     lead: "Pangas de trabajo, de 14 a 30.5 pies, laminadas para aguantar la faena todos los días.",
-    heroId: "galileo-18-doble-realce-03",
+    heroId: "pesquero-25-03",
   },
   turismo: {
     title: "Botes para turismo",
