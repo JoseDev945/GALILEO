@@ -9,8 +9,16 @@ export type Photo = {
   model: string;
   alt: string;
   blur: string;
-  /** Bote al que pertenece la foto, para agrupar en la página del modelo (ej. "Monky Tour MG2"). */
+  /** Bote al que pertenece la foto (id de `BoatModel.boats`, ej. "bote-2"). */
   boat?: string;
+};
+
+/** Un bote real fabricado de un modelo. Cada uno tiene su propia sección con sus fotos. */
+export type Boat = {
+  /** Va en la dirección: /modelos/{modelo}/{id}. El primero de la lista se ve en /modelos/{modelo}. */
+  id: string;
+  /** Nombre o rótulo del bote (ej. "El Chombito"). Si falta se muestra solo "Bote N". */
+  name?: string;
 };
 
 
@@ -36,6 +44,8 @@ export type BoatModel = {
   priceFrom?: number;
   priceNote?: string;
   cover: string;
+  /** Botes fabricados de este modelo, en el orden de las carpetas («BOTE 1», «BOTE 2»…). */
+  boats?: Boat[];
   /** Una foto por cada bote distinto del modelo: en el carrusel y en «La línea» sale una tarjeta por bote. Si falta, se usa la portada. */
   boatCovers?: string[];
   /** false para no mostrar el modelo en el carrusel de inicio (sigue en el menú y en su página). */
@@ -68,6 +78,10 @@ export const models: BoatModel[] = [
     priceNote: "Precio de la versión sencilla.",
     cover: "galileo-30-02",
     boatCovers: ["galileo-30-01", "galileo-30-03"],
+    boats: [
+      { id: "bote-1", name: "Monkey Tours" },
+      { id: "bote-2", name: "Monky Tour MG2" },
+    ],
     accent: ["#a3121f", "#f2525f"],
     featured: true,
   },
@@ -138,6 +152,15 @@ export const models: BoatModel[] = [
     word: "DELPHIN",
     masc: true,
     suffix: "Doble realce",
+    boats: [
+      { id: "bote-1" },
+      { id: "bote-2" },
+      { id: "bote-3", name: "Delfín de Gaiza" },
+      { id: "bote-4", name: "13-PC-648" },
+      { id: "bote-5", name: "Carlos Daniel" },
+      { id: "bote-6", name: "El Chombito" },
+      { id: "bote-7", name: "Azul con marlín" },
+    ],
     badge: "Borda elevada",
     uses: ["pesca", "turismo"],
     summary: "El Delphin con doble realce: borda más alta para que entre menos agua con mar picado.",

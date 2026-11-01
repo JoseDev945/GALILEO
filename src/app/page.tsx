@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { byId, categories, modelName, ofName, theName, models, photos, photosOf, priceLabel } from "@/data/catalog";
+import { byId, categories, modelName, ofName, theName, models, photos, photosOf, priceLabel, hrefOfPhoto } from "@/data/catalog";
 import { site, whatsappLink } from "@/config/site";
 import { Hero } from "@/components/Hero";
 import { ModelTitle } from "@/components/ModelTitle";
@@ -29,6 +29,7 @@ export default function Home() {
       name: modelName(m.slug),
       ofName: ofName(m.slug),
       photo: byId(id),
+      href: hrefOfPhoto(m, id),
       price: m.priceFrom ? `Desde ${priceLabel(m)}` : "Precio a cotizar",
       eslora: m.specs.find((s) => s.label === "Largo" && !["Consultar", "A medida"].includes(s.value))?.value ?? "",
     })));
@@ -55,7 +56,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {lineCards.map(({ m, photo }, i) => (
-              <ModelCard key={photo} m={m} photoId={photo} wide={lineCards.length % 2 === 1 && i === lineCards.length - 1} />
+              <ModelCard key={photo} m={m} photoId={photo} href={hrefOfPhoto(m, photo)} wide={lineCards.length % 2 === 1 && i === lineCards.length - 1} />
             ))}
           </div>
           <p className="mt-6 text-sm text-mist">Precios referenciales en USD para el casco en fibra. El precio final y lo que incluye se confirman por escrito al cotizar.</p>

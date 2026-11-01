@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/config/site";
-import { models, photosOf, photosOfModel } from "@/data/catalog";
+import { boatsOf, models, photosOf, photosOfModel } from "@/data/catalog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -11,7 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: u("/galeria/pesca"), lastModified: now, changeFrequency: "monthly", priority: 0.9, images: photosOf("pesca").map((p) => u(p.src)) },
     { url: u("/galeria/turismo"), lastModified: now, changeFrequency: "monthly", priority: 0.9, images: photosOf("turismo").map((p) => u(p.src)) },
     { url: u("/galeria/deportivas"), lastModified: now, changeFrequency: "monthly", priority: 0.9, images: photosOf("deportivas").map((p) => u(p.src)) },
-    ...models.map((m) => ({ url: u(`/modelos/${m.slug}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.8, images: photosOfModel(m.slug).map((p) => u(p.src)) })),
+    ...models.map((m) => ({ url: u(`/modelos/${m.slug}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.8, images: (boatsOf(m)[0]?.photos ?? photosOfModel(m.slug)).map((p) => u(p.src)) })),
+    // Sección propia de cada bote (menos el primero, que es la página del modelo)
+    ...models.flatMap((m) => boatsOf(m).slice(1).map((b) => ({ url: u(b.href), lastModified: now, changeFrequency: "monthly" as const, priority: 0.6, images: b.photos.map((p) => u(p.src)) }))),
     { url: u("/aviso-legal"), lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: u("/privacidad"), lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: u("/terminos"), lastModified: now, changeFrequency: "yearly", priority: 0.2 },

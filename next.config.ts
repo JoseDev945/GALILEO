@@ -57,7 +57,11 @@ const nextConfig: NextConfig = {
       ["galileo-24", "delphin-24"],
       ["ranita-20", "rana-20"],
     ];
-    return old.map(([from, to]) => ({ source: `/modelos/${from}`, destination: `/modelos/${to}`, permanent: true }));
+    return [
+      ...old.map(([from, to]) => ({ source: `/modelos/${from}`, destination: `/modelos/${to}`, permanent: true })),
+      // El bote 1 de cada modelo es la página del modelo
+      { source: "/modelos/:slug/bote-1", destination: "/modelos/:slug", permanent: true },
+    ];
   },
   async headers() {
     return [

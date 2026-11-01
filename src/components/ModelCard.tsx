@@ -3,19 +3,19 @@ import Link from "next/link";
 import { byId, ofName, priceLabel, useLabel, type BoatModel } from "@/data/catalog";
 import { ModelTitle } from "./ModelTitle";
 
-/** Tarjeta de un modelo. `photoId` cambia la foto (para mostrar otro bote del mismo modelo). */
-export function ModelCard({ m, wide = false, photoId }: { m: BoatModel; wide?: boolean; photoId?: string }) {
+/** Tarjeta de un modelo. `photoId` cambia la foto y `href` lleva a la sección de ese bote. */
+export function ModelCard({ m, wide = false, photoId, href = `/modelos/${m.slug}` }: { m: BoatModel; wide?: boolean; photoId?: string; href?: string }) {
   // Sin foto indicada se usa la del primer bote del modelo (o su portada)
   const p = byId(photoId ?? m.boatCovers?.[0] ?? m.cover);
   return (
     <article className={`flex flex-col overflow-hidden rounded-2xl border border-line bg-white ${wide ? "md:col-span-2 md:flex-row" : ""}`}>
-      <Link href={`/modelos/${m.slug}`} tabIndex={-1} aria-hidden className={`group relative block aspect-[16/9] overflow-hidden bg-night ${wide ? "md:aspect-auto md:min-h-[420px] md:w-1/2 md:shrink-0" : ""}`}>
+      <Link href={href} tabIndex={-1} aria-hidden className={`group relative block aspect-[16/9] overflow-hidden bg-night ${wide ? "md:aspect-auto md:min-h-[420px] md:w-1/2 md:shrink-0" : ""}`}>
         <Image src={p.src} alt={p.alt} fill placeholder="blur" blurDataURL={p.blur} sizes="(min-width: 1280px) 620px, (min-width: 768px) 50vw, calc(100vw - 32px)" quality={75} className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
         <span className="eyebrow absolute left-4 top-4 rounded-full bg-night/85 px-3 py-1.5 text-white">{m.badge}</span>
       </Link>
       <div className={`flex flex-1 flex-col p-6 sm:p-8 ${wide ? "md:justify-center lg:p-10" : ""}`}>
         <h3 className="text-3xl sm:text-4xl">
-          <Link href={`/modelos/${m.slug}`} className="hover:text-teal">
+          <Link href={href} className="hover:text-teal">
             <ModelTitle m={m} />
           </Link>
         </h3>
@@ -44,7 +44,7 @@ export function ModelCard({ m, wide = false, photoId }: { m: BoatModel; wide?: b
             <p className="eyebrow text-mist">{m.priceFrom ? "Desde" : "Precio"}</p>
             <p className="mt-1 text-xl font-semibold">{priceLabel(m)}</p>
           </div>
-          <Link href={`/modelos/${m.slug}`} className="btn shrink-0 border border-ink/80 text-center hover:bg-ink hover:text-white" aria-label={`Ver fotos ${ofName(m.slug)}`}>
+          <Link href={href} className="btn shrink-0 border border-ink/80 text-center hover:bg-ink hover:text-white" aria-label={`Ver fotos ${ofName(m.slug)}`}>
             Ver fotos<span className="hidden lg:inline">&nbsp;{ofName(m.slug)}</span>
           </Link>
         </div>

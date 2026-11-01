@@ -38,7 +38,7 @@ function HeroPhoto({ photo, active, first }: { photo: Photo; active: boolean; fi
   );
 }
 
-type Slide = { model: BoatModel; name: string; ofName: string; photo: Photo; price: string; eslora: string };
+type Slide = { model: BoatModel; name: string; ofName: string; photo: Photo; href: string; price: string; eslora: string };
 
 const INTERVAL = 6000;
 
@@ -154,7 +154,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
             <p className="mt-5 max-w-xl text-lg text-white/90 sm:text-xl">{s.model.summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={whatsappLink(`Hola, quiero cotizar el modelo ${s.name}.`)} target="_blank" rel="noopener noreferrer" className="btn bg-[var(--accent)] text-white ring-1 ring-white/20 hover:brightness-110">Cotiza la tuya</a>
-              <Link href={`/modelos/${s.model.slug}`} className="btn border border-white text-white hover:bg-white hover:text-ink">
+              <Link href={s.href} className="btn border border-white text-white hover:bg-white hover:text-ink">
                 Ver fotos<span className="hidden sm:inline">&nbsp;{s.ofName}</span>
               </Link>
             </div>
