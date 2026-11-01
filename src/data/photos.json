@@ -1804,17 +1804,6 @@
   "boat": "popa-roja"
  },
  {
-  "id": "galileo-18-75",
-  "src": "/img/galileo-18-75.webp",
-  "category": "turismo",
-  "model": "delphin",
-  "alt": "Proa de Delphin 18 pies celeste con detalles rojos pintados",
-  "width": 1920,
-  "height": 2560,
-  "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoMABAAA4BaJYwCw7EQ+oPK5GAA/ps/vysJLMSz7cWKewIBvhPWebNJpSBP4dSecK8CH7FPIIv/L+juusNAickX3omQAAAA",
-  "boat": "proa-celeste"
- },
- {
   "id": "galileo-18-76",
   "src": "/img/galileo-18-76.webp",
   "category": "pesca",
@@ -1901,28 +1890,6 @@
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwAA4BaJYwC7AEDmTKegXoAAOJ973PC6QUP+Ve56ZFkSW2atv8E7LYb76DAwmc6+IuwEhfurKf+5yvdDhDK1iEsiTrppvJkAA==",
   "boat": "rosado-bp-2703-a"
- },
- {
-  "id": "galileo-18-94",
-  "src": "/img/galileo-18-94.webp",
-  "category": "turismo",
-  "model": "delphin",
-  "alt": "Delphin 18 pies verde y blanco rotulado «Jorge»",
-  "width": 2560,
-  "height": 1920,
-  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAA4BaJZQCdAECz30vGUOAAPZs30EkewwuyUwbEqJ8a9e/OVyMOP62ge5eMciyVoLrL+TiaCe2df4VhKzD682v7ec2vb+RzGT4zRl8kR3oiqUAAA==",
-  "boat": "jorge"
- },
- {
-  "id": "galileo-18-95",
-  "src": "/img/galileo-18-95.webp",
-  "category": "turismo",
-  "model": "delphin",
-  "alt": "Proa de Delphin 18 pies verde y blanca con detalles pintados",
-  "width": 2560,
-  "height": 1920,
-  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoQAAwAA4BaJQBOgBZSE6MAAOJ6HQqgxWhNVtPzUXwCHsL1Cqqa+0vXhQ2AHwL8Ib0diSTiK+hDQbGfc8h3X2aBSU0bXlQYuuAat0j5XoDYaAAA",
-  "boat": "jorge"
  },
  {
   "id": "pesquero-25-01",
