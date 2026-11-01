@@ -125,6 +125,7 @@ export const models: BoatModel[] = [
       { id: "acua", name: "Acua", size: "18 pies" },
       { id: "verde-con-interior-celeste", name: "Verde con interior celeste", size: "18 pies" },
       { id: "buena-vibra-1", name: "Buena Vibra 1", size: "18 pies" },
+      { id: "verde-con-interior-gris", name: "Verde con interior gris", size: "18 pies" },
       { id: "azul-con-delfin-y-toldo", name: "Azul con delfín y toldo", size: "18 pies" },
       { id: "popa-de-palmeras-rosada", name: "Popa de palmeras rosada", size: "18 pies" },
       { id: "popa-con-atardecer", name: "Popa con atardecer", size: "18 pies" },
