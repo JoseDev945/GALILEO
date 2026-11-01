@@ -215,7 +215,7 @@ export const models: BoatModel[] = [
       { label: "Toldo", value: "Opcional" },
     ],
     priceFrom: 4100,
-    cover: "galileo-24-03",
+    cover: "galileo-24-06",
     accent: ["#1f4f99", "#6f9ce0"],
     inHero: false,
     featured: true,
@@ -274,7 +274,7 @@ export const categories: Record<Category, { title: string; lead: string; heroId:
   turismo: {
     title: "Botes para turismo",
     lead: "Pangas con toldo o techo, bancas para pasajeros y la pintura que identifica a tu negocio.",
-    heroId: "galileo-24-03",
+    heroId: "galileo-30-01",
   },
   deportivas: {
     title: "Lanchas deportivas",

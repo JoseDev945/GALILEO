@@ -13,8 +13,8 @@ export const photosOf = (c: Category) => {
 };
 export const photosOfModel = (slug: string) => photos.filter((p) => p.model === slug && p.category !== "proceso");
 
-/** Un bote con sus fotos, su número («Bote 3») y la dirección de su sección. */
-export type BoatView = Boat & { num: number; label: string; href: string; photos: Photo[]; cover: Photo };
+/** Un bote con sus fotos, su posición en la lista y la dirección de su sección. */
+export type BoatView = Boat & { num: number; href: string; photos: Photo[]; cover: Photo };
 /** Botes del modelo que tienen fotos. El primero se ve en /modelos/{modelo}; los demás en /modelos/{modelo}/{bote}. */
 export const boatsOf = (m: BoatModel): BoatView[] =>
   (m.boats ?? [])
@@ -23,7 +23,6 @@ export const boatsOf = (m: BoatModel): BoatView[] =>
       return {
         ...b,
         num: i + 1,
-        label: b.name ? `Bote ${i + 1} · ${b.name}` : `Bote ${i + 1}`,
         href: i === 0 ? `/modelos/${m.slug}` : `/modelos/${m.slug}/${b.id}`,
         photos: list,
         cover: list[0],

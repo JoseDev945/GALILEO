@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!f) return {};
   const { m, b } = f;
   const name = modelName(m.slug);
-  const title = `${name}, ${b.name ? `bote «${b.name}»` : `bote ${b.num}`}`;
+  const title = b.name ? `${name} «${b.name}»` : `${name}, otro bote`;
   return {
     title: `${m.kind ?? "Panga"} ${title}: fotos del bote en Panamá`,
     description: `${b.photos.length} fotos ${b.name ? `del bote «${b.name}», ` : ""}un ${name} fabricado en fibra de vidrio por ${site.name} en La Chorrera, Panamá. ${m.summary}`,
