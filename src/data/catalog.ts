@@ -29,7 +29,7 @@ export const boatsOf = (m: BoatModel): BoatView[] => {
       href: i === 0 ? `/modelos/${m.slug}` : `/modelos/${m.slug}/${b.id}`,
       photos,
       // La portada del modelo, si es de este bote; si no, su primera foto
-      cover: photos.find((p) => p.id === m.cover) ?? photos[0],
+      cover: photos.find((p) => p.id === b.coverId) ?? photos.find((p) => p.id === m.cover) ?? photos[0],
     }));
 };
 /** Dirección de la sección del bote al que pertenece una foto (o la del modelo si no tiene bote). */

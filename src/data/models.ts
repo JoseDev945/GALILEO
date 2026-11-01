@@ -21,6 +21,8 @@ export type Boat = {
   name?: string;
   /** Medida de este bote (ej. "20 pies"), para modelos que se fabrican en varios largos. */
   size?: string;
+  /** Foto de portada del bote (su tarjeta y el inicio de su sección). Si falta, su primera foto. */
+  coverId?: string;
 };
 
 
@@ -176,7 +178,7 @@ export const models: BoatModel[] = [
       { id: "bote-1" },
       { id: "bote-2" },
       { id: "bote-3", name: "Delfín de Gaiza" },
-      { id: "bote-5", name: "Carlos Daniel" },
+      { id: "bote-5", name: "Carlos Daniel", coverId: "galileo-18-55" },
       { id: "bote-6", name: "El Chombito" },
       { id: "bote-7", name: "Azul con marlín" },
       { id: "bote-8", name: "Azul y blanco" },
