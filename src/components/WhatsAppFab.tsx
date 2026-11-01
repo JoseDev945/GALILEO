@@ -6,12 +6,12 @@ const FB = "M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.
 
 const base = "grid place-items-center rounded-full text-white shadow-lg transition-transform hover:scale-105";
 
-/** Botones flotantes: Facebook (solo computadora), TikTok y WhatsApp. */
+/** Botones flotantes: Facebook (en celular, más pequeño que TikTok), TikTok y WhatsApp. */
 export function WhatsAppFab() {
   return (
     <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 flex flex-col items-center gap-3">
-      <a href={site.social.facebookPage} target="_blank" rel="noopener noreferrer" aria-label="Facebook de Botes Galileo" className={`${base} hidden size-12 bg-[#1877f2] lg:grid`}>
-        <svg aria-hidden width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d={FB} /></svg>
+      <a href={site.social.facebookPage} target="_blank" rel="noopener noreferrer" aria-label="Facebook de Botes Galileo" className={`${base} size-10 bg-[#1877f2] lg:size-12`}>
+        <svg aria-hidden width="26" height="26" className="size-[22px] lg:size-[26px]" viewBox="0 0 24 24" fill="currentColor"><path d={FB} /></svg>
       </a>
       <a href={site.social.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok de Botes Galileo" className={`${base} size-12 bg-black ring-1 ring-white/20`}>
         <svg aria-hidden width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d={TT} /></svg>
