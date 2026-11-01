@@ -75,8 +75,8 @@ export const models: BoatModel[] = [
     specs: [
       { label: "Largo", value: "30.5'" },
       { label: "Ancho", value: "7'" },
+      { label: "Altura", value: "5'" },
       { label: "Versión", value: "Sencilla" },
-      { label: "Colores", value: "A elección" },
     ],
     priceFrom: 9100,
     priceNote: "Precio de la versión sencilla.",
@@ -217,8 +217,8 @@ export const models: BoatModel[] = [
     specs: [
       { label: "Largo", value: "25' / 28'" },
       { label: "Ancho", value: "7'" },
+      { label: "Altura", value: "4'" },
       { label: "Proa", value: "Alta" },
-      { label: "28 pies", value: "$9,100" },
     ],
     priceFrom: 6100,
     priceNote: "Precio de la de 25 pies. La de 28 pies cuesta $9,100.",
