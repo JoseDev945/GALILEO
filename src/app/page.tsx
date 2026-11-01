@@ -27,11 +27,11 @@ export default function Home() {
       model: m,
       name: modelName(m.slug),
       ofName: ofName(m.slug),
-      photo: byId(m.cover),
+      photo: byId(m.heroCover ?? m.cover),
       price: m.priceFrom ? `Desde ${priceLabel(m)}` : "Precio a cotizar",
       eslora: m.specs.find((s) => s.label === "Largo" && !["Consultar", "A medida"].includes(s.value))?.value ?? "",
     }));
-  const strip = ["corvina-18-08", "galileo-24-10", "galileo-24-01", "galileo-18-doble-realce-01", "corvina-14-02", "galileo-18-80"].map(byId);
+  const strip = ["corvina-18-08", "galileo-30-06", "galileo-24-01", "galileo-18-doble-realce-01", "corvina-14-02", "galileo-18-80"].map(byId);
   const total = photos.filter((p) => p.category !== "proceso").length;
   const sport = models.find((m) => m.slug === "ranita-20")!;
   const sportCover = byId(sport.cover);

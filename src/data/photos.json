@@ -10,6 +10,146 @@
   "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAwAA4BaJZACdACh+sP2wAAA/rewt0NcgWth5J7hY4goVnO2MafuKeDPPcXyqCHue0tb3NW7rnoqIqRbF2nAv5aYQY+/E/BxI1K7lLewpfEtAlLApwAA"
  },
  {
+  "id": "galileo-30-02",
+  "src": "/img/galileo-30-02.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 roja y blanca «Monky Tour MG 2» con interior celeste, vista lateral de cerca",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAwAA4BaJZACdAELzCbmAAD+L21Y4HHwdKh5jErnjHoFf+UhqJpm5g34kun99o3nLGCfa5XBmOljkTQu4jhU9Tnxuyf0fTzQcAAA"
+ },
+ {
+  "id": "galileo-30-03",
+  "src": "/img/galileo-30-03.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 «Monky Tour MG 2» terminada bajo el techo del taller de Botes Galileo",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAwAA4BaJaACdAEREXda01kpAAD+gttSj0XQSYQ/2x6GwgHRGh8RtQ3ISNNnP67vczGfh9FNF3JDetikBACp5JF3P96yphEkysfdKwAAAA=="
+ },
+ {
+  "id": "galileo-30-04",
+  "src": "/img/galileo-30-04.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 roja «Monky Tour MG 2» con casco negro, vista lateral completa",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwAA4BaJZgCdAEQOBhM0AAA/odPUFep8KPTV799TJOMa4MrAM9dWIzq0hfmcO1gQpAGmIW2tr7sAlxCHPPyoKB8AA=="
+ },
+ {
+  "id": "galileo-30-05",
+  "src": "/img/galileo-30-05.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 «Monky Tour MG 2» lista para entrega, vista lateral desde la popa",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAwAA4BaJZgCdACd1X5i4AD+g8I5QJyFqkLCHiri8BRVBJWuqM+o/kVOylQi18Jq3zpqGi5ZxRm8DuFo33bI+QA14QY5TY/wDf6bTLnAAAAA"
+ },
+ {
+  "id": "galileo-30-06",
+  "src": "/img/galileo-30-06.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Proa roja de la Galileo 30 «Monky Tour MG 2» con chevrón blanco, vista de frente",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJYgCdADicKstU4CYAP7tCbNqiBPP1ayeNpjTowSWP2J5coT3myM5L0Ubye5FnFZeeIdSfJ4/bxYraK3nskwMrZGu8XVfOSY/OYAA"
+ },
+ {
+  "id": "galileo-30-07",
+  "src": "/img/galileo-30-07.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Constructor de Botes Galileo junto a la proa de la Galileo 30 «Monky Tour MG 2»",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAwAA4BaJbACdAChfmdrpUAA/njFGrxJbdPARW3T1Tl4Y4VnnVv6kwOwPCn8jNaz0DYdfBwIcKpyYtcmetREz9qS0NAgodZBHgzPw6n/5HrgObBIAA=="
+ },
+ {
+  "id": "galileo-30-08",
+  "src": "/img/galileo-30-08.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Constructor junto al costado de la Galileo 30 roja con bancas celestes",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQAgCdASoQAAwAA4BaJbACdAEfmj/WM5iAAP7c9FfPOT707J+U9U9IhYux9V5Sfl5auAZFb9qoO6dobws1jOv4YMNUrJm6SwPSnlkkzvQOma0LMTdUoV60/io8IhBnayUC2cAvqpjTTDneGTnAPAAA"
+ },
+ {
+  "id": "galileo-30-09",
+  "src": "/img/galileo-30-09.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 roja vista desde la proa, con interior celeste y bancas",
+  "width": 2400,
+  "height": 3200,
+  "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoMABAAA4BaJbACdFQAA6z9Lwl7X3RAAP7bhfUDm7xF/vqkOpT5qT08HFuYIjZkw7O72gds2LGrxMoIjsEuria/VMDX4nDp5MoU7lWM30/l10FJ66vhJVxH9CXIIIIbQ+fDUsp+qf+/fXQA"
+ },
+ {
+  "id": "galileo-30-10",
+  "src": "/img/galileo-30-10.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Interior celeste de la Galileo 30 visto desde la proa, con borda negra",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAQCdASoQAAwAA4BaJbACdABsY6ZEAAD+5fWh/jSGZhHWACxNbLHpvrdZ6ee3heMBnhGsCnVX4yWutsD8R0iPo7TShoGQynKsig6mn/ZJGcWEKhqqDTlKw+pghg31b5gFjzQxk0vSR8Qttxs6O+AA"
+ },
+ {
+  "id": "galileo-30-11",
+  "src": "/img/galileo-30-11.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Bancas celestes de fibra de vidrio de la Galileo 30, vistas desde arriba",
+  "width": 2172,
+  "height": 2896,
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoMABAAA4BaJbACdAEfhmDLeeJ5QAD9mgopJz9WYua9Ytj31Fmx48V6wCrePhlG1p6qglz/Q5pQ8/p1VSO98fK3Jw5EZbfcF3Qxtrb886BzOEydtNjZrfifdhEx3AAA"
+ },
+ {
+  "id": "galileo-30-12",
+  "src": "/img/galileo-30-12.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Detalle de la consola y una banca celeste de la Galileo 30 en fibra de vidrio",
+  "width": 2048,
+  "height": 3072,
+  "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoLABAAA4BaJbACdAEOfFDkjU18rAAAzf3HqMqpmBlar8S7ZdKNQrcdqDr/ay8n6jRhXnH6L6sOLqQPKhIem5sWpaCwpbZpnsWLBCgfEba8I613cjXrs2dm8wTxH/singAAAA=="
+ },
+ {
+  "id": "galileo-30-13",
+  "src": "/img/galileo-30-13.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 roja con interior celeste en el taller, junto a la mesa de trabajo",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoQAAwAA4BaJZgCdADpr+ir0YAA9qgBQBBaP4PmS4dWAphVexKerrotQzuakapZDCV70S7cnW/TuNghwMjiSpCCWmAeDXiR5FPKm8cVXPYtvmKNiFL8xQvDyHRUj7NKAAA="
+ },
+ {
+  "id": "galileo-30-14",
+  "src": "/img/galileo-30-14.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Galileo 30 «Monky Tour MG 2» con bancas celestes durante los acabados",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAwAA4BaJZACdAYvXGIgAtUMAPkSQVWc1wWt+rC3/o7GAyUP5bGdk+mUiJT7JXTt2Lhsex2p8ETDFnQLLA8+/1MvhSUxRNwkLnFVwl9U/NgSZAGXlg27v/ezGgAA"
+ },
+ {
+  "id": "galileo-30-15",
+  "src": "/img/galileo-30-15.webp",
+  "category": "turismo",
+  "model": "galileo-30",
+  "alt": "Costado rojo y blanco de la Galileo 30 en el taller, con los materiales de acabado",
+  "width": 2896,
+  "height": 2172,
+  "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAgCdASoQAAwAA4BaJYgCdH8GJ/gfTFkccxcAAM4QRGw1WNl3eyzijp7vbJ/D3JRP3zf8//KU8Zo95xlc10zXV83Z9cVRdku2Cjmer+3JO42CRCbf3UHMZjWcAAAA"
+ },
+ {
   "id": "corvina-14-02",
   "src": "/img/corvina-14-02.webp",
   "category": "pesca",
@@ -1540,26 +1680,6 @@
   "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAwAA4BaJaACdACtNp+kAPKf8iCgMLARKOIVPajc7gLir06mNWqLmOKYbWDdfapeQ+QBVJgX5l+mMPyoNMcgjEQONLKHo0hZ7YGpjYAAAA=="
  },
  {
-  "id": "galileo-24-10",
-  "src": "/img/galileo-24-10.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja con chevrón blanco en la proa",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJYgCdADicKstU4CYAP7tCbNqiBPP1ayeNpjTowSWP2J5coT3myM5L0Ubye5FnFZeeIdSfJ4/bxYraK3nskwMrZGu8XVfOSY/OYAA"
- },
- {
-  "id": "galileo-24-18",
-  "src": "/img/galileo-24-18.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja, interior celeste",
-  "width": 2400,
-  "height": 3200,
-  "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoMABAAA4BaJbACdFQAA6z9Lwl7X3RAAP7bhfUDm7xF/vqkOpT5qT08HFuYIjZkw7O72gds2LGrxMoIjsEuria/VMDX4nDp5MoU7lWM30/l10FJ66vhJVxH9CXIIIIbQ+fDUsp+qf+/fXQA"
- },
- {
   "id": "galileo-24-02",
   "src": "/img/galileo-24-02.webp",
   "category": "turismo",
@@ -1588,126 +1708,6 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJaACdADOq6VMSAAA9hz5ZbsPcs0UXaSlmoYZKc5JEHAW3hBSTZJDpoTGB8NpO4IpddLeDjP03GK+58E/XIw8Xoi8+GGGKroAAA=="
- },
- {
-  "id": "galileo-24-07",
-  "src": "/img/galileo-24-07.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja y blanca con interior celeste, vista lateral",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAwAA4BaJYgCdEf/gaWl2vvbgADOPfnIKz1vcX94/vJTNTdjXyWNKJVP6pNyYF25CPn9jmfQhnP+np4XeLyOpfEaRkr3r9y+Mt1e6uldJd+NvkzF2o2JGF9BfzkQAAA="
- },
- {
-  "id": "galileo-24-08",
-  "src": "/img/galileo-24-08.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja con interior celeste y bancas, en el taller",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoQAAwAA4BaJQBOgCIEvEm9fAAA4gblyqTjs4CSNOAvfyDZJX5WpjZEXgsvdYPNWpZhhumQAgcdIzIFKBe9EBL4HpDktYfAUQ0TH8gr5fFRsRxWBIugzbu7zYnBaqPAAAA="
- },
- {
-  "id": "galileo-24-09",
-  "src": "/img/galileo-24-09.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Interior celeste con bancas de una Galileo 24, desde la proa",
-  "width": 2402,
-  "height": 3200,
-  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoMABAAA4BaJbACdADcUDmkRX+sAAD8IvdCL8bBzygRwhJVSXiSGdHfGhs5ceGFksZyOqfv4ITPPJjJt26Eju6VtTXxu4pwLfCK3C20b+YIk6Y5c4zC3flvD2gcTbh1rWHnSmh9xubAAA=="
- },
- {
-  "id": "galileo-24-11",
-  "src": "/img/galileo-24-11.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Proa de Galileo 24 roja rotulada «Monky Tour MG 2»",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAwAA4BaJbACdADC/Qk2MaqAAP7tINsJNB4auBjkXepgMRBrSmyk9ZStwqfVavaIbYe3XxjFUDL2Je2YQb0EmmgEwdyoz4jaQOgnckZ5wZQvnVxv4FWvCLzwAA=="
- },
- {
-  "id": "galileo-24-12",
-  "src": "/img/galileo-24-12.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja «Monky Tour MG 2» con interior celeste, vista lateral",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAwAA4BaJZgCdH8AFXYMXNecHQAA/upWkeMf/fp4xKagi6Z8m14zlHW9HQ/ZTix9Kxm5t4V7QpDt8hjlY+gCU6Yp4KC3yuuFzuDAN3gXRWwM4AA="
- },
- {
-  "id": "galileo-24-13",
-  "src": "/img/galileo-24-13.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Consola y bancas celestes de una Galileo 24, vistas de cerca",
-  "width": 2402,
-  "height": 3200,
-  "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAQCdASoMABAAA4BaJbACdADaLBOgAMyiLPbg4jeQv/HJldsu+gG7Ju2h46cfLODo5GPwsMNSBe3XPloMaGErdn6vnd7/C2aIbiYdJ2Gjv0hGbcWrV56vbwbAZTnRcvH3gok+wbOaKZSCIAA="
- },
- {
-  "id": "galileo-24-14",
-  "src": "/img/galileo-24-14.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Constructor junto a la proa roja de una Galileo 24",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAwAA4BaJbACdADHoV/7iNMAAP6ihBDfXx9UOYhpjIBGJ+iJgFLV/mXlmptPreiKv3j9zmQn6PoMPZOdKrpyAs50IccRhKa+PBu84ZVTb5VBwKD5M1oAAAA="
- },
- {
-  "id": "galileo-24-15",
-  "src": "/img/galileo-24-15.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja con interior celeste vista desde la proa",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQAgCdASoQAAwAA4BaJbACdAEfmj/WM5iAAP7c9FfPOT707J+U9U9IhYux9V5Sfl5auAZFb9qoO6dobws1jOv4YMNUrJm6SwPSnlkkzvQOma0LMTdUoV60/io8IhBnayUC2cAvqpjTTDneGTnAPAAA"
- },
- {
-  "id": "galileo-24-16",
-  "src": "/img/galileo-24-16.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Proa de Galileo 24 con interior celeste visto desde arriba",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQAgCdASoQAAwAA4BaJbACdAEKVc+y3vqAAP7xFSG3UQreXayxCmES0A7hdr2H2mpte1Jmw1AVnqc8BbDK9m+/kdqb1vG3asPuaNU5b/czw94/HgMyQEZB5/v0r9Dhv8fnwmXfEkCSTgabU/wPjyWFC6wAAA=="
- },
- {
-  "id": "galileo-24-17",
-  "src": "/img/galileo-24-17.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja «Monky Tour MG 2» bajo el techo del taller",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAwAA4BaJZACdH8AFwQ48g8wAAD+vJPsPqAh30XktbQQnTGTHYNj10K5si++jGMy5gIHXtuuLwgB9IAI80i0HPx42kghCHBjxDG/YCIKHBt2ZZpvwAAA"
- },
- {
-  "id": "galileo-24-19",
-  "src": "/img/galileo-24-19.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Galileo 24 roja y blanca «Monky Tour MG 2», vista lateral completa",
-  "width": 3200,
-  "height": 2402,
-  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAwAA4BaJaACdH8GJ/gerzE/igAA/qN46hzq2Ek9G0V9+w4xDVicLkPlElO9u+CGGASZm7xWw9VPp/8CXAQkuIPrR4zdI2CFWJ3cDUP+OD+TY7AAAA=="
- },
- {
-  "id": "galileo-24-20",
-  "src": "/img/galileo-24-20.webp",
-  "category": "turismo",
-  "model": "galileo-24",
-  "alt": "Constructor de Botes Galileo junto a una Galileo 24 roja terminada",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAwAA4BaJbACdAChfmdrpUAA/njFGrxJbdPARW3T1Tl4Y4VnnVv6kwOwPCn8jNaz0DYdfBwIcKpyYtcmetREz9qS0NAgodZBHgzPw6n/5HrgObBIAA=="
  },
  {
   "id": "pesquero-25-01",
