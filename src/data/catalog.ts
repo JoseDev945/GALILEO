@@ -16,19 +16,25 @@ export const photosOfModel = (slug: string) => photos.filter((p) => p.model === 
 /** Un bote con sus fotos, su posición en la lista y la dirección de su sección. */
 export type BoatView = Boat & { num: number; href: string; photos: Photo[]; cover: Photo };
 /** Botes del modelo que tienen fotos. El primero se ve en /modelos/{modelo}; los demás en /modelos/{modelo}/{bote}. */
-export const boatsOf = (m: BoatModel): BoatView[] =>
-  (m.boats ?? [])
-    .map((b, i) => {
-      const list = photosOfModel(m.slug).filter((p) => p.boat === b.id);
-      return {
-        ...b,
-        num: i + 1,
-        href: i === 0 ? `/modelos/${m.slug}` : `/modelos/${m.slug}/${b.id}`,
-        photos: list,
-        cover: list[0],
-      };
-    })
-    .filter((b) => b.photos.length > 0);
+export const boatsOf = (m: BoatModel): BoatView[] => {
+  if (!m.boats?.length) return [];
+  const all = photosOfModel(m.slug);
+  const ids = new Set(m.boats.map((b) => b.id));
+  // Fotos del modelo que todavía no tienen bote: van juntas al final
+  const loose = all.filter((p) => !p.boat || !ids.has(p.boat));
+  const list: Boat[] = loose.length ? [...m.boats, { id: "otras", name: "Más fotos" }] : m.boats;
+  return list
+    .map((b) => ({ b, photos: b.id === "otras" ? loose : all.filter((p) => p.boat === b.id) }))
+    .filter((x) => x.photos.length > 0)
+    .map(({ b, photos }, i) => ({
+      ...b,
+      num: i + 1,
+      href: i === 0 ? `/modelos/${m.slug}` : `/modelos/${m.slug}/${b.id}`,
+      photos,
+      // La portada del modelo, si es de este bote; si no, su primera foto
+      cover: photos.find((p) => p.id === m.cover) ?? photos[0],
+    }));
+};
 /** Dirección de la sección del bote al que pertenece una foto (o la del modelo si no tiene bote). */
 export const hrefOfPhoto = (m: BoatModel, photoId: string) =>
   boatsOf(m).find((b) => b.id === byId(photoId).boat)?.href ?? `/modelos/${m.slug}`;
