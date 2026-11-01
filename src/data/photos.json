@@ -429,28 +429,6 @@
   "boat": "cabanas-cholita"
  },
  {
-  "id": "galileo-20-07",
-  "src": "/img/galileo-20-07.webp",
-  "category": "turismo",
-  "model": "delphin",
-  "alt": "Popa con delfines pintados a mano",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAwAA4BaJZACdAD2LnG7qwAA/u6ykAWKDWJhh/gPHBGUu3+8AhyrE2h0LT6zEScI/We6osIzjqAdgjY3egS7HkGvsZkbXPj8VZkKSKP4bKAgAAA=",
-  "boat": "delfines-azul"
- },
- {
-  "id": "galileo-20-08",
-  "src": "/img/galileo-20-08.webp",
-  "category": "turismo",
-  "model": "delphin",
-  "alt": "Interior lila de Delphin 20 pies con bancas y popa con peces pintados",
-  "width": 3200,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAwAA4BaJQBdgCMCY1xrcS0N9gAA/vFT46iBs91FnF//m0n1LQMXP5N+sb7vu6EtscRUI8QOQO88qfTzXmlJqKydNILcaRoJG/UTsI5gLTZ7gAA=",
-  "boat": "delfines-azul"
- },
- {
   "id": "galileo-18-96",
   "src": "/img/galileo-18-96.webp",
   "category": "turismo",
@@ -470,6 +448,28 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAQCdASoQAAwAA4BaJZgAAl2WF6RgAP62x3DsZEtbILPGvmp+zXfzKUQcVh0yxUCqu7mAh9LF/jJgHdRd1xw3kGEnCvjic4YdHnSQzOMkXVCMZ2Y8kZ3XK5UtoI/NF5FAAA==",
+  "boat": "madagascar-2"
+ },
+ {
+  "id": "galileo-20-07",
+  "src": "/img/galileo-20-07.webp",
+  "category": "turismo",
+  "model": "delphin",
+  "alt": "Popa con delfines pintados a mano",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAwAA4BaJZACdAD2LnG7qwAA/u6ykAWKDWJhh/gPHBGUu3+8AhyrE2h0LT6zEScI/We6osIzjqAdgjY3egS7HkGvsZkbXPj8VZkKSKP4bKAgAAA=",
+  "boat": "madagascar-2"
+ },
+ {
+  "id": "galileo-20-08",
+  "src": "/img/galileo-20-08.webp",
+  "category": "turismo",
+  "model": "delphin",
+  "alt": "Interior lila de Delphin 20 pies con bancas y popa con peces pintados",
+  "width": 3200,
+  "height": 2400,
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAwAA4BaJQBdgCMCY1xrcS0N9gAA/vFT46iBs91FnF//m0n1LQMXP5N+sb7vu6EtscRUI8QOQO88qfTzXmlJqKydNILcaRoJG/UTsI5gLTZ7gAA=",
   "boat": "madagascar-2"
  },
  {
@@ -1801,7 +1801,7 @@
   "width": 1920,
   "height": 2560,
   "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoMABAAA4BaJZQAAtx/U8F+0WYAAP73hwGQf7SArsy/fCEttq/LLNMN2YFzVroGpQmdtz0/qWaPIJUIi/gQgNAidKMqoehABz1UAAAA",
-  "boat": "interior-gris-con-bandera"
+  "boat": "popa-roja"
  },
  {
   "id": "galileo-18-75",

@@ -84,14 +84,14 @@ const nextConfig: NextConfig = {
       ["delphin-18/bote-13", "delphin/popa-de-palmeras-verde"],
       ["delphin-18/bote-14", "delphin/popa-de-palmeras-celeste"],
       ["delphin-18/bote-15", "delphin/popa-roja"],
-      ["delphin-18/bote-16", "delphin/interior-gris-con-bandera"],
+      ["delphin-18/bote-16", "delphin/popa-roja"],
       ["delphin-18/bote-17", "delphin/proa-celeste"],
       ["delphin-18/bote-18", "delphin/lidia-17"],
       ["delphin-18/bote-19", "delphin/la-tropa"],
       ["delphin-18/bote-20", "delphin/rosado-bp-2703-a"],
       ["delphin-18/bote-21", "delphin/jorge"],
       ["delphin-20/bote-1", "delphin/cabanas-cholita"],
-      ["delphin-20/bote-2", "delphin/delfines-azul"],
+      ["delphin-20/bote-2", "delphin/madagascar-2"],
       ["delphin-20/bote-3", "delphin/madagascar-2"],
       ["delphin-20/bote-4", "delphin/kendra-pauleth"],
       ["delphin-20/bote-5", "delphin/yaci-1"],
@@ -105,6 +105,9 @@ const nextConfig: NextConfig = {
       ["pesquero-25/bote-2", "pesquero/bote-2"],
       ["pesquero-25/bote-3", "pesquero/bote-3"],
       ["rana-20/bote-1", "rana"],
+      // Botes que eran el mismo
+      ["delphin/delfines-azul", "delphin/madagascar-2"],
+      ["delphin/interior-gris-con-bandera", "delphin/popa-roja"],
       // Las fotos del «13-PC-648» son del bote «Carlos Daniel»
       ["delphin-doble-realce/bote-4", "delphin-doble-realce/bote-5"],
     ];
