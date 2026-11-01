@@ -19,6 +19,7 @@ export function ModelView({ m, boat }: { m: BoatModel; boat?: BoatView }) {
   const cover = current ? current.cover : byId(m.cover);
   const list = (current ? current.photos : photosOfModel(m.slug)).map((p) => ({ ...p, modelLabel: modelName(p.model) }));
   const siblings = boats.filter((b) => b.id !== current?.id);
+  const tall = cover.height > cover.width;
   const others = models.filter((o) => o.slug !== m.slug && o.uses.some((u) => m.uses.includes(u))).slice(0, 2);
   const name = modelName(m.slug);
 
@@ -39,7 +40,15 @@ export function ModelView({ m, boat }: { m: BoatModel; boat?: BoatView }) {
     <>
       <JsonLd data={ld} />
       <section className="relative isolate overflow-hidden bg-night text-white">
-        <Image src={cover.src} alt={cover.alt} fill preload fetchPriority="high" loading="eager" placeholder="blur" blurDataURL={cover.blur} sizes="100vw" quality={90} className="-z-20 object-cover" />
+        {tall ? (
+          <>
+            {/* Foto vertical: en pantallas anchas se ve completa (sin recortarla ni agrandarla de más) sobre un fondo difuminado de la misma foto */}
+            <div aria-hidden className="absolute inset-0 -z-30 scale-110 bg-cover bg-center blur-2xl" style={{ backgroundImage: `url(${cover.blur})` }} />
+            <Image src={cover.src} alt={cover.alt} fill preload fetchPriority="high" loading="eager" placeholder="blur" blurDataURL={cover.blur} sizes="(min-width: 640px) 80vh, 100vw" quality={90} className="-z-20 object-cover sm:object-contain" />
+          </>
+        ) : (
+          <Image src={cover.src} alt={cover.alt} fill preload fetchPriority="high" loading="eager" placeholder="blur" blurDataURL={cover.blur} sizes="100vw" quality={90} className="-z-20 object-cover" />
+        )}
         {/* Sombra suave solo abajo, para que el nombre se lea sin tapar el bote */}
         <div className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-night/70 to-transparent" />
         <div className="mx-auto flex min-h-[70svh] max-w-7xl flex-col justify-end px-4 pb-8 pt-24 sm:px-6 sm:pb-12 lg:min-h-[calc(100svh-74px)]">

@@ -1442,13 +1442,13 @@
  },
  {
   "id": "galileo-18-14",
-  "src": "/img/galileo-18-14.webp",
+  "src": "/img/galileo-18-14-hd.webp",
   "category": "turismo",
   "model": "delphin",
   "alt": "Delphin 18 pies blanco y azul rotulado «Doña Hilda I», vista de proa",
-  "width": 1920,
-  "height": 2560,
-  "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoMABAAA4BaJZgCdAERB46wzBooAADiWf9BmNWxUDlONGQR/8NkvjmThlh3HYPNTfi2e7APoTY8hprYt1K7OvGGy8GYae7WiCjptUVWC9/FzPwml6SU3ggA",
+  "width": 2400,
+  "height": 3200,
+  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoMABAAA4BaJZgCdAERB46dsaoYAADiWf9BmNWxUDlONGQR/8NkvjmThlhvRsQJV7p6Me3SYUt/l1JuQnc/JGYwQHgWAuJO4X8F5NN/Mc+CvLvhWm97MdRoAAA=",
   "boat": "dona-hilda-1"
  },
  {

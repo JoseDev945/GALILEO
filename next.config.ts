@@ -70,9 +70,9 @@ const nextConfig: NextConfig = {
       ["corvina-14/bote-1", "corvina"],
       ["corvina-18/bote-1", "corvina/18-pies-1"],
       ["corvina-18/bote-2", "corvina/18-pies-2"],
-      ["delphin-18/bote-1", "delphin"],
+      ["delphin-18/bote-1", "delphin/acua"],
       ["delphin-18/bote-2", "delphin/verde-con-interior-celeste"],
-      ["delphin-18/bote-3", "delphin/dona-hilda-1"],
+      ["delphin-18/bote-3", "delphin"],
       ["delphin-18/bote-4", "delphin/buena-vibra-1"],
       ["delphin-18/bote-5", "delphin/azul-con-delfin-y-toldo"],
       ["delphin-18/bote-6", "delphin/popa-de-palmeras-rosada"],
@@ -105,6 +105,8 @@ const nextConfig: NextConfig = {
       ["pesquero-25/bote-2", "pesquero/bote-2"],
       ["pesquero-25/bote-3", "pesquero/bote-3"],
       ["rana-20/bote-1", "rana"],
+      // Doña Hilda 1 es ahora el primer bote del Delphin (su página es la del modelo)
+      ["delphin/dona-hilda-1", "delphin"],
       // Botes que eran el mismo
       ["delphin/delfines-azul", "delphin/madagascar-2"],
       ["delphin/interior-gris-con-bandera", "delphin/popa-roja"],
