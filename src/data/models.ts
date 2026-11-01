@@ -36,6 +36,8 @@ export type BoatModel = {
   cover: string;
   /** Foto para el carrusel de inicio cuando la portada no deja leer el título encima. */
   heroCover?: string;
+  /** false para no mostrar el modelo en el carrusel de inicio (sigue en el menú y en su página). */
+  inHero?: boolean;
   featured?: boolean;
   /** Colores del bote para el carrusel: [oscuro para fondos con texto blanco, claro para detalles] */
   accent: [string, string];
@@ -63,7 +65,7 @@ export const models: BoatModel[] = [
     priceFrom: 9100,
     priceNote: "Precio de la versión sencilla.",
     cover: "galileo-30-02",
-    heroCover: "galileo-30-01",
+    heroCover: "galileo-30-03",
     accent: ["#a3121f", "#f2525f"],
     featured: true,
   },
@@ -190,6 +192,7 @@ export const models: BoatModel[] = [
     priceFrom: 4100,
     cover: "galileo-24-03",
     accent: ["#1f4f99", "#6f9ce0"],
+    inHero: false,
     featured: true,
   },
   {

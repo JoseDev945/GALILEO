@@ -23,6 +23,7 @@ export default function Home() {
   // Carrusel: todos los modelos, empezando por la Galileo (30.5 pies)
   const first = "galileo-30";
   const slides = [...models.filter((m) => m.slug === first), ...models.filter((m) => m.slug !== first)]
+    .filter((m) => m.inHero !== false)
     .map((m) => ({
       model: m,
       name: modelName(m.slug),

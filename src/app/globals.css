@@ -53,6 +53,7 @@
 
 @utility model-num {
   font-style: italic;
+  white-space: nowrap;
   color: var(--num-color, inherit);
   transition: color 900ms ease;
 }
