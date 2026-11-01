@@ -41,7 +41,7 @@ export function ModelAccordion({ category, openFirst = false }: { category: Cate
           <div className="divide-y divide-line border-t border-[#c9cdd0] bg-white">
             {boats.map((b) => (
               <section key={b.id} aria-label={boatTitle(m, b)} className="p-3 sm:p-7">
-                {boats.length > 1 && (
+                {b.id !== "todas" && (
                   <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <h3 className="font-serif text-lg font-extrabold sm:text-xl">
                       {boatTitle(m, b)}
