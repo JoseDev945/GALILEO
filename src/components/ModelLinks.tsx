@@ -18,10 +18,10 @@ export function ModelLinks({ size = "menu" }: { size?: "menu" | "section" }) {
         </ul>
       </div>
       <ul className={`grid gap-4 ${big ? "md:grid-cols-2" : "grid-cols-2"}`}>
-        {models.map((m) => {
-          const p = byId(m.cover);
+        {/* Una tarjeta por cada bote distinto del modelo (la Galileo tiene dos) */}
+        {models.flatMap((m) => (m.boatCovers ?? [m.cover]).map((id) => ({ m, p: byId(id) }))).map(({ m, p }) => {
           return (
-            <li key={m.slug}>
+            <li key={p.id}>
               <Link href={`/modelos/${m.slug}`} className={`group/card flex h-full gap-5 rounded-2xl border border-line bg-paper p-3 transition-colors hover:border-teal ${big ? "flex-col sm:flex-row sm:items-center" : "items-center"}`}>
                 <Image
                   src={p.src}
