@@ -24,7 +24,7 @@ export default function Home() {
   const first = "galileo-30";
   const slides = [...models.filter((m) => m.slug === first), ...models.filter((m) => m.slug !== first)]
     .filter((m) => m.inHero !== false)
-    .flatMap((m) => (m.heroCovers ?? [m.cover]).map((id) => ({
+    .flatMap((m) => (m.boatCovers ?? [m.cover]).map((id) => ({
       model: m,
       name: modelName(m.slug),
       ofName: ofName(m.slug),
@@ -32,6 +32,8 @@ export default function Home() {
       price: m.priceFrom ? `Desde ${priceLabel(m)}` : "Precio a cotizar",
       eslora: m.specs.find((s) => s.label === "Largo" && !["Consultar", "A medida"].includes(s.value))?.value ?? "",
     })));
+  // «La línea»: una tarjeta por bote distinto (la Galileo tiene dos)
+  const lineCards = models.flatMap((m) => (m.boatCovers ?? [m.cover]).map((photo) => ({ m, photo })));
   const strip = ["corvina-18-08", "galileo-30-06", "galileo-24-01", "galileo-18-doble-realce-01", "corvina-14-02", "galileo-18-80"].map(byId);
   const total = photos.filter((p) => p.category !== "proceso").length;
   const sport = models.find((m) => m.slug === "rana-20")!;
@@ -48,12 +50,12 @@ export default function Home() {
           <div className="max-w-2xl">
             <h2 id="modelos-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">La línea</h2>
             <p className="mt-4 text-lg text-mist">
-              Nueve modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
+              Nueve modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30.5 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {models.map((m, i) => (
-              <ModelCard key={m.slug} m={m} wide={models.length % 2 === 1 && i === models.length - 1} />
+            {lineCards.map(({ m, photo }, i) => (
+              <ModelCard key={photo} m={m} photoId={photo} wide={lineCards.length % 2 === 1 && i === lineCards.length - 1} />
             ))}
           </div>
           <p className="mt-6 text-sm text-mist">Precios referenciales en USD para el casco en fibra. El precio final y lo que incluye se confirman por escrito al cotizar.</p>

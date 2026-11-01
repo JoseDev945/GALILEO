@@ -3,8 +3,9 @@ import Link from "next/link";
 import { byId, ofName, priceLabel, useLabel, type BoatModel } from "@/data/catalog";
 import { ModelTitle } from "./ModelTitle";
 
-export function ModelCard({ m, wide = false }: { m: BoatModel; wide?: boolean }) {
-  const p = byId(m.cover);
+/** Tarjeta de un modelo. `photoId` cambia la foto (para mostrar otro bote del mismo modelo). */
+export function ModelCard({ m, wide = false, photoId }: { m: BoatModel; wide?: boolean; photoId?: string }) {
+  const p = byId(photoId ?? m.cover);
   return (
     <article className={`flex flex-col overflow-hidden rounded-2xl border border-line bg-white ${wide ? "md:col-span-2 md:flex-row" : ""}`}>
       <Link href={`/modelos/${m.slug}`} tabIndex={-1} aria-hidden className={`group relative block aspect-[16/9] overflow-hidden bg-night ${wide ? "md:aspect-auto md:min-h-[420px] md:w-1/2 md:shrink-0" : ""}`}>

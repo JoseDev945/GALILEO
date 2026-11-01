@@ -36,8 +36,8 @@ export type BoatModel = {
   priceFrom?: number;
   priceNote?: string;
   cover: string;
-  /** Fotos para el carrusel de inicio, una tarjeta por bote (ej. dos Galileo distintas). Si falta, se usa la portada. */
-  heroCovers?: string[];
+  /** Una foto por cada bote distinto del modelo: en el carrusel y en «La línea» sale una tarjeta por bote. Si falta, se usa la portada. */
+  boatCovers?: string[];
   /** false para no mostrar el modelo en el carrusel de inicio (sigue en el menú y en su página). */
   inHero?: boolean;
   featured?: boolean;
@@ -67,7 +67,7 @@ export const models: BoatModel[] = [
     priceFrom: 9100,
     priceNote: "Precio de la versión sencilla.",
     cover: "galileo-30-02",
-    heroCovers: ["galileo-30-01", "galileo-30-03"],
+    boatCovers: ["galileo-30-01", "galileo-30-03"],
     accent: ["#a3121f", "#f2525f"],
     featured: true,
   },
@@ -245,7 +245,7 @@ export const models: BoatModel[] = [
 export const categories: Record<Category, { title: string; lead: string; heroId: string }> = {
   pesca: {
     title: "Botes para pesca",
-    lead: "Pangas de trabajo, de 14 a 30 pies, laminadas para aguantar la faena todos los días.",
+    lead: "Pangas de trabajo, de 14 a 30.5 pies, laminadas para aguantar la faena todos los días.",
     heroId: "galileo-18-doble-realce-03",
   },
   turismo: {
