@@ -47,6 +47,17 @@ const nextConfig: NextConfig = {
     // El CSS va dentro del HTML: el navegador no espera otro archivo para pintar la página (mejor LCP en móvil)
     inlineCss: true,
   },
+  // Los modelos de 18, 20 y 24 pies ahora se llaman Delphin y la Ranita se llama Rana: los enlaces viejos siguen sirviendo
+  async redirects() {
+    const old: [string, string][] = [
+      ["galileo-18-doble-realce", "delphin-18-doble-realce"],
+      ["galileo-18", "delphin-18"],
+      ["galileo-20", "delphin-20"],
+      ["galileo-24", "delphin-24"],
+      ["ranita-20", "rana-20"],
+    ];
+    return old.map(([from, to]) => ({ source: `/modelos/${from}`, destination: `/modelos/${to}`, permanent: true }));
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

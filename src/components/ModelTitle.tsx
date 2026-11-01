@@ -2,8 +2,8 @@ import type { CSSProperties } from "react";
 import type { BoatModel } from "@/data/catalog";
 
 /**
- * Nombre del modelo primero y luego el número (ej. "CORVINA 14", "GALILEO 18 DOBLE REALCE").
- * El número va en cursiva y del color del bote; `light` usa el tono claro (para fondos oscuros).
+ * Nombre del modelo y al lado lo que mide (ej. "GALILEO 30.5 pies", "DELPHIN 18 pies doble realce").
+ * La medida va en cursiva y del color del bote; `light` usa el tono claro (para fondos oscuros).
  */
 export function ModelTitle({ m, className = "", light = false }: { m: BoatModel; className?: string; light?: boolean }) {
   return (
@@ -11,7 +11,8 @@ export function ModelTitle({ m, className = "", light = false }: { m: BoatModel;
       {m.word}
       {m.num && " "}
       {m.num && <span className="model-num">{m.num}</span>}
-      {m.suffix && ` ${m.suffix}`}
+      {m.num && <span className="model-unit"> pies</span>}
+      {m.suffix && <span className="model-unit"> {m.suffix}</span>}
     </span>
   );
 }

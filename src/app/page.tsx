@@ -20,7 +20,7 @@ const steps = [
 ];
 
 export default function Home() {
-  // Carrusel: todos los modelos, empezando por el bote rojo (Galileo 30)
+  // Carrusel: todos los modelos, empezando por la Galileo (30.5 pies)
   const first = "galileo-30";
   const slides = [...models.filter((m) => m.slug === first), ...models.filter((m) => m.slug !== first)]
     .map((m) => ({
@@ -33,7 +33,7 @@ export default function Home() {
     }));
   const strip = ["corvina-18-08", "galileo-30-06", "galileo-24-01", "galileo-18-doble-realce-01", "corvina-14-02", "galileo-18-80"].map(byId);
   const total = photos.filter((p) => p.category !== "proceso").length;
-  const sport = models.find((m) => m.slug === "ranita-20")!;
+  const sport = models.find((m) => m.slug === "rana-20")!;
   const sportCover = byId(sport.cover);
   const sportPhotos = photosOf("deportivas").filter((p) => p.model === sport.slug);
 
