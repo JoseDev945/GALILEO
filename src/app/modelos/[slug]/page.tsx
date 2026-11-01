@@ -38,6 +38,10 @@ export default async function ModeloPage({ params }: Props) {
   if (!m) notFound();
   const cover = byId(m.cover);
   const list = photosOfModel(m.slug).map((p) => ({ ...p, modelLabel: modelName(p.model) }));
+  // Si las fotos dicen de qué bote son, cada bote va en su propio grupo
+  const boats = list.some((p) => p.boat)
+    ? [...new Set(list.map((p) => p.boat ?? "Otras fotos"))].map((name) => ({ name, photos: list.filter((p) => (p.boat ?? "Otras fotos") === name) }))
+    : [];
   const others = models.filter((o) => o.slug !== m.slug && o.uses.some((u) => m.uses.includes(u))).slice(0, 2);
   const name = modelName(m.slug);
 
@@ -72,7 +76,20 @@ export default async function ModeloPage({ params }: Props) {
           <div className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6 sm:pt-14 lg:py-20">
             <h2 className="font-serif text-2xl font-extrabold sm:text-3xl">Fotos {ofName(m.slug)}</h2>
             <p className="mt-2 text-mist">Toca una foto para verla en grande y hacer zoom.</p>
-            <div className="mt-8"><Gallery photos={list} priorityCount={2} /></div>
+            {boats.length > 0 ? (
+              boats.map((b, i) => (
+                <div key={b.name} className="mt-10 first-of-type:mt-8">
+                  <h3 className="flex items-baseline gap-3 font-serif text-xl font-extrabold sm:text-2xl">
+                    <span className="eyebrow font-sans text-mist">Bote {i + 1}</span>
+                    {b.name}
+                    <span className="font-sans text-sm font-normal text-mist">· {b.photos.length} {b.photos.length === 1 ? "foto" : "fotos"}</span>
+                  </h3>
+                  <div className="mt-4"><Gallery photos={b.photos} priorityCount={i === 0 ? 2 : 0} /></div>
+                </div>
+              ))
+            ) : (
+              <div className="mt-8"><Gallery photos={list} priorityCount={2} /></div>
+            )}
           </div>
         </section>
       )}

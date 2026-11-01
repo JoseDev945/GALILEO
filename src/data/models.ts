@@ -9,6 +9,8 @@ export type Photo = {
   model: string;
   alt: string;
   blur: string;
+  /** Bote al que pertenece la foto, para agrupar en la página del modelo (ej. "Monky Tour MG2"). */
+  boat?: string;
 };
 
 
