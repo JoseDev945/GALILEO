@@ -63,6 +63,8 @@ const nextConfig: NextConfig = {
       ...old.map(([from, to]) => ({ source: `/modelos/${from}`, destination: `/modelos/${to}`, permanent: true })),
       // El bote 1 de cada modelo es la página del modelo
       { source: "/modelos/:slug/bote-1", destination: "/modelos/:slug", permanent: true },
+      // Las fotos del «13-PC-648» son del bote «Carlos Daniel»
+      { source: "/modelos/delphin-doble-realce/bote-4", destination: "/modelos/delphin-doble-realce/bote-5", permanent: true },
     ];
   },
   async headers() {

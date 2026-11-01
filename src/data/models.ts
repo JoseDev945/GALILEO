@@ -156,7 +156,6 @@ export const models: BoatModel[] = [
       { id: "bote-1" },
       { id: "bote-2" },
       { id: "bote-3", name: "Delfín de Gaiza" },
-      { id: "bote-4", name: "13-PC-648" },
       { id: "bote-5", name: "Carlos Daniel" },
       { id: "bote-6", name: "El Chombito" },
       { id: "bote-7", name: "Azul con marlín" },
