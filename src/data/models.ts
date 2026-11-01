@@ -34,8 +34,8 @@ export type BoatModel = {
   priceFrom?: number;
   priceNote?: string;
   cover: string;
-  /** Foto para el carrusel de inicio cuando la portada no deja leer el título encima. */
-  heroCover?: string;
+  /** Fotos para el carrusel de inicio, una tarjeta por bote (ej. dos Galileo distintas). Si falta, se usa la portada. */
+  heroCovers?: string[];
   /** false para no mostrar el modelo en el carrusel de inicio (sigue en el menú y en su página). */
   inHero?: boolean;
   featured?: boolean;
@@ -65,7 +65,7 @@ export const models: BoatModel[] = [
     priceFrom: 9100,
     priceNote: "Precio de la versión sencilla.",
     cover: "galileo-30-02",
-    heroCover: "galileo-30-03",
+    heroCovers: ["galileo-30-01", "galileo-30-03"],
     accent: ["#a3121f", "#f2525f"],
     featured: true,
   },

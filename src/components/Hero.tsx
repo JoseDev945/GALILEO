@@ -144,7 +144,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
 
       <div className="mx-auto flex min-h-[calc(100svh-74px)] max-w-7xl flex-col justify-end px-4 pb-36 pt-28 sm:px-6 lg:pb-8 lg:pt-32">
         <div className="flex items-end justify-between gap-6">
-          <div key={s.model.slug} aria-live={paused ? "polite" : "off"} className="max-w-3xl [text-shadow:0_1px_14px_rgb(0_0_0/0.6)]">
+          <div key={s.photo.id} aria-live={paused ? "polite" : "off"} className="max-w-3xl [text-shadow:0_1px_14px_rgb(0_0_0/0.6)]">
             {/* Título principal de la página para Google: lo que busca la gente ("botes en Panamá", "pangas") */}
             <h1 className="eyebrow mb-4 text-white/85">Botes y pangas de fibra de vidrio en Panamá</h1>
             <span className="inline-block rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold ring-1 ring-white/20">{s.model.badge}</span>
@@ -173,7 +173,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
           <div className="flex flex-1 gap-1.5" role="tablist" aria-label="Elegir modelo">
             {slides.map((sl, i) => (
               <button
-                key={sl.model.slug}
+                key={sl.photo.id}
                 type="button"
                 role="tab"
                 aria-selected={i === active}
@@ -205,7 +205,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
           onMouseLeave={markBrowsing}
           className="mt-4 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 [scrollbar-width:none] lg:gap-4 [&::-webkit-scrollbar]:hidden">
           {slides.map((sl, i) => (
-            <li key={sl.model.slug} className="w-[72%] shrink-0 snap-start sm:w-[44%] lg:w-[calc(25%-12px)]">
+            <li key={sl.photo.id} className="w-[72%] shrink-0 snap-start sm:w-[44%] lg:w-[calc(25%-12px)]">
               <button
                 type="button"
                 onClick={() => go(i)}
