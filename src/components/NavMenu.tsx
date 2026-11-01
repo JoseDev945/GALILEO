@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useOpenUntilNavigate } from "./useOpenUntilNavigate";
 
-/** Menú desplegable: se abre al pasar el mouse o con clic, y se cierra con otro clic, al salir con el mouse, con Esc, clic afuera o al navegar. */
+/** Menú desplegable: se abre con un clic y queda abierto hasta otro clic en el botón, Esc o al elegir una opción. */
 export function NavMenu({ label, children, panelClassName = "" }: { label: string; children: React.ReactNode; panelClassName?: string }) {
   const [open, setOpen] = useOpenUntilNavigate();
-  const ref = useRef<HTMLLIElement>(null);
   // El contenido del menú (con sus fotos) solo se dibuja la primera vez que la persona se acerca a él:
   // así la página inicial pesa menos y carga más rápido. Después queda listo para abrir al instante.
   const [armed, setArmed] = useState(false);
@@ -14,22 +13,18 @@ export function NavMenu({ label, children, panelClassName = "" }: { label: strin
 
   useEffect(() => {
     if (!open) return;
-    const onDown = (e: MouseEvent) => { if (!ref.current?.contains(e.target as Node)) setOpen(false); };
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
-    document.addEventListener("mousedown", onDown);
     document.addEventListener("keydown", onKey);
-    return () => { document.removeEventListener("mousedown", onDown); document.removeEventListener("keydown", onKey); };
+    return () => document.removeEventListener("keydown", onKey);
   }, [open, setOpen]);
 
   return (
     <li
-      ref={ref}
       data-open={open}
       className="group"
       onFocusCapture={arm}
-      // Con mouse: se abre al pasar por encima y se cierra al salir. Un clic en "Modelos" lo abre o lo cierra.
-      onPointerEnter={(e) => { arm(); if (e.pointerType === "mouse") setOpen(true); }}
-      onPointerLeave={(e) => { if (e.pointerType === "mouse") setOpen(false); }}
+      // Pasar el mouse solo prepara el contenido; el menú se abre y se cierra únicamente con clic en el botón.
+      onPointerEnter={arm}
     >
       <button
         type="button"
