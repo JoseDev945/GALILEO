@@ -24,7 +24,7 @@ export type BoatModel = {
   kind?: "Panga" | "Lancha";
   /** true si el nombre es masculino ("el Delphin"); por defecto se dice "la Corvina". */
   masc?: boolean;
-  /** Texto que va después de la medida (ej. "doble realce"). */
+  /** Texto que va después del nombre o la medida (ej. "Doble realce"). */
   suffix?: string;
   /** Nombre del modelo en mayúsculas (ej. "CORVINA"). */
   word: string;
@@ -133,24 +133,24 @@ export const models: BoatModel[] = [
     featured: true,
   },
   {
-    slug: "delphin-18-doble-realce",
-    num: "18",
+    slug: "delphin-doble-realce",
+    num: "",
     word: "DELPHIN",
     masc: true,
-    suffix: "doble realce",
+    suffix: "Doble realce",
     badge: "Borda elevada",
     uses: ["pesca", "turismo"],
-    summary: "El Delphin de 18 pies con doble realce: borda más alta para que entre menos agua con mar picado.",
+    summary: "El Delphin con doble realce: borda más alta para que entre menos agua con mar picado.",
     description:
       "El doble realce sube la borda del Delphin para que entre menos agua cuando el mar se pone picado. Es la panga de quien sale lejos o lleva pasajeros y quiere más protección sin perder estabilidad. Se puede pedir en cualquier medida del Delphin por $1,000 extra.",
     specs: [
-      { label: "Largo", value: "18'" },
+      { label: "Largo", value: "18' a 24'" },
       { label: "Ancho", value: "5'" },
       { label: "Borda", value: "Doble realce" },
       { label: "Toldo", value: "Opcional" },
     ],
     priceFrom: 3700,
-    priceNote: "Delphin 18 pies ($2,700) más el doble realce ($1,000).",
+    priceNote: "Precio del Delphin de 18 pies ($2,700) más el doble realce ($1,000). En otras medidas se suman $1,000 al precio del Delphin.",
     cover: "galileo-18-doble-realce-03",
     accent: ["#0d6c70", "#3fc6c9"],
     featured: true,

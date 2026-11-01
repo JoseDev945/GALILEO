@@ -16,7 +16,7 @@ export function ModelTitle({ m, className = "", light = false }: { m: BoatModel;
           <span className="model-unit"> pies</span>
         </span>
       )}
-      {m.suffix && <span className="model-unit"> {m.suffix}</span>}
+      {m.suffix && (m.num ? <span className="model-unit"> {m.suffix}</span> : <span className="model-tag"> {m.suffix}</span>)}
     </span>
   );
 }

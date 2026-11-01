@@ -50,7 +50,8 @@ const nextConfig: NextConfig = {
   // Los modelos de 18, 20 y 24 pies ahora se llaman Delphin y la Ranita se llama Rana: los enlaces viejos siguen sirviendo
   async redirects() {
     const old: [string, string][] = [
-      ["galileo-18-doble-realce", "delphin-18-doble-realce"],
+      ["galileo-18-doble-realce", "delphin-doble-realce"],
+      ["delphin-18-doble-realce", "delphin-doble-realce"],
       ["galileo-18", "delphin-18"],
       ["galileo-20", "delphin-20"],
       ["galileo-24", "delphin-24"],

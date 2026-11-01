@@ -148,7 +148,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
             {/* Título principal de la página para Google: lo que busca la gente ("botes en Panamá", "pangas") */}
             <h1 className="eyebrow mb-4 text-white/85">Botes y pangas de fibra de vidrio en Panamá</h1>
             <span className="inline-block rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold ring-1 ring-white/20">{s.model.badge}</span>
-            <p className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:text-[var(--accent-light)]">
+            <p className="mt-5 text-[clamp(2.8rem,7vw,5.25rem)] [&_.model-num]:text-[var(--accent-light)] [&_.model-tag]:text-[var(--accent-light)]">
               <ModelTitle m={s.model} />
             </p>
             <p className="mt-5 max-w-xl text-lg text-white/90 sm:text-xl">{s.model.summary}</p>

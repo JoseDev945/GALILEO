@@ -51,6 +51,14 @@
   letter-spacing: 0.02em;
 }
 
+/* Texto que va en lugar de la medida (ej. "Doble realce"): del color del bote */
+@utility model-tag {
+  font-size: max(0.6em, 0.8rem);
+  font-weight: 700;
+  color: var(--num-color, inherit);
+  transition: color 900ms ease;
+}
+
 @utility model-num {
   font-style: italic;
   white-space: nowrap;
