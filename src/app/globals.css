@@ -46,6 +46,7 @@
 }
 @utility model-unit {
   font-size: max(0.42em, 0.72rem);
+  font-style: normal;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
