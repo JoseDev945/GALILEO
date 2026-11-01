@@ -13,7 +13,7 @@ export function WhatsAppTracker() {
       const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[href^="https://wa.me/"]');
       if (!a) return;
       const text = new URL(a.href).searchParams.get("text") ?? "";
-      const model = text.match(/modelo (.+?)\.?$/)?.[1] ?? text.match(/(Rana \d+ pies)/)?.[1] ?? "";
+      const model = text.match(/modelo (.+?)\.?$/)?.[1] ?? text.match(/deportiva (.+?)\.?$/)?.[1] ?? "";
       track("whatsapp_click", { page: window.location.pathname, model: model || "general" });
     };
     document.addEventListener("click", onClick);

@@ -17,8 +17,10 @@ export type Photo = {
 export type Boat = {
   /** Va en la dirección: /modelos/{modelo}/{id}. El primero de la lista se ve en /modelos/{modelo}. */
   id: string;
-  /** Nombre o rótulo del bote (ej. "El Chombito"). Si falta se muestra solo "Bote N". */
+  /** Nombre o rótulo del bote (ej. "El Chombito"). */
   name?: string;
+  /** Medida de este bote (ej. "20 pies"), para modelos que se fabrican en varios largos. */
+  size?: string;
 };
 
 
@@ -60,8 +62,8 @@ const corvina = (feet: number) => 1600 + (feet - 14) * 200;
 
 export const models: BoatModel[] = [
   {
-    slug: "galileo-30",
-    num: "30.5",
+    slug: "galileo",
+    num: "",
     word: "GALILEO",
     badge: "La más grande",
     uses: ["pesca", "turismo"],
@@ -86,91 +88,82 @@ export const models: BoatModel[] = [
     featured: true,
   },
   {
-    slug: "corvina-14",
-    num: "14",
+    slug: "corvina",
+    num: "",
     word: "CORVINA",
     boats: [
-      { id: "bote-1" },
+      { id: "14-pies", size: "14 pies" },
+      { id: "18-pies-1", size: "18 pies" },
+      { id: "18-pies-2", size: "18 pies" },
     ],
-    badge: "Pesca ligera",
+    badge: "Pesca",
     uses: ["pesca"],
-    summary: "Liviana y fácil de remolcar. Ideal para pescar en ríos, esteros y cerca de la costa.",
+    summary: "Liviana y fácil de remolcar, de 14 a 18 pies. Ideal para pescar en ríos, esteros y cerca de la costa.",
     description:
-      "La Corvina de 14 pies es nuestra panga de pesca más accesible. Su casco liviano se remolca sin esfuerzo y entra donde las pangas grandes no llegan. Se puede pedir más larga: cada pie extra suma $200.",
+      "La Corvina es nuestra panga de pesca más accesible. Su casco liviano se remolca sin esfuerzo y entra donde las pangas grandes no llegan. Se fabrica desde 14 pies ($1,600) y cada pie extra suma $200: la de 18 pies cuesta $2,300 y admite techo fijo para pescar a la sombra.",
     specs: [
-      { label: "Largo", value: "14'" },
+      { label: "Largo", value: "14' a 18'" },
       { label: "Ancho", value: "4'" },
       { label: "Altura", value: "3'" },
       { label: "Extra por pie", value: "+$200" },
     ],
     priceFrom: corvina(14),
-    priceNote: "Cada pie adicional suma $200.",
+    priceNote: "Precio de la de 14 pies. Cada pie adicional suma $200 (18 pies: $2,300).",
     cover: "corvina-14-04",
     accent: ["#3f7a12", "#9fe05a"],
     featured: true,
   },
   {
-    slug: "corvina-18",
-    num: "18",
-    word: "CORVINA",
-    boats: [
-      { id: "bote-1" },
-      { id: "bote-2" },
-    ],
-    badge: "Pesca con techo",
-    uses: ["pesca"],
-    summary: "La Corvina alargada a 18 pies. Admite techo fijo para pescar a la sombra.",
-    description:
-      "Misma línea de casco que la Corvina de 14 pies, con cuatro pies más de largo. Es la opción de quien necesita más espacio para pescar y un techo fijo para el sol, sin pasar a una panga grande.",
-    specs: [
-      { label: "Largo", value: "18'" },
-      { label: "Ancho", value: "4'" },
-      { label: "Altura", value: "3'" },
-      { label: "Techo", value: "Opcional" },
-    ],
-    priceFrom: 2300,
-    cover: "corvina-18-04",
-    accent: ["#1f5fa8", "#6fa8ef"],
-  },
-  {
-    slug: "delphin-18",
-    num: "18",
+    slug: "delphin",
+    num: "",
     word: "DELPHIN",
     masc: true,
     boats: [
-      { id: "bote-1", name: "Acua" },
-      { id: "bote-2", name: "Verde con interior celeste" },
-      { id: "bote-3", name: "Doña Hilda 1" },
-      { id: "bote-4", name: "Buena Vibra 1" },
-      { id: "bote-5", name: "Azul con delfín y toldo" },
-      { id: "bote-6", name: "Popa de palmeras rosada" },
-      { id: "bote-8", name: "Popa con atardecer" },
-      { id: "bote-9", name: "Azul con lona" },
-      { id: "bote-10", name: "Popa verde y amarilla" },
-      { id: "bote-11", name: "Maydel" },
-      { id: "bote-12", name: "Popa de palmeras azul noche" },
-      { id: "bote-13", name: "Popa de palmeras verde" },
-      { id: "bote-14", name: "Popa de palmeras celeste" },
-      { id: "bote-15", name: "Popa roja" },
-      { id: "bote-16", name: "Interior gris con bandera" },
-      { id: "bote-17", name: "Proa celeste" },
-      { id: "bote-18", name: "Lidia 17" },
-      { id: "bote-19", name: "La Tropa" },
-      { id: "bote-20", name: "Rosado BP-2703-A" },
-      { id: "bote-21", name: "Jorge" },
+      { id: "acua", name: "Acua", size: "18 pies" },
+      { id: "verde-con-interior-celeste", name: "Verde con interior celeste", size: "18 pies" },
+      { id: "dona-hilda-1", name: "Doña Hilda 1", size: "18 pies" },
+      { id: "buena-vibra-1", name: "Buena Vibra 1", size: "18 pies" },
+      { id: "azul-con-delfin-y-toldo", name: "Azul con delfín y toldo", size: "18 pies" },
+      { id: "popa-de-palmeras-rosada", name: "Popa de palmeras rosada", size: "18 pies" },
+      { id: "popa-con-atardecer", name: "Popa con atardecer", size: "18 pies" },
+      { id: "azul-con-lona", name: "Azul con lona", size: "18 pies" },
+      { id: "popa-verde-y-amarilla", name: "Popa verde y amarilla", size: "18 pies" },
+      { id: "maydel", name: "Maydel", size: "18 pies" },
+      { id: "popa-de-palmeras-azul-noche", name: "Popa de palmeras azul noche", size: "18 pies" },
+      { id: "popa-de-palmeras-verde", name: "Popa de palmeras verde", size: "18 pies" },
+      { id: "popa-de-palmeras-celeste", name: "Popa de palmeras celeste", size: "18 pies" },
+      { id: "popa-roja", name: "Popa roja", size: "18 pies" },
+      { id: "interior-gris-con-bandera", name: "Interior gris con bandera", size: "18 pies" },
+      { id: "proa-celeste", name: "Proa celeste", size: "18 pies" },
+      { id: "lidia-17", name: "Lidia 17", size: "18 pies" },
+      { id: "la-tropa", name: "La Tropa", size: "18 pies" },
+      { id: "rosado-bp-2703-a", name: "Rosado BP-2703-A", size: "18 pies" },
+      { id: "jorge", name: "Jorge", size: "18 pies" },
+      { id: "cabanas-cholita", name: "Cabañas Cholita", size: "20 pies" },
+      { id: "delfines-azul", name: "Delfines azul", size: "20 pies" },
+      { id: "madagascar-2", name: "Madagascar 2", size: "20 pies" },
+      { id: "kendra-pauleth", name: "Kendra Pauleth", size: "20 pies" },
+      { id: "yaci-1", name: "Yaci 1", size: "20 pies" },
+      { id: "johey-1", name: "Johey 1", size: "20 pies" },
+      { id: "interior-verde-menta", name: "Interior verde menta", size: "20 pies" },
+      { id: "celeste-con-rayas", name: "Celeste con rayas", size: "20 pies" },
+      { id: "don-zapaton", name: "Don Zapatón", size: "20 pies" },
+      { id: "la-esperanza", name: "La Esperanza", size: "20 pies" },
+      { id: "caribena", name: "Caribeña", size: "20 pies" },
     ],
     badge: "Pesca y turismo",
     uses: ["pesca", "turismo"],
-    summary: "La panga de todos los días: 18 pies de largo y 5 de ancho, para pescar o pasear.",
+    summary: "La panga de todos los días: de 18 a 24 pies de largo y 5 de ancho, para pescar, pasear o hacer traslados.",
     description:
-      "El Delphin de 18 pies es la panga de todos los días. Con 5 pies de ancho es estable y espaciosa; se entrega con bancas laminadas, piso antideslizante y el rotulado que identifica tu bote. Sirve igual para pesca que para paseos con toldo.",
+      "El Delphin es la panga de todos los días. Con 5 pies de ancho es estable y espaciosa; se entrega con bancas laminadas, piso antideslizante y el rotulado que identifica tu bote. Sirve igual para pesca que para paseos con toldo, y se fabrica en 18, 20, 22 y 24 pies.",
     specs: [
-      { label: "Largo", value: "18'" },
+      { label: "Largo", value: "18' a 24'" },
       { label: "Ancho", value: "5'" },
       { label: "Altura", value: "3'" },
       { label: "Toldo", value: "Opcional" },
     ],
     priceFrom: 2700,
+    priceNote: "18 pies $2,700 · 20 pies $3,200 · 22 pies $3,600 · 24 pies $4,100.",
     cover: "galileo-18-05",
     accent: ["#0c6f96", "#46c4f5"],
     featured: true,
@@ -208,47 +201,14 @@ export const models: BoatModel[] = [
     featured: true,
   },
   {
-    slug: "delphin-20",
-    num: "20",
-    word: "DELPHIN",
-    masc: true,
-    boats: [
-      { id: "bote-1", name: "Cabañas Cholita" },
-      { id: "bote-2", name: "Delfines azul" },
-      { id: "bote-3", name: "Madagascar 2" },
-      { id: "bote-4", name: "Kendra Pauleth" },
-      { id: "bote-5", name: "Yaci 1" },
-      { id: "bote-6", name: "Johey 1" },
-      { id: "bote-7", name: "Interior verde menta" },
-      { id: "bote-8", name: "Celeste con rayas" },
-      { id: "bote-9", name: "Don Zapatón" },
-      { id: "bote-10", name: "La Esperanza" },
-      { id: "bote-11", name: "Caribeña" },
-    ],
-    badge: "Pesca y traslados",
-    uses: ["pesca", "turismo"],
-    summary: "Dos pies más de cubierta: más espacio para equipo, hielo o pasajeros.",
-    description:
-      "El Delphin de 20 pies es dos pies más largo que el de 18 y se nota en la cubierta: más espacio para equipo, hielo o pasajeros. Funciona igual de bien como panga de pesca que como bote de paseo o traslado a islas.",
-    specs: [
-      { label: "Largo", value: "20'" },
-      { label: "Ancho", value: "5'" },
-      { label: "Altura", value: "3'" },
-      { label: "Toldo", value: "Opcional" },
-    ],
-    priceFrom: 3200,
-    cover: "galileo-20-01",
-    accent: ["#1d3f9e", "#7d99f0"],
-  },
-  {
-    slug: "pesquero-25",
-    num: "25",
+    slug: "pesquero",
+    num: "",
     word: "PESQUERO",
     masc: true,
     boats: [
-      { id: "bote-1" },
-      { id: "bote-2" },
-      { id: "bote-3" },
+      { id: "bote-1", size: "25 pies" },
+      { id: "bote-2", size: "25 pies" },
+      { id: "bote-3", size: "25 pies" },
     ],
     badge: "Mar abierto",
     uses: ["pesca", "turismo"],
@@ -262,24 +222,24 @@ export const models: BoatModel[] = [
       { label: "28 pies", value: "$9,100" },
     ],
     priceFrom: 6100,
-    priceNote: "La versión de 28 pies cuesta $9,100.",
+    priceNote: "Precio de la de 25 pies. La de 28 pies cuesta $9,100.",
     cover: "pesquero-25-03",
     accent: ["#5b2a7a", "#b77fe0"],
     featured: true,
   },
   {
-    slug: "rana-20",
-    num: "20",
+    slug: "rana",
+    num: "",
     word: "RANA",
     kind: "Lancha",
     boats: [
-      { id: "bote-1" },
+      { id: "bote-1", size: "20 pies" },
     ],
     badge: "Pesca deportiva",
     uses: ["deportivas", "pesca", "turismo"],
-    summary: "Lancha deportiva de 6 pies de ancho: estable, liviana y con consola central para salir a pescar por deporte.",
+    summary: "Lancha deportiva de 20 pies y 6 de ancho: estable, liviana y con consola central para salir a pescar por deporte.",
     description:
-      "La Rana de 20 pies es nuestra lancha para pesca deportiva. Sus 6 pies de ancho la hacen muy estable, y su borda baja de pie y medio facilita lanzar y subir la pesca. Trae consola central y bancas laminadas, y se rotula con el nombre y los colores que elijas.",
+      "La Rana es nuestra lancha para pesca deportiva. Mide 20 pies de largo y 6 de ancho, lo que la hace muy estable, y su borda baja de pie y medio facilita lanzar y subir la pesca. Trae consola central y bancas laminadas, y se rotula con el nombre y los colores que elijas.",
     specs: [
       { label: "Largo", value: "20'" },
       { label: "Ancho", value: "6'" },
@@ -321,9 +281,9 @@ export const modelName = (slug: string) => {
   const m = modelBySlug(slug);
   return m ? `${m.word.charAt(0)}${m.word.slice(1).toLowerCase()}${m.num ? ` ${m.num} pies` : ""}${m.suffix ? ` ${m.suffix}` : ""}` : "";
 };
-/** "la Corvina 14 pies" o "el Delphin 18 pies". */
+/** "la Corvina" o "el Delphin". */
 export const theName = (slug: string) => `${modelBySlug(slug)?.masc ? "el" : "la"} ${modelName(slug)}`;
-/** "de la Corvina 14 pies" o "del Delphin 18 pies". */
+/** "de la Corvina" o "del Delphin". */
 export const ofName = (slug: string) => (modelBySlug(slug)?.masc ? `del ${modelName(slug)}` : `de la ${modelName(slug)}`);
 export const usd = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);

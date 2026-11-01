@@ -20,8 +20,8 @@ const steps = [
 ];
 
 export default function Home() {
-  // Carrusel: todos los modelos, empezando por la Galileo (30.5 pies). Un modelo con varios botes tiene una tarjeta por bote.
-  const first = "galileo-30";
+  // Carrusel: todos los modelos, empezando por la Galileo. Un modelo con varios botes tiene una tarjeta por bote.
+  const first = "galileo";
   const slides = [...models.filter((m) => m.slug === first), ...models.filter((m) => m.slug !== first)]
     .filter((m) => m.inHero !== false)
     .flatMap((m) => (m.boatCovers ?? [m.cover]).map((id) => ({
@@ -33,11 +33,11 @@ export default function Home() {
       price: m.priceFrom ? `Desde ${priceLabel(m)}` : "Precio a cotizar",
       eslora: m.specs.find((s) => s.label === "Largo" && !["Consultar", "A medida"].includes(s.value))?.value ?? "",
     })));
-  // «La línea»: una tarjeta por bote distinto (la Galileo tiene dos)
-  const lineCards = models.flatMap((m) => (m.boatCovers ?? [m.cover]).map((photo) => ({ m, photo })));
+  // «La línea»: una tarjeta por modelo, con la foto de su primer bote
+  const lineCards = models.map((m) => ({ m, photo: m.boatCovers?.[0] ?? m.cover }));
   const strip = ["corvina-18-08", "galileo-30-06", "galileo-24-01", "galileo-18-doble-realce-01", "corvina-14-02", "galileo-18-80"].map(byId);
   const total = photos.filter((p) => p.category !== "proceso").length;
-  const sport = models.find((m) => m.slug === "rana-20")!;
+  const sport = models.find((m) => m.slug === "rana")!;
   const sportCover = byId(sport.cover);
   const sportPhotos = photosOf("deportivas").filter((p) => p.model === sport.slug);
 
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <h2 id="modelos-titulo" className="font-serif text-4xl font-extrabold sm:text-5xl">La línea</h2>
             <p className="mt-4 text-lg text-mist">
-              Ocho modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30.5 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
+              Seis modelos de botes, pangas y lanchas de fibra de vidrio, de 14 a 30.5 pies, fabricados en Panamá. Todos se fabrican sobre pedido con el largo, los colores y los accesorios que necesites.
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">

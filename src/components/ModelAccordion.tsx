@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Gallery } from "@/components/Gallery";
-import { boatsOf, modelName, models, photos, type Category } from "@/data/catalog";
+import { boatTitle, boatsOf, modelName, models, photos, type Category } from "@/data/catalog";
 
 /**
  * Lista de acordeones: un modelo por fila. Al abrirlo se ven sus fotos separadas por bote
@@ -12,7 +12,7 @@ export function ModelAccordion({ category, openFirst = false }: { category: Cate
     .map((m) => {
       const boats = boatsOf(m);
       const list = photos.filter((p) => p.category !== "proceso" && p.model === m.slug);
-      return { m, list, boats: boats.length ? boats : [{ id: "todas", name: undefined, href: `/modelos/${m.slug}`, photos: list }] };
+      return { m, list, boats: boats.length ? boats : [{ id: "todas", name: undefined, size: undefined, href: `/modelos/${m.slug}`, photos: list }] };
     })
     .filter((g) => g.list.length > 0);
 
@@ -37,12 +37,12 @@ export function ModelAccordion({ category, openFirst = false }: { category: Cate
           </summary>
           <div className="divide-y divide-line border-t border-[#c9cdd0] bg-white">
             {boats.map((b) => (
-              <section key={b.id} aria-label={b.name ?? modelName(m.slug)} className="p-3 sm:p-7">
+              <section key={b.id} aria-label={boatTitle(m, b)} className="p-3 sm:p-7">
                 {boats.length > 1 && (
                   <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <h3 className="font-serif text-lg font-extrabold sm:text-xl">
-                      {b.name ?? modelName(m.slug)}
-                      <span className="ml-2 font-sans text-sm font-normal text-mist">{b.photos.length} {b.photos.length === 1 ? "foto" : "fotos"}</span>
+                      {boatTitle(m, b)}
+                      <span className="ml-2 font-sans text-sm font-normal text-mist">{b.name && b.size ? `${b.size} · ` : ""}{b.photos.length} {b.photos.length === 1 ? "foto" : "fotos"}</span>
                     </h3>
                     <Link href={b.href} className="text-sm font-semibold text-teal underline underline-offset-4">Ver este bote</Link>
                   </div>

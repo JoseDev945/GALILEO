@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { whatsappLink } from "@/config/site";
-import { byId, hrefOfPhoto, modelName, models, priceLabel } from "@/data/catalog";
+import { byId, modelName, models, priceLabel } from "@/data/catalog";
 
 /** Enlaces rápidos + tarjetas de modelos (foto, nombre, descripción). Se usa en el menú y en la sección de inicio. */
 export function ModelLinks({ size = "menu" }: { size?: "menu" | "section" }) {
@@ -18,8 +18,8 @@ export function ModelLinks({ size = "menu" }: { size?: "menu" | "section" }) {
         </ul>
       </div>
       <ul className={`grid gap-4 ${big ? "md:grid-cols-2" : "grid-cols-2"}`}>
-        {/* Una tarjeta por cada bote distinto del modelo (la Galileo tiene dos) */}
-        {models.flatMap((m) => (m.boatCovers ?? [m.cover]).map((id) => ({ m, p: byId(id), href: hrefOfPhoto(m, id) }))).map(({ m, p, href }) => {
+        {/* Una tarjeta por modelo (son 6), con la foto de su primer bote */}
+        {models.map((m) => ({ m, p: byId(m.boatCovers?.[0] ?? m.cover), href: `/modelos/${m.slug}` })).map(({ m, p, href }) => {
           return (
             <li key={p.id}>
               <Link href={href} className={`group/card flex h-full gap-5 rounded-2xl border border-line bg-paper p-3 transition-colors hover:border-teal ${big ? "flex-col sm:flex-row sm:items-center" : "items-center"}`}>

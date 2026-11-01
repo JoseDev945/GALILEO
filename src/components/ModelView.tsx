@@ -6,7 +6,7 @@ import { ModelCard } from "@/components/ModelCard";
 import { ModelTitle } from "@/components/ModelTitle";
 import { PaymentInfo } from "@/components/PaymentInfo";
 import { WaIcon } from "@/components/WaIcon";
-import { boatsOf, byId, ofName, theName, modelName, models, photosOfModel, priceLabel, useLabel, type BoatModel, type BoatView } from "@/data/catalog";
+import { boatTitle, boatsOf, byId, ofName, theName, modelName, models, photosOfModel, priceLabel, useLabel, type BoatModel, type BoatView } from "@/data/catalog";
 import { site, whatsappLink } from "@/config/site";
 
 /**
@@ -53,13 +53,13 @@ export function ModelView({ m, boat }: { m: BoatModel; boat?: BoatView }) {
           <div className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6 sm:pt-14 lg:py-20">
             <h2 className="font-serif text-2xl font-extrabold sm:text-3xl">Fotos {ofName(m.slug)}</h2>
             <p className="mt-2 text-mist">Toca una foto para verla en grande y hacer zoom.</p>
-            {current?.name && (
+            {current && (current.name || current.size) && (
               <h3 className="mt-8 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-serif text-xl font-extrabold sm:text-2xl">
-                {current.name}
-                <span className="font-sans text-sm font-normal text-mist">· {list.length} {list.length === 1 ? "foto" : "fotos"}</span>
+                {boatTitle(m, current)}
+                <span className="font-sans text-sm font-normal text-mist">· {current.name && current.size ? `${current.size} · ` : ""}{list.length} {list.length === 1 ? "foto" : "fotos"}</span>
               </h3>
             )}
-            <div className={current?.name ? "mt-4" : "mt-8"}><Gallery photos={list} priorityCount={2} /></div>
+            <div className={current && (current.name || current.size) ? "mt-4" : "mt-8"}><Gallery photos={list} priorityCount={2} /></div>
 
             {siblings.length > 0 && (
               <div className="mt-14 border-t border-line pt-10">
@@ -73,8 +73,8 @@ export function ModelView({ m, boat }: { m: BoatModel; boat?: BoatView }) {
                           <Image src={b.cover.src} alt={b.cover.alt} fill placeholder="blur" blurDataURL={b.cover.blur} sizes="(min-width: 1024px) 300px, (min-width: 768px) 33vw, 50vw" quality={75} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
                         </span>
                         <span className="block p-4">
-                          <span className="block font-serif text-lg font-extrabold leading-tight group-hover:text-teal">{b.name ?? `${modelName(m.slug)}`}</span>
-                          <span className="mt-1 block text-sm text-mist">{b.photos.length} {b.photos.length === 1 ? "foto" : "fotos"} · Ver bote →</span>
+                          <span className="block font-serif text-lg font-extrabold leading-tight group-hover:text-teal">{boatTitle(m, b)}</span>
+                          <span className="mt-1 block text-sm text-mist">{b.name && b.size ? `${b.size} · ` : ""}{b.photos.length} {b.photos.length === 1 ? "foto" : "fotos"} · Ver bote →</span>
                         </span>
                       </Link>
                     </li>

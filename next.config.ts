@@ -47,24 +47,71 @@ const nextConfig: NextConfig = {
     // El CSS va dentro del HTML: el navegador no espera otro archivo para pintar la página (mejor LCP en móvil)
     inlineCss: true,
   },
-  // Los modelos de 18 y 20 pies ahora se llaman Delphin y la Ranita se llama Rana: los enlaces viejos siguen sirviendo
+  // Direcciones viejas → nuevas. Los modelos son 6 (sin medida en el nombre); las medidas van en cada bote.
   async redirects() {
     const old: [string, string][] = [
       ["galileo-18-doble-realce", "delphin-doble-realce"],
       ["delphin-18-doble-realce", "delphin-doble-realce"],
-      ["galileo-18", "delphin-18"],
-      ["galileo-20", "delphin-20"],
-      // El «Delphin 24» era un doble realce: ahora es el bote «Azul y blanco» del Delphin Doble realce
       ["galileo-24", "delphin-doble-realce/bote-8"],
       ["delphin-24", "delphin-doble-realce/bote-8"],
-      ["ranita-20", "rana-20"],
+      ["galileo-30", "galileo"],
+      ["corvina-14", "corvina"],
+      ["corvina-18", "corvina/18-pies-1"],
+      ["galileo-18", "delphin"],
+      ["delphin-18", "delphin"],
+      ["galileo-20", "delphin/cabanas-cholita"],
+      ["delphin-20", "delphin/cabanas-cholita"],
+      ["pesquero-25", "pesquero"],
+      ["ranita-20", "rana"],
+      ["rana-20", "rana"],
+      // Secciones de bote de los modelos viejos
+      ["galileo-30/bote-1", "galileo"],
+      ["galileo-30/bote-2", "galileo/bote-2"],
+      ["corvina-14/bote-1", "corvina"],
+      ["corvina-18/bote-1", "corvina/18-pies-1"],
+      ["corvina-18/bote-2", "corvina/18-pies-2"],
+      ["delphin-18/bote-1", "delphin"],
+      ["delphin-18/bote-2", "delphin/verde-con-interior-celeste"],
+      ["delphin-18/bote-3", "delphin/dona-hilda-1"],
+      ["delphin-18/bote-4", "delphin/buena-vibra-1"],
+      ["delphin-18/bote-5", "delphin/azul-con-delfin-y-toldo"],
+      ["delphin-18/bote-6", "delphin/popa-de-palmeras-rosada"],
+      ["delphin-18/bote-8", "delphin/popa-con-atardecer"],
+      ["delphin-18/bote-9", "delphin/azul-con-lona"],
+      ["delphin-18/bote-10", "delphin/popa-verde-y-amarilla"],
+      ["delphin-18/bote-11", "delphin/maydel"],
+      ["delphin-18/bote-12", "delphin/popa-de-palmeras-azul-noche"],
+      ["delphin-18/bote-13", "delphin/popa-de-palmeras-verde"],
+      ["delphin-18/bote-14", "delphin/popa-de-palmeras-celeste"],
+      ["delphin-18/bote-15", "delphin/popa-roja"],
+      ["delphin-18/bote-16", "delphin/interior-gris-con-bandera"],
+      ["delphin-18/bote-17", "delphin/proa-celeste"],
+      ["delphin-18/bote-18", "delphin/lidia-17"],
+      ["delphin-18/bote-19", "delphin/la-tropa"],
+      ["delphin-18/bote-20", "delphin/rosado-bp-2703-a"],
+      ["delphin-18/bote-21", "delphin/jorge"],
+      ["delphin-20/bote-1", "delphin/cabanas-cholita"],
+      ["delphin-20/bote-2", "delphin/delfines-azul"],
+      ["delphin-20/bote-3", "delphin/madagascar-2"],
+      ["delphin-20/bote-4", "delphin/kendra-pauleth"],
+      ["delphin-20/bote-5", "delphin/yaci-1"],
+      ["delphin-20/bote-6", "delphin/johey-1"],
+      ["delphin-20/bote-7", "delphin/interior-verde-menta"],
+      ["delphin-20/bote-8", "delphin/celeste-con-rayas"],
+      ["delphin-20/bote-9", "delphin/don-zapaton"],
+      ["delphin-20/bote-10", "delphin/la-esperanza"],
+      ["delphin-20/bote-11", "delphin/caribena"],
+      ["pesquero-25/bote-1", "pesquero"],
+      ["pesquero-25/bote-2", "pesquero/bote-2"],
+      ["pesquero-25/bote-3", "pesquero/bote-3"],
+      ["rana-20/bote-1", "rana"],
+      // Las fotos del «13-PC-648» son del bote «Carlos Daniel»
+      ["delphin-doble-realce/bote-4", "delphin-doble-realce/bote-5"],
     ];
     return [
       ...old.map(([from, to]) => ({ source: `/modelos/${from}`, destination: `/modelos/${to}`, permanent: true })),
-      // El bote 1 de cada modelo es la página del modelo
+      // El primer bote de cada modelo es la página del modelo
       { source: "/modelos/:slug/bote-1", destination: "/modelos/:slug", permanent: true },
-      // Las fotos del «13-PC-648» son del bote «Carlos Daniel»
-      { source: "/modelos/delphin-doble-realce/bote-4", destination: "/modelos/delphin-doble-realce/bote-5", permanent: true },
     ];
   },
   async headers() {

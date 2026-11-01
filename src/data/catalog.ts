@@ -1,5 +1,5 @@
 import raw from "./photos.json";
-import { models, type Boat, type BoatModel, type Category, type Photo } from "./models";
+import { modelName, models, type Boat, type BoatModel, type Category, type Photo } from "./models";
 
 export * from "./models";
 
@@ -38,3 +38,6 @@ export const boatsOf = (m: BoatModel): BoatView[] => {
 /** Dirección de la sección del bote al que pertenece una foto (o la del modelo si no tiene bote). */
 export const hrefOfPhoto = (m: BoatModel, photoId: string) =>
   boatsOf(m).find((b) => b.id === byId(photoId).boat)?.href ?? `/modelos/${m.slug}`;
+/** Cómo se llama un bote en títulos y tarjetas: su nombre, o «Corvina de 14 pies» si no tiene. */
+export const boatTitle = (m: BoatModel, b: Boat) =>
+  b.name ?? (b.size ? `${modelName(m.slug)} de ${b.size}` : modelName(m.slug));
