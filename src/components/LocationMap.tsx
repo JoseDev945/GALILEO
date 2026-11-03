@@ -39,7 +39,7 @@ export function LocationMap({ className = "" }: { className?: string }) {
             <svg aria-hidden width="48" height="48" viewBox="0 0 24 24" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full text-[#c8102e] drop-shadow-lg">
               <path fill="currentColor" stroke="white" strokeWidth="1.2" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
             </svg>
-            <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-2 bg-gradient-to-t from-white/95 via-white/80 to-transparent px-4 pb-4 pt-10 text-center">
+            <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-2 bg-gradient-to-t from-white/90 via-white/60 to-transparent px-4 pb-3 pt-6 text-center">
               <button type="button" onClick={() => setShow(true)} className="btn bg-teal text-white shadow-lg hover:bg-teal-600">
                 Mostrar mapa interactivo
               </button>
