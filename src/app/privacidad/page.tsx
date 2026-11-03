@@ -48,8 +48,9 @@ export default function Privacidad() {
 
       <h2>Mapa de ubicación</h2>
       <p>
-        La página de inicio ofrece un mapa de Google Maps con la ubicación del taller. El mapa <strong>no se carga hasta que tú lo pides</strong>{" "}
-        tocando «Mostrar mapa». Desde ese momento Google puede recibir datos técnicos de tu navegador y usar cookies según su propia
+        La página de inicio muestra una imagen fija del mapa con la ubicación del taller, hecha con datos de OpenStreetMap; esa imagen
+        está guardada en este sitio y no usa cookies. También ofrece un mapa de Google Maps que se puede mover, que{" "}
+        <strong>no se carga hasta que tú lo pides</strong> tocando «Mostrar mapa interactivo». Desde ese momento Google puede recibir datos técnicos de tu navegador y usar cookies según su propia
         política de privacidad. Si no quieres eso, usa el botón «Cómo llegar», que abre Google Maps aparte.
       </p>
 

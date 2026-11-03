@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { site } from "@/config/site";
 
 /**
- * Mapa de Google con la ubicación del taller. No se carga hasta que la persona toca «Mostrar mapa»,
- * así el sitio no envía datos a Google ni recibe sus cookies sin permiso.
+ * Ubicación del taller. Siempre se ve una foto del mapa (OpenStreetMap, sin cookies) con el taller marcado;
+ * el mapa de Google, que se puede mover, solo se carga si la persona toca «Mostrar mapa».
  */
 export function LocationMap({ className = "" }: { className?: string }) {
   const [show, setShow] = useState(false);
@@ -25,20 +26,31 @@ export function LocationMap({ className = "" }: { className?: string }) {
             allowFullScreen
           />
         ) : (
-          <div className="absolute inset-0 grid place-items-center bg-[radial-gradient(circle_at_50%_40%,#e3eef0,#dfe3e6)] p-6 text-center">
-            <div>
-              <svg aria-hidden width="44" height="44" viewBox="0 0 24 24" className="mx-auto text-teal">
-                <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
-              </svg>
-              <p className="mt-3 font-semibold">{site.address.street}, {site.address.locality}</p>
-              <button type="button" onClick={() => setShow(true)} className="btn mt-4 bg-teal text-white hover:bg-teal-600">
-                Mostrar mapa
+          <>
+            <Image
+              src="/img/mapa-taller.webp"
+              alt={`Mapa del taller de ${site.name} en ${site.address.street}, ${site.address.locality}`}
+              fill
+              sizes="(min-width: 1280px) 1216px, 100vw"
+              quality={80}
+              className="object-cover"
+            />
+            {/* Marca del taller en el centro del mapa */}
+            <svg aria-hidden width="48" height="48" viewBox="0 0 24 24" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full text-[#c8102e] drop-shadow-lg">
+              <path fill="currentColor" stroke="white" strokeWidth="1.2" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
+            </svg>
+            <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-2 bg-gradient-to-t from-white/95 via-white/80 to-transparent px-4 pb-4 pt-10 text-center">
+              <button type="button" onClick={() => setShow(true)} className="btn bg-teal text-white shadow-lg hover:bg-teal-600">
+                Mostrar mapa interactivo
               </button>
-              <p className="mx-auto mt-3 max-w-sm text-sm text-mist">
-                El mapa lo carga Google y puede usar cookies. <Link href="/privacidad" className="underline">Más información sobre el mapa y tu privacidad</Link>.
+              <p className="max-w-md text-xs text-ink/75">
+                Ese mapa lo carga Google y puede usar cookies. <Link href="/privacidad" className="underline">Más información</Link>.
               </p>
             </div>
-          </div>
+            <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="absolute right-0 top-0 rounded-bl-md bg-white/85 px-1.5 py-0.5 text-[11px] text-ink/80">
+              © OpenStreetMap
+            </a>
+          </>
         )}
       </div>
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
