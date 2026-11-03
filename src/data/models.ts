@@ -144,7 +144,6 @@ export const models: BoatModel[] = [
       { id: "kendra-pauleth", name: "Kendra Pauleth", size: "20 pies" },
       { id: "yaci-1", name: "Yaci 1", size: "20 pies" },
       { id: "johey-1", name: "Johey 1", size: "20 pies" },
-      { id: "interior-verde-menta", name: "Interior verde menta", size: "20 pies" },
       { id: "celeste-con-rayas", name: "Celeste con rayas", size: "20 pies" },
       { id: "don-zapaton", name: "Don Zapatón", size: "20 pies" },
       { id: "la-esperanza", name: "La Esperanza", size: "20 pies" },

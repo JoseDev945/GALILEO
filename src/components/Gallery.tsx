@@ -66,12 +66,6 @@ export function Gallery({ photos, priorityCount = 3 }: Props) {
                 className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </button>
-            <p className="mt-1.5 text-xs text-mist sm:mt-2 sm:text-sm">
-              {!p.alt.toLowerCase().includes(p.modelLabel.toLowerCase()) && (
-                <span className="block font-semibold text-ink">{p.modelLabel}</span>
-              )}
-              {p.alt}
-            </p>
           </li>
         ))}
       </ul>

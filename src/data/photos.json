@@ -653,7 +653,7 @@
   "src": "/img/galileo-20-27.webp",
   "category": "turismo",
   "model": "delphin",
-  "alt": "Proa de Delphin 20 pies verde y blanca rotulada «Yaci I»",
+  "alt": "Proa de Delphin 20 pies verde y blanca rotulada «Johey 1»",
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAwAA4BaJYwCdAEeu50DkSTisAD+6fk28gE/XmmpNXzVXdXa683+Oe9cz8JCsND1XBI2XPLFMHMHh1iV4GqhdHBKw71Du4AAAA==",
@@ -668,7 +668,7 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAwAA4BaJZgCdAEQUN9e2CuabvwA/uxbdIC4E87YKO81wIF75D/jvK5WEP0yKX+7t6eMNeGyH9PNyl/Gr18jhEH4KbFd/bgpCrbcVf/8Mmv0KCgAAA==",
-  "boat": "interior-verde-menta"
+  "boat": "johey-1"
  },
  {
   "id": "galileo-18-02",
@@ -679,7 +679,7 @@
   "width": 3200,
   "height": 2402,
   "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAwAA4BaJZgAAxZf8ZEAAP7VFNSTkNg9/vzywO8PWDKImX+boPggQBvcWoaM6kvRthjLfbmNCGSqHqX/+CcMvXXpWAAA",
-  "boat": "interior-verde-menta"
+  "boat": "johey-1"
  },
  {
   "id": "galileo-18-03",
@@ -690,7 +690,7 @@
   "width": 3200,
   "height": 2402,
   "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAwAA4BaJbAAAxPBf9+AAP7tKF28DK/dTKFWFp+5aJ+46NBeHwW5tBJEmGYVZ6FrHQnoc1++K2GV4PbnSJ/67T6x0PM5LUJf/9e0gAA=",
-  "boat": "interior-verde-menta"
+  "boat": "johey-1"
  },
  {
   "id": "galileo-18-04",
@@ -701,7 +701,7 @@
   "width": 3200,
   "height": 2402,
   "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAwAA4BaJbACdAD0OigY3gwAAP7lO4IEuE2nATho+RnODgHaQi6Mjdu0gmv9YoC5eAE20Hx4UD0k3Zs7GX4IT9ZKQAAA",
-  "boat": "interior-verde-menta"
+  "boat": "johey-1"
  },
  {
   "id": "galileo-18-07",
@@ -712,7 +712,7 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwAA4BaJaACdADdeInEVfgA9muJ5Ny8k01olExFwcMi2Fl16eT2x+D9+8Mib+txK4LCMEIe4Dw9Cxp072GqXzI1Ek2FzcMgAA==",
-  "boat": "interior-verde-menta"
+  "boat": "johey-1"
  },
  {
   "id": "galileo-20-28",
@@ -723,7 +723,7 @@
   "width": 3200,
   "height": 2400,
   "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAwAA4BaJYgCdAYs3bWApm6qwAD+5gmGE7fMT1BeokCMzelIZlouZwcLDzxLse5SZHXjcABaCyTp25b9yzjzLrakXlmZboKKBq/37AA=",
-  "boat": "interior-verde-menta"
+  "boat": "johey-1"
  },
  {
   "id": "galileo-18-08",

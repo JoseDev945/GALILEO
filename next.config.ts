@@ -96,7 +96,7 @@ const nextConfig: NextConfig = {
       ["delphin-20/bote-4", "delphin/kendra-pauleth"],
       ["delphin-20/bote-5", "delphin/yaci-1"],
       ["delphin-20/bote-6", "delphin/johey-1"],
-      ["delphin-20/bote-7", "delphin/interior-verde-menta"],
+      ["delphin-20/bote-7", "delphin/johey-1"],
       ["delphin-20/bote-8", "delphin/celeste-con-rayas"],
       ["delphin-20/bote-9", "delphin/don-zapaton"],
       ["delphin-20/bote-10", "delphin/la-esperanza"],
@@ -111,6 +111,7 @@ const nextConfig: NextConfig = {
       ["delphin/proa-celeste", "delphin"],
       ["delphin/jorge", "delphin"],
       // Botes que eran el mismo
+      ["delphin/interior-verde-menta", "delphin/johey-1"],
       ["delphin/delfines-azul", "delphin/madagascar-2"],
       ["delphin/interior-gris-con-bandera", "delphin/popa-roja"],
       // Las fotos del «13-PC-648» son del bote «Carlos Daniel»
