@@ -44,7 +44,7 @@ export function LocationMap({ className = "" }: { className?: string }) {
                 Mostrar mapa interactivo
               </button>
               <p className="max-w-md text-xs text-ink/75">
-                Ese mapa lo carga Google y puede usar cookies. <Link href="/privacidad" className="underline">Más información</Link>.
+                Ese mapa lo carga Google y puede usar cookies. <Link href="/privacidad" className="underline">Más información sobre el mapa y tu privacidad</Link>.
               </p>
             </div>
             <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="absolute right-0 top-0 rounded-bl-md bg-white/85 px-1.5 py-0.5 text-[11px] text-ink/80">

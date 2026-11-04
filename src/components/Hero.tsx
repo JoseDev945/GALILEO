@@ -185,8 +185,8 @@ export function Hero({ slides }: { slides: Slide[] }) {
                 {i === active && (
                   <span
                     key={`${active}-${paused}-${cycle}`}
-                    className="allow-motion absolute left-0 top-1/2 h-[3px] -translate-y-1/2 bg-[var(--accent-light)]"
-                    style={{ width: paused ? "100%" : undefined, animation: paused ? undefined : `hero-progress ${INTERVAL}ms linear forwards` }}
+                    className="allow-motion absolute inset-x-0 top-1/2 h-[3px] origin-left -translate-y-1/2 bg-[var(--accent-light)]"
+                    style={{ animation: paused ? undefined : `hero-progress ${INTERVAL}ms linear forwards` }}
                   />
                 )}
               </button>

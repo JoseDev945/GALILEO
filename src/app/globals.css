@@ -9,7 +9,7 @@
   font-display: swap;
   font-weight: 400 900;
   src: url("/fonts/playfair-italic-digits.woff2") format("woff2-variations");
-  unicode-range: U+0020, U+002E, U+0030-0039;
+  unicode-range: U+002E, U+0030-0039;
 }
 
 @theme {
@@ -81,9 +81,10 @@
   transition: background-color 150ms, color 150ms, border-color 150ms;
 }
 
+/* La barra crece con transform (no con width) para que el navegador no tenga que redibujar la página */
 @keyframes hero-progress {
-  from { width: 0%; }
-  to { width: 100%; }
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
 
 /* Colores del carrusel: cambian con cada bote y se animan suavemente */
@@ -130,9 +131,10 @@
 }
 /* En la cabecera, el botón toma el color del bote que muestra el carrusel (si lo hay) */
 .btn-wa.wa-follow { --wa-color: var(--boat-color, #25d366); }
+/* El reflejo se mueve con transform: 190 % del botón = 475 % de su propio ancho (40 %) */
 @keyframes wa-shine {
-  0%, 70% { left: -60%; }
-  100% { left: 130%; }
+  0%, 70% { transform: translateX(0) skewX(-20deg); }
+  100% { transform: translateX(475%) skewX(-20deg); }
 }
 
 /* Vista ampliada de fotos: flechas grandes con el color del bote de la foto */
