@@ -15,7 +15,7 @@ Los modelos, precios y medidas están en `src/data/catalog.ts`; las fotos, en `s
 
 ## 2. Probar en tu computadora
 
-Necesitas Node.js 20.9 o superior y **pnpm** (este proyecto usa solo pnpm; no uses npm ni yarn).
+Necesitas Node.js **24.22.2** (o una versión 24 más nueva; está en `.node-version` y `.nvmrc`) y **pnpm** (este proyecto usa solo pnpm; no uses npm ni yarn).
 
 ```bash
 corepack enable        # activa pnpm (viene con Node.js)
