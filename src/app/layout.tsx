@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `Botes en Panamá: pangas de fibra de vidrio | ${site.name}`,
     description: site.description,
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Panga de turismo azul con toldo fabricada por Botes Galileo" }],
+    images: [{ url: "/og-logo.jpg", width: 1200, height: 630, alt: "Logo de Botes Galileo" }],
   },
-  twitter: { card: "summary_large_image", images: ["/og.jpg"] },
+  twitter: { card: "summary_large_image", images: ["/og-logo.jpg"] },
   robots: { index: true, follow: true, googleBot: { "max-image-preview": "large" } },
   formatDetection: { telephone: false },
 };
