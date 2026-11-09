@@ -2101,44 +2101,44 @@
   "boat": "bote-1"
  },
  {
-  "id": "proceso-molde-56",
-  "src": "/img/proceso-molde-56.webp",
-  "width": 3200,
-  "height": 2400,
+  "id": "proceso-1-pulido",
+  "src": "/img/proceso-1-pulido.webp",
   "category": "proceso",
-  "model": "molde",
-  "alt": "Casco en el molde antes del desmolde",
-  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJYwC7AEMxfPrj6YAAP4A57nDmOgbm7RfUs2Za6+peYgiYmOjOMDfnj+umAIzDBOeoJyhsGbITsoTGqL2JHQkJZ6o92Fr4Y5bkAAA"
+  "model": "pulido",
+  "alt": "Trabajadores puliendo el molde de una panga antes de aplicar el gelcoat",
+  "width": 2172,
+  "height": 2896,
+  "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoMABAAA4BaJaACdAYulyJIkoaXwAD32n27+Q5u5Jj3CFhALsUxPMRv3Fjh8q0EAswIyVMor5Q/goNMCFuPziZj0F8AGAVCe6T4reg0tj1Rjx0eU1TxH1l6eY1IDBkHiTAAAA=="
  },
  {
-  "id": "proceso-laminado-57",
-  "src": "/img/proceso-laminado-57.webp",
-  "width": 2400,
-  "height": 3200,
-  "category": "proceso",
-  "model": "laminado",
-  "alt": "Laminado de fibra de vidrio sobre el molde",
-  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAgCdASoMABAAA4BaJZQC7AEWPMYOfIq+sAAA/uwEqNAQBwXJWq7s2iZyoC0dFBo62f30paXgdP3292h8tFNd3odPJEYzHPa+PDanQGAAAA=="
- },
- {
-  "id": "proceso-estructura-59",
-  "src": "/img/proceso-estructura-59.webp",
-  "width": 2400,
-  "height": 3200,
-  "category": "proceso",
-  "model": "estructura",
-  "alt": "Bancas y estructura interna laminadas",
-  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoMABAAA4BaJQBOgBuLc4fKgADOMw6hrsxgsp9tIHbced0zzLuUM66YFyW3K70Gwhvxr2x0xav+X7B/tK6IetFg84+d7EirPBJQ6CJETl3LAAAA"
- },
- {
-  "id": "proceso-gelcoat-27",
-  "src": "/img/proceso-gelcoat-27.webp",
-  "width": 3200,
-  "height": 2400,
+  "id": "proceso-2-gelcoat",
+  "src": "/img/proceso-2-gelcoat.webp",
   "category": "proceso",
   "model": "gelcoat",
-  "alt": "Interior terminado con gelcoat antideslizante",
-  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAwAA4BaJYwC7AED5nKbWaAA/unhktJVKsbRiSxsNMnqkZDYeWGJ2KTUSClQsRE/+4Tzs2ccmgCoYOsQ+5Tu2x0Gn0oEVk9PmvfIPodkXgAA"
+  "alt": "Molde de panga recién cubierto con gelcoat blanco en el taller",
+  "width": 2160,
+  "height": 2888,
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoMABAAA4BaJZACdAEQdtOvzbf5nKgA/pbgh0WNI/vDtv3pR7J0BfAB4//KUKz0G8Cy21hR6h9/UZFNU08w8I/Qzfrb/Y4utA+xJ30CM0YzQdcroAA="
+ },
+ {
+  "id": "proceso-3-laminado",
+  "src": "/img/proceso-3-laminado.webp",
+  "category": "proceso",
+  "model": "laminado",
+  "alt": "Casco de panga laminado con fibra de vidrio sobre el molde",
+  "width": 2400,
+  "height": 3200,
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAQCdASoMABAAA4BaJZwAApzEJk3AAP7xPyaEvOk75WYX9XcYQZT6OhdCjW9UgNd4agAvW11iypq4O5guyDOoO+10J2eCshB/jBjP5H5ySCaFjtCpkOAA"
+ },
+ {
+  "id": "proceso-4-estructura",
+  "src": "/img/proceso-4-estructura.webp",
+  "category": "proceso",
+  "model": "estructura",
+  "alt": "Interior de un casco con las cuadernas y bancas laminadas",
+  "width": 1920,
+  "height": 2560,
+  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoMABAAA4BaJZwAAmjG8rjBA8AAAP6H76sXLyzgKCuwWLBuWatxb0fH4+5HiQJs65kfmbQc3oSADNWtfk3sMsFc5Fy8FPsbX4kAAA=="
  },
  {
   "id": "proceso-consola-44",
@@ -2149,15 +2149,5 @@
   "model": "consola",
   "alt": "Consola y cajones en fibra antes de pintar",
   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwAA4BaJaACdADdeInEVfgA9muJ5Ny8k01olExFwcMi2Fl16eT2x+D9+8Mib+txK4LCMEIe4Dw9Cxp072GqXzI1Ek2FzcMgAA=="
- },
- {
-  "id": "proceso-acabado-63",
-  "src": "/img/proceso-acabado-63.webp",
-  "width": 2400,
-  "height": 3200,
-  "category": "proceso",
-  "model": "acabado",
-  "alt": "Casco terminado listo para pintura",
-  "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoMABAAA4BaJQBdgCHaSlyN4ztTgAD+5kkCjWwu/zEILDIxDbLmXsajQpHgq5zcO9kC5hxOzpzSa7kAbdYN52CNZzk+cVDJhAAAAA=="
  }
 ]

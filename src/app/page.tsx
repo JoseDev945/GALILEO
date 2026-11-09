@@ -11,12 +11,12 @@ import { PaymentInfo } from "@/components/PaymentInfo";
 import { LocationMap } from "@/components/LocationMap";
 
 const steps = [
-  { id: "proceso-molde-56", title: "Molde", text: "Cada modelo sale de un molde propio, encerado y revisado antes de cada casco." },
-  { id: "proceso-laminado-57", title: "Laminado", text: "Capas de fibra de vidrio y resina, aplicadas a mano y compactadas con rodillo." },
-  { id: "proceso-estructura-59", title: "Estructura", text: "Bancas, cuadernas y cajones se laminan al casco para darle rigidez." },
-  { id: "proceso-gelcoat-27", title: "Gelcoat", text: "Acabado antideslizante en piso y bancas, resistente al sol y al agua salada." },
+  { id: "proceso-1-pulido", title: "Pulido del molde", text: "Cada modelo sale de un molde propio, pulido y encerado antes de cada casco para que el acabado quede liso." },
+  { id: "proceso-2-gelcoat", title: "Aplicación de gelcoat", text: "La primera capa que va en el molde: da el color y protege el casco del sol y del agua salada." },
+  { id: "proceso-3-laminado", title: "Laminado", text: "Capas de fibra de vidrio y resina, aplicadas a mano y compactadas con rodillo." },
+  { id: "proceso-4-estructura", title: "Estructura y curvas", text: "Cuadernas, bancas y refuerzos se laminan al casco para darle rigidez y forma." },
   { id: "proceso-consola-44", title: "Accesorios", text: "Consola, cajas de hielo o toldo, según el uso que le vayas a dar." },
-  { id: "proceso-acabado-63", title: "Pintura y rótulo", text: "Colores, franjas y el nombre de tu bote pintado a mano. Luego, la entrega." },
+  { id: "galileo-18-96", title: "Pintura y rótulo", text: "Colores, franjas y el nombre de tu bote pintado a mano. Luego, la entrega." },
 ];
 
 export default function Home() {
