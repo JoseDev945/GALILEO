@@ -2,7 +2,7 @@ import type { CSSProperties } from "react";
 import type { BoatModel } from "@/data/catalog";
 
 /**
- * Nombre del modelo y al lado lo que mide (ej. "GALILEO 30.5 pies", "DELPHIN 18 pies doble realce").
+ * Nombre del modelo y al lado lo que mide (ej. "GALILEO 30.5 pies", "DOLPHIN 18 pies doble realce").
  * La medida y la palabra «pies» van del color del bote (el número en cursiva); `light` usa el tono claro (para fondos oscuros).
  */
 export function ModelTitle({ m, className = "", light = false }: { m: BoatModel; className?: string; light?: boolean }) {

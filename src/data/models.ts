@@ -34,7 +34,7 @@ export type BoatModel = {
   num: string;
   /** Tipo de embarcación para títulos y Google (por defecto "Panga"). */
   kind?: "Panga" | "Lancha";
-  /** true si el nombre es masculino ("el Delphin"); por defecto se dice "la Corvina". */
+  /** true si el nombre es masculino ("el Dolphin"); por defecto se dice "la Corvina". */
   masc?: boolean;
   /** Texto que va después del nombre o la medida (ej. "Doble realce"). */
   suffix?: string;
@@ -116,9 +116,9 @@ export const models: BoatModel[] = [
     featured: true,
   },
   {
-    slug: "delphin",
+    slug: "dolphin",
     num: "",
-    word: "DELPHIN",
+    word: "DOLPHIN",
     masc: true,
     boats: [
       { id: "dona-hilda-1", name: "Doña Hilda 1", size: "18 pies" },
@@ -153,7 +153,7 @@ export const models: BoatModel[] = [
     uses: ["pesca", "turismo"],
     summary: "La panga de todos los días: de 18 a 24 pies de largo y 5 de ancho, para pescar, pasear o hacer traslados.",
     description:
-      "El Delphin es la panga de todos los días. Con 5 pies de ancho es estable y espaciosa; se entrega con bancas laminadas, piso antideslizante y el rotulado que identifica tu bote. Sirve igual para pesca que para paseos con toldo, y se fabrica en 18, 20, 22 y 24 pies.",
+      "El Dolphin es la panga de todos los días. Con 5 pies de ancho es estable y espaciosa; se entrega con bancas laminadas, piso antideslizante y el rotulado que identifica tu bote. Sirve igual para pesca que para paseos con toldo, y se fabrica en 18, 20, 22 y 24 pies.",
     specs: [
       { label: "Largo", value: "18' a 24'" },
       { label: "Ancho", value: "5'" },
@@ -167,9 +167,9 @@ export const models: BoatModel[] = [
     featured: true,
   },
   {
-    slug: "delphin-doble-realce",
+    slug: "dolphin-doble-realce",
     num: "",
-    word: "DELPHIN",
+    word: "DOLPHIN",
     masc: true,
     suffix: "Doble realce",
     boats: [
@@ -183,9 +183,9 @@ export const models: BoatModel[] = [
     ],
     badge: "Borda elevada",
     uses: ["pesca", "turismo"],
-    summary: "El Delphin con doble realce: borda más alta para que entre menos agua con mar picado.",
+    summary: "El Dolphin con doble realce: borda más alta para que entre menos agua con mar picado.",
     description:
-      "El doble realce sube la borda del Delphin para que entre menos agua cuando el mar se pone picado. Es la panga de quien sale lejos o lleva pasajeros y quiere más protección sin perder estabilidad. Se puede pedir en cualquier medida del Delphin por $1,000 extra.",
+      "El doble realce sube la borda del Dolphin para que entre menos agua cuando el mar se pone picado. Es la panga de quien sale lejos o lleva pasajeros y quiere más protección sin perder estabilidad. Se puede pedir en cualquier medida del Dolphin por $1,000 extra.",
     specs: [
       { label: "Largo", value: "18' a 24'" },
       { label: "Ancho", value: "5'" },
@@ -193,7 +193,7 @@ export const models: BoatModel[] = [
       { label: "Toldo", value: "Opcional" },
     ],
     priceFrom: 3700,
-    priceNote: "Precio del Delphin de 18 pies ($2,700) más el doble realce ($1,000). En otras medidas se suman $1,000 al precio del Delphin.",
+    priceNote: "Precio del Dolphin de 18 pies ($2,700) más el doble realce ($1,000). En otras medidas se suman $1,000 al precio del Dolphin.",
     cover: "galileo-18-doble-realce-03",
     accent: ["#0d6c70", "#3fc6c9"],
     featured: true,
@@ -281,9 +281,9 @@ export const modelName = (slug: string) => {
   const m = modelBySlug(slug);
   return m ? `${m.word.charAt(0)}${m.word.slice(1).toLowerCase()}${m.num ? ` ${m.num} pies` : ""}${m.suffix ? ` ${m.suffix}` : ""}` : "";
 };
-/** "la Corvina" o "el Delphin". */
+/** "la Corvina" o "el Dolphin". */
 export const theName = (slug: string) => `${modelBySlug(slug)?.masc ? "el" : "la"} ${modelName(slug)}`;
-/** "de la Corvina" o "del Delphin". */
+/** "de la Corvina" o "del Dolphin". */
 export const ofName = (slug: string) => (modelBySlug(slug)?.masc ? `del ${modelName(slug)}` : `de la ${modelName(slug)}`);
 export const usd = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
