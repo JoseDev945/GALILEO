@@ -142,7 +142,7 @@ export function Hero({ slides }: { slides: Slide[] }) {
       {/* Tono del color del bote sobre la foto */}
       <div aria-hidden className="absolute inset-0 -z-10 bg-[linear-gradient(to_top_right,color-mix(in_srgb,var(--accent)_22%,transparent),transparent_40%)]" />
 
-      <div className="mx-auto flex min-h-[calc(100svh-74px)] max-w-7xl flex-col justify-end px-4 pb-36 pt-28 sm:px-6 lg:pb-8 lg:pt-32">
+      <div className="mx-auto flex min-h-[calc(100svh-60px)] max-w-7xl flex-col justify-end px-4 pb-36 pt-28 sm:px-6 lg:min-h-[calc(100svh-74px)] lg:pb-8 lg:pt-32">
         <div className="flex items-end justify-between gap-6">
           <div key={s.photo.id} aria-live={paused ? "polite" : "off"} className="max-w-3xl [text-shadow:0_1px_14px_rgb(0_0_0/0.6)]">
             {/* Título principal de la página para Google: lo que busca la gente ("botes en Panamá", "pangas") */}

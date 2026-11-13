@@ -18,6 +18,7 @@ export const site = {
   email: "botes.galileo@gmail.com",
   social: {
     tiktok: "https://www.tiktok.com/@humbertohbc",
+    instagram: "https://www.instagram.com/botesgalileo507/",
     facebookPage: "https://www.facebook.com/share/1DofD243TX/",
     facebookContact: "https://www.facebook.com/share/1SZMbzSA3P/",
   },

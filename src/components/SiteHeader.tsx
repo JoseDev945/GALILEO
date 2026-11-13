@@ -23,7 +23,7 @@ export function SiteHeader() {
   const modelItems = models.map((m) => ({ href: `/modelos/${m.slug}`, label: modelName(m.slug) }));
   return (
     <header className="sticky top-0 z-50 bg-night text-white/85">
-      <div className="relative mx-auto flex h-[74px] max-w-7xl items-center justify-between gap-6 px-4 sm:px-6">
+      <div className="relative mx-auto flex h-[60px] max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:h-[74px]">
         <LogoLink label={`${site.name}, inicio`} className="shrink-0">
           <Image src="/logo-galileo.png" alt={site.name} width={720} height={452} loading="eager" sizes="80px" className="h-10 w-auto sm:h-12" />
         </LogoLink>

@@ -7,7 +7,7 @@ import { SocialLinks } from "./SocialLinks";
 export function SiteFooter() {
   return (
     <footer className="bg-night text-white/75">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-10 px-4 pb-36 pt-14 sm:px-6 md:grid-cols-[1.3fr_1fr_1fr_1fr] md:pb-16">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-10 px-4 pb-16 pt-14 sm:px-6 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div className="col-span-2 md:col-span-1">
           <Image src="/logo-galileo.png" alt={site.name} width={720} height={452} className="h-20 w-auto" />
           <p className="mt-4 max-w-xs">Pangas de fibra de vidrio hechas a mano en {site.address.locality}, {site.address.region}, para pesca, turismo y pesca deportiva.</p>
@@ -48,7 +48,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-4 py-5 pr-20 text-sm text-white/50 sm:px-6 md:pr-6">
+        <p className="mx-auto max-w-7xl px-4 pt-5 pb-[calc(4.75rem+env(safe-area-inset-bottom))] text-sm text-white/50 sm:px-6 lg:pb-5">
           © {new Date().getFullYear()} {site.name}. Fotos de trabajos reales del taller. Precios referenciales en USD, sujetos a cotización.
         </p>
       </div>
